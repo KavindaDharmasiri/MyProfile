@@ -1,5 +1,5 @@
-#*This is my profile*
-###Kavinda Gimhan
+#*This is my profile*#
+###Kavinda Gimhan###
 
 This project I used to create my official web site. [KavindaGimhan](https://kavindagimhan.000webhostapp.com/)
 
