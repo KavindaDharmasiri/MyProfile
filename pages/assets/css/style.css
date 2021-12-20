@@ -1,0 +1,279 @@
+header{
+    background-image: url("../images/header.png");
+    height: 140vh;
+}
+.about{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -210px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+.about h2{
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about1{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about2{
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.downNavHeader .social{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -270px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: #888888;
+}
+.downNavHeader .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+.downNavHeader .social a:hover{
+    color: crimson;
+    opacity: 0.9;
+}
+.mainNavBar {
+    background-color: #1c1a1a;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    box-shadow: -2px 6px 9px -4px #917a7a;
+}
+.mainNavBar.sticky{
+    padding: 15px 0;
+    background-color: gray;
+}
+.mainNavBar.sticky:hover{
+    color: crimson;
+}
+.mainNavBar img {
+    width: 43px;
+    margin: 10px;
+}
+.mainNavBar ul {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+.mainNavBar ul > li > a {
+    text-decoration: none;
+    color: #f3f1f1;
+    padding-bottom: 4px;
+    margin-left: 13px;
+}
+.mainNavBar ul > li {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+}
+
+
+.mainNavBar .menu li a:hover{
+    color: crimson;
+}
+
+.mainNavBar .logo a{
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+.mainNavBar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+.mainNavBar.sticky .logo a span{
+    color: crimson;
+}
+
+.home-content .text-1{
+    font-size: 27px;
+}
+.home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home-content{
+    color: white;
+    position: absolute;
+    top: 283px;
+    right: 100px;
+}
+.home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+}
+
+@media all and (max-width: 424px) {
+
+    .about{
+        top: 241px;
+    }
+    .about h2 {
+        top: 260px;
+        font-size: 10px;
+        left: 12px;
+    }
+    .about1 {
+        font-size: 8px;
+        left: 19px;
+        top: 271px;
+    }
+    .about2 {
+        font-size: 8px;
+        left: 34px;
+        top: 280px;
+    }
+    .downNavHeader .social {
+        top: 304px;
+    }
+    .downNavHeader .social a {
+        font-size: 16px;
+        width: 30px;
+        height: 30px;
+        line-height: 31px;
+    }
+    .downNavHeader .social {
+        bottom: -217px;
+    }
+    .mainNavBar .logo a {
+        top: 29px;
+        font-size: 20px;
+    }
+    header{
+        background-image: url("../images/mainHeader.png");
+        height: 70vh;
+    }
+    .home-content .text-1 {
+        font-size: 10px;
+    }
+    .home-content .text-2 {
+        font-size: 13px;
+    }
+    .home-content .text-3 {
+        font-size: 10px;
+    }
+    .home-content {
+        top: 183px;
+        right: 13px;
+    }
+    .mainNavBar ul > li > a {
+        margin-left: 0px;
+    }
+    .mainNavBar ul {
+        right: 21px;
+        bottom: -8px;
+        font-size: 13px;
+    }
+}
+@media all and (min-width: 424px) and (max-width: 767px) {
+    .mainNavBar ul {
+        right: 23px;
+        bottom: -18px;
+        font-size: 23px;
+    }
+    .mainNavBar .logo a {
+        top: 4px;
+    }
+    .about h2 {
+        font-size: 14px;
+    }
+    .about1 {
+        font-size: 11px;
+    }
+    .about2 {
+        font-size: 11px;
+    }
+    .home-content .text-3 {
+        font-size: 21px;
+    }
+    .home-content .text-2 {
+        font-size: 30px;
+    }
+    .home-content .text-1 {
+        font-size: 22px;
+    }
+    .home-content {
+        top: 238px;
+        right: 12px;
+    }
+    header{
+        background-image: url("../images/secondmainheader.png");
+        height: 100vh;
+    }
+    .about {
+        bottom: 15px;
+    }
+    .downNavHeader .social {
+        bottom: -22px;
+        padding-bottom: 29px;
+    }
+    .downNavHeader .social a {
+        width: 33px;
+        height: 33px;
+    }
+}
+@media all and (min-width: 767px) and (max-width: 1023px) {
+    .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home-content .text-2 {
+        font-size: 36px;
+    }
+    .home-content .text-3 {
+        font-size: 26px;
+    }
+    .home-content {
+        top: 461px;
+        right: 16px;
+    }
+    .about h2 {
+        font-size: 25px;
+    }
+    .about1 {
+        font-size: 19px;
+    }
+    .about2 {
+        font-size: 19px;
+    }
+    .about {
+        bottom: -350px;
+    }
+    header {
+        height: 175vh;
+    }
+    .downNavHeader .social {
+        bottom: -387px;
+    }
+}

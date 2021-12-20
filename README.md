@@ -12,6 +12,6 @@ This project I used to create my official web site. [KavindaGimhan](https://kavi
 ```
 *css
 
-![Image of fish](assets/images/Untitled-2.png)
+![Image of fish](pages/assets/images/Untitled-2.png)
 
 ***Thanks for visiting.***
