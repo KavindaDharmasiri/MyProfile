@@ -1,8 +1,13 @@
-header{
+html {
+    background-color: #888888;
+}
+
+header {
     background-image: url("../images/header.png");
     height: 140vh;
 }
-.about{
+
+.headerabout {
     position: absolute;
     left: 0;
     right: 0;
@@ -11,20 +16,245 @@ header{
     padding-bottom: 25px;
     color: white;
 }
-.about h2{
+
+.about {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -210px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.horiButtn {
+    height: 600px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.Btn {
+
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 20px;
+
+
+    background: crimson;
+    color: white;
+}
+
+.Btn:hover {
+    background-color: transparent;
+    border: 1px solid crimson;
+    color: crimson;
+}
+
+.serv-content {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 1900px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv-content .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.serv-content .card:hover {
+    background: crimson;
+}
+
+.serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.serv-content .card:hover i {
+    color: #fff;
+}
+
+.serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+.serv-content1 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 2200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv-content1 .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.serv-content1 .card:hover {
+    background: crimson;
+}
+
+.serv-content1 .card .box {
+    transition: all 0.3s ease;
+}
+
+.serv-content1 .card:hover .box {
+    transform: scale(1.05);
+}
+
+.serv-content1 .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.serv-content1 .card:hover i {
+    color: #fff;
+}
+
+.serv-content1 .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.verButtn {
+    height: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.Btn2 {
+
+    border-radius: 40px;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 20px;
+    margin-bottom: 409px;
+
+    background: aqua;
+    color: white;
+}
+
+.imgProject {
+    position: absolute;
+    top: 1400px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: auto;
+}
+
+.Btn2:hover {
+    background-color: transparent;
+    border: 1px solid aqua;
+    color: aqua;
+}
+
+.maintopTheme {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -500px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.maintopTheme h1 {
+    color: black;
+}
+
+.about h2 {
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about1{
-    font-size: 20px;
+
+.headerabout h2 {
+    font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
 }
-.about2{
+
+.about1 {
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
 }
 
-.downNavHeader .social{
+.about2 {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.downNavHeader .social {
     position: absolute;
     left: 0;
     right: 0;
@@ -33,7 +263,8 @@ header{
     padding-bottom: 25px;
     color: #888888;
 }
-.downNavHeader .social a{
+
+.downNavHeader .social a {
     font-size: 24px;
     color: inherit;
     border: 1px solid #ccc;
@@ -46,10 +277,12 @@ header{
     margin: 0 8px;
     opacity: 0.75;
 }
-.downNavHeader .social a:hover{
+
+.downNavHeader .social a:hover {
     color: crimson;
     opacity: 0.9;
 }
+
 .mainNavBar {
     background-color: #1c1a1a;
     position: fixed;
@@ -58,17 +291,21 @@ header{
     height: 80px;
     box-shadow: -2px 6px 9px -4px #917a7a;
 }
-.mainNavBar.sticky{
+
+.mainNavBar.sticky {
     padding: 15px 0;
     background-color: gray;
 }
-.mainNavBar.sticky:hover{
+
+.mainNavBar.sticky:hover {
     color: crimson;
 }
+
 .mainNavBar img {
     width: 43px;
     margin: 10px;
 }
+
 .mainNavBar ul {
     position: absolute;
     right: 30px;
@@ -79,23 +316,25 @@ header{
     text-decoration: none;
     color: white;
 }
+
 .mainNavBar ul > li > a {
     text-decoration: none;
     color: #f3f1f1;
     padding-bottom: 4px;
     margin-left: 13px;
 }
+
 .mainNavBar ul > li {
     padding: 0 10px 0 10px;
     display: inline-block;
 }
 
 
-.mainNavBar .menu li a:hover{
+.mainNavBar .menu li a:hover {
     color: crimson;
 }
 
-.mainNavBar .logo a{
+.mainNavBar .logo a {
     position: absolute;
     top: 20px;
     left: 85px;
@@ -104,176 +343,688 @@ header{
     font-weight: 600;
     font-family: 'Ubuntu', sans-serif;
 }
-.mainNavBar .logo a span{
+
+.mainNavBar .logo a span {
     color: crimson;
     transition: all 0.3s ease;
 }
-.mainNavBar.sticky .logo a span{
+
+.mainNavBar.sticky .logo a span {
     color: crimson;
 }
 
-.home-content .text-1{
+.home-content .text-1 {
     font-size: 27px;
 }
-.home-content .text-2{
+
+.home-content .text-2 {
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
 }
-.home-content .text-3{
+
+.home-content .text-3 {
     font-size: 40px;
     margin: 5px 0;
 }
-.home-content{
+
+.home-content {
     color: white;
     position: absolute;
     top: 283px;
     right: 100px;
 }
-.home-content .text-3 span{
+
+.home-content .text-3 span {
     color: crimson;
     font-weight: 500;
 }
 
-@media all and (max-width: 424px) {
+.about {
+    background: black;
+    position: absolute;
+    top: 2500px;
+    height: 1500px;
+}
 
-    .about{
+.aboutme h1 {
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.aboutme h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: crimson;
+    margin-left: 50px;
+}
+
+.treepng {
+
+    position: relative;
+    left: -333px;
+    height: 552px;
+}
+
+.aboutpre {
+
+    position: absolute;
+    top: 287px;
+    right: 121px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.skills h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: crimson;
+    margin-left: 50px;
+}
+
+.aboutmehr {
+
+    position: relative;
+    height: 17px;
+    top: 305px;
+    /* bottom: -6px; */
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, crimson);
+}
+
+.gallryHr {
+    height: 17px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, crimson);
+}
+
+.hobbyEnd {
+    position: relative;
+    top: 3000px;
+    height: 17px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, crimson);
+}
+
+.gallery {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -2587px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gallery h1 {
+    color: black;
+}
+
+.gallery h2 {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.gallaryphoto {
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+
+.gallaryphoto .img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+}
+
+.gallaryphoto .img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.gallaryphoto .img:nth-child(2n+3) {
+    grid-row-start: span 2;
+}
+
+.gallaryphoto .img:nth-child(4n+5) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.gallaryphoto .img:nth-child(6n+7) {
+    grid-row-start: span 1;
+}
+
+.gallaryphoto .img:nth-child(8n+9) {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+
+.gallaryphoto .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(100);
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+.gallaryphoto .img:hover img {
+    filter: brightness(1) grayscale(0);
+}
+
+.hobby {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -2587px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hobby .image {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.hobby figure {
+    border: 5px solid crimson;
+    height: 175px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+.hobby h3 {
+    color: #000;
+    margin-top: 40px;
+}
+
+.hobby p {
+    padding: 0 10px;
+}
+
+.image img {
+    display: block;
+    /*width: 100%;*/
+    height: auto;
+    cursor: pointer;
+}
+
+.image #zoom-in img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.image #zoom-in:hover img {
+    transform: scale(1.5);
+}
+
+.image #zoom-inTwo img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.image #zoom-inTwo:hover img {
+    transform: scale(1.5);
+}
+
+.image #zoom-inThree img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+.image #zoom-inThree:hover img {
+    transform: scale(1.5);
+}
+
+
+footer {
+    font-weight: 400;
+    background-color: white;
+    /* padding: 40px 0;*/
+    background-color: black;
+    position: relative;
+    bottom: -2994px;
+    height: 225px;
+}
+
+.footer {
+    position: relative;
+    top: -297px;
+}
+
+.footer .footersocial {
+    text-align: center;
+    padding-bottom: 25px;
+    color: #888888;
+}
+
+.footer .footersocial a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.footer .footersocial a:hover {
+    color: crimson;
+    opacity: 0.9;
+}
+
+.footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+
+.maintopTheme h1 {
+    font-size: 20px;
+}
+
+
+@media all and (max-width: 425px) {
+
+    .headerabout {
         top: 241px;
     }
-    .about h2 {
+
+    .headerabout h2 {
         top: 260px;
         font-size: 10px;
         left: 12px;
     }
+
     .about1 {
         font-size: 8px;
         left: 19px;
         top: 271px;
     }
+
     .about2 {
         font-size: 8px;
         left: 34px;
         top: 280px;
     }
+
     .downNavHeader .social {
         top: 304px;
     }
+
     .downNavHeader .social a {
         font-size: 16px;
         width: 30px;
         height: 30px;
         line-height: 31px;
     }
+
     .downNavHeader .social {
         bottom: -217px;
     }
+
     .mainNavBar .logo a {
         top: 29px;
         font-size: 20px;
     }
-    header{
+
+    header {
         background-image: url("../images/mainHeader.png");
         height: 70vh;
     }
+
     .home-content .text-1 {
         font-size: 10px;
     }
+
     .home-content .text-2 {
         font-size: 13px;
     }
+
     .home-content .text-3 {
         font-size: 10px;
     }
+
     .home-content {
         top: 183px;
         right: 13px;
     }
+
     .mainNavBar ul > li > a {
         margin-left: 0px;
     }
+
     .mainNavBar ul {
         right: 21px;
         bottom: -8px;
         font-size: 13px;
     }
+
+    .maintopTheme {
+        bottom: 0px;
+        font-size: 6px;
+    }
+
+    .maintopTheme h1 {
+        font-size: 20px;
+    }
+
+    .Btn {
+        border-radius: 45px;
+        font-size: 10px;
+        padding: 10px 10px;
+        margin-left: 37px;
+        margin-right: 35px;
+    }
+
+    .horiButtn {
+        height: 297px;
+        border-radius: 5px;
+        border: 0;
+        font-size: 10px;
+
+    }
+
+    .Btn2 {
+        font-size: 10px;
+        padding: 10px 10px;
+        margin-left: 18px;
+        margin-right: 20px;
+    }
+
+    .verButtn {
+        height: 176px;
+    }
+
+    .imgProject {
+        top: 576px;
+        left: -231px;
+    }
+
+    .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    .serv-content1 {
+        flex-wrap: wrap;
+        top: 1790px;
+    }
+    .gallery {
+        bottom: -3225px;
+    }
+    .gallery h2 {
+        font-size: 8px;
+    }
+    .hobby {
+        bottom: -3178px;
+        font-size: 10px;
+    }
+    footer {
+        bottom: -3500px;
+    }
 }
-@media all and (min-width: 424px) and (max-width: 767px) {
+
+@media all and (min-width: 425px) and (max-width: 768px) {
     .mainNavBar ul {
         right: 23px;
         bottom: -18px;
         font-size: 23px;
     }
+
+
+    .gallery {
+        bottom: -3004px;
+    }
+    .gallery h2 {
+        font-size: 10px;
+    }
+    .hobby {
+        bottom: -2964px;
+        font-size: 14px;
+    }
+    .hobby p {
+        font-size: 11px;
+    }
+    footer {
+        bottom: -3298px;
+    }
+
+    .maintopTheme {
+        bottom: -156px;
+    }
+
+    .horiButtn {
+        height: 334px;
+    }
+    .verButtn {
+        height: 205px;
+    }
+
+    .Btn {
+        border-radius: 30px;
+        font-size: 10px;
+        margin-left: 14px;
+        margin-right: 20px;
+    }
+
+    .Btn2 {
+        border-radius: 30px;
+        font-size: 10px;
+        margin-left: 14px;
+        margin-right: 20px;
+    }
+
     .mainNavBar .logo a {
         top: 4px;
     }
-    .about h2 {
+
+    .headerabout h2 {
         font-size: 14px;
     }
+
     .about1 {
         font-size: 11px;
     }
+
     .about2 {
         font-size: 11px;
     }
+
     .home-content .text-3 {
         font-size: 21px;
     }
+
     .home-content .text-2 {
         font-size: 30px;
     }
+
     .home-content .text-1 {
         font-size: 22px;
     }
+
     .home-content {
         top: 238px;
         right: 12px;
     }
-    header{
+
+    header {
         background-image: url("../images/secondmainheader.png");
         height: 100vh;
     }
-    .about {
+
+    .headerabout {
         bottom: 15px;
     }
+
     .downNavHeader .social {
         bottom: -22px;
         padding-bottom: 29px;
     }
+
     .downNavHeader .social a {
         width: 33px;
         height: 33px;
     }
+
+    .maintopTheme h2 {
+        font-size: 10px;
+    }
+    .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    .serv-content1 {
+        flex-wrap: wrap;
+        top: 1790px;
+    }
 }
-@media all and (min-width: 767px) and (max-width: 1023px) {
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
     .home-content .text-1 {
         font-size: 20px;
     }
+
     .home-content .text-2 {
         font-size: 36px;
     }
+
     .home-content .text-3 {
         font-size: 26px;
+    }
+    footer {
+        bottom: -3008px;
+    }
+    .footer {
+        top: -324px;
     }
     .home-content {
         top: 461px;
         right: 16px;
     }
-    .about h2 {
+
+    .headerabout {
+        bottom: -351px;
+    }
+
+    .headerabout h2 {
         font-size: 25px;
     }
+
     .about1 {
         font-size: 19px;
     }
+
     .about2 {
         font-size: 19px;
     }
+
     .about {
         bottom: -350px;
     }
+
     header {
         height: 175vh;
     }
+
     .downNavHeader .social {
         bottom: -387px;
     }
+
+    .maintopTheme {
+        bottom: -580px;
+    }
+    .serv-content {
+        flex-wrap: nowrap;
+        top: 1465px;
+    }
+
+    .serv-content1 {
+        flex-wrap: nowrap;
+        top: 1790px;
+    }
 }
+/*
+
+@media all and (min-width: 1024px) and (max-width: 1440px) {
+    .headerabout {
+        bottom: -361px;
+    }
+    .downNavHeader .social {
+        bottom: -391px;
+    }
+    .home-content {
+        right: 22px;
+    }
+    header {
+        height: 176vh;
+    }
+    .maintopTheme {
+        bottom: -580px;
+    }
+}
+*/
