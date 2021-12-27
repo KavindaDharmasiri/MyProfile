@@ -1,0 +1,535 @@
+/*Start Header Section*/
+header {
+    background-image: url("../images/vlog.png");
+    height: 80vh;
+}
+header, main ,footer{
+    font-family: 'Ubuntu', sans-serif;
+}
+/*Start Nav Bar Styling*/
+.mainNavBar {
+    background-color: #1c1a1a;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    box-shadow: -2px 6px 9px -4px #917a7a;
+}
+
+.mainNavBar.sticky {
+    padding: 15px 0;
+    background-color: gray;
+}
+
+.mainNavBar.sticky:hover {
+    color: crimson;
+}
+
+.mainNavBar img {
+    width: 43px;
+    margin: 10px;
+}
+
+.mainNavBar ul {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.mainNavBar ul > li > a {
+    text-decoration: none;
+    color: #f3f1f1;
+    padding-bottom: 4px;
+    margin-left: 13px;
+}
+
+.mainNavBar ul > li {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+}
+
+
+.mainNavBar .menu li a:hover {
+    color: crimson;
+}
+
+.mainNavBar .logo a {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainNavBar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.mainNavBar.sticky .logo a span {
+    color: crimson;
+}
+/*End Nav Bar Styling*/
+/*Start Rest*/
+.home-content {
+    color: white;
+    position: absolute;
+    top: 250px;
+    right: 180px;
+    text-align: center;
+}
+
+.home-content .text-1 {
+    font-size: 27px;
+    color: gray;
+}
+
+.home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+/*End Rest*/
+/*Start Project Section*/
+.maintopTheme {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 500px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+.maintopTheme h1 {
+    color: black;
+}
+.maintopTheme h3{
+    font-size: 23px;
+    color: gray;
+    position: relative;
+    top: 50px;
+}
+
+
+
+
+/*Start Slider Styling*/
+.slide{
+    position: relative;
+    top: 350px;
+}
+.slide h1{
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+    color: #9d0191;
+}
+.main{
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+.slide-container{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.arrow{
+    width: 2rem;
+    margin: 0 1rem;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.container::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+}
+.container::-webkit-scrollbar-track{
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: #d90191;
+    outline: 1px solid #eee;
+}
+.container .thumbnail{
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+.container .thumbnail:hover{
+    transform: scale(1);
+}
+.project-details{
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+.project-details h2{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.project-details p{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+.project-details a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #db6400;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+.project-details a:hover{
+    background-color: #9d0191;
+}
+/*End Slider Styling*/
+
+
+/*End Project Section*/
+/*End Header Section*/
+
+/*Start Main Section*/
+/*Start Service Section*/
+.serv-content {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 1900px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv-content .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.serv-content .card:hover {
+    background: crimson;
+}
+
+.serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.serv-content .card:hover i {
+    color: #fff;
+}
+
+.serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+.serv-content1 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 2200px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv-content1 .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.serv-content1 .card:hover {
+    background: crimson;
+}
+
+.serv-content1 .card .box {
+    transition: all 0.3s ease;
+}
+
+.serv-content1 .card:hover .box {
+    transform: scale(1.05);
+}
+
+.serv-content1 .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.serv-content1 .card:hover i {
+    color: #fff;
+}
+
+.serv-content1 .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.service {
+    position: relative;
+    bottom: 1450px;
+}
+/*End Service Section*/
+/*End Main Section*/
+
+/*Start Footer Section*/
+footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: -1100px;
+    height: 225px;
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+/*End Footer Section*/
+
+hr {
+
+    position: relative;
+    height: 17px;
+    top: 386px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, crimson);
+}
+
+
+@media all and (max-width: 425px) {
+
+    .mainNavBar .logo a {
+        top: 29px;
+        font-size: 20px;
+    }
+
+    header {
+        background-image: url("../images/mainHeader.png");
+        height: 70vh;
+    }
+
+    .home-content .text-1 {
+        font-size: 10px;
+    }
+
+    .home-content .text-2 {
+        font-size: 13px;
+    }
+
+    .home-content .text-3 {
+        font-size: 10px;
+    }
+
+    .mainNavBar ul > li > a {
+        margin-left: 0px;
+    }
+
+    .mainNavBar ul {
+        right: 21px;
+        bottom: -8px;
+        font-size: 13px;
+    }
+
+    .aboutHeader .home-content {
+        top: 261px;
+        left: 125px;
+    }
+    .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    .serv-content1 {
+        flex-wrap: wrap;
+        top: 1790px;
+    }
+    .service {
+        bottom: 550px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    .mainNavBar .logo a {
+        top: 4px;
+    }
+
+    .home-content .text-3 {
+        font-size: 21px;
+    }
+
+    .home-content .text-2 {
+        font-size: 30px;
+    }
+
+    .home-content .text-1 {
+        font-size: 22px;
+    }
+
+    .home-content {
+        top: 238px;
+        right: 12px;
+    }
+
+    header {
+        background-image: url("../images/secondmainheader.png");
+        height: 100vh;
+    }
+
+    .mainNavBar ul {
+        bottom: -10px;
+        font-size: 19px;
+    }
+
+    .aboutHeader .home-content {
+        top: 254px;
+        left: 200px;
+    }
+    .maintopTheme {
+        font-size: 8px;
+    }
+    footer {
+        bottom: -2000px;
+    }
+    .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    .serv-content1 {
+        flex-wrap: wrap;
+        top: 1790px;
+    }
+    .service {
+        bottom: 600px;
+    }
+}
+/*
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    .home-content .text-2 {
+        font-size: 36px;
+    }
+
+    .home-content .text-3 {
+        font-size: 26px;
+    }
+
+    .home-content {
+        top: 461px;
+        right: 16px;
+    }
+
+    header {
+        height: 104vh;
+    }
+
+}*/
+
+

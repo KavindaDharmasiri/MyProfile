@@ -2,294 +2,41 @@ html {
     background-color: #888888;
 }
 
+/*Header Section Start*/
 header {
-    background-image: url("../images/header.png");
-    height: 140vh;
+    min-height: 135vh;
+    background-color: black;
 }
 
-.headerabout {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -210px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: white;
-}
-
-.about {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -210px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: white;
-}
-
-.horiButtn {
-    height: 600px;
-    position: relative;
+.mainHeader {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-
-    border-radius: 40px;
-    border: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-    cursor: pointer;
-
+    background: url("../images/header.png") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.Btn {
-
-    border-radius: 40px;
-    border: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 2rem 3rem;
-    text-transform: uppercase;
-    white-space: nowrap;
-    cursor: pointer;
-    margin-left: 50px;
-    margin-right: 20px;
-
-
-    background: crimson;
-    color: white;
-}
-
-.Btn:hover {
-    background-color: transparent;
-    border: 1px solid crimson;
-    color: crimson;
-}
-
-.serv-content {
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    top: 1900px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.serv-content .card {
-    background: #D9CECD;
-    text-align: center;
-    border-radius: 6px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-.serv-content .card:hover {
-    background: crimson;
-}
-
-.serv-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.serv-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.serv-content .card i {
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-.serv-content .card:hover i {
-    color: #fff;
-}
-
-.serv-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-
-.serv-content1 {
-    display: flex;
-    flex-wrap: nowrap;
-    position: absolute;
-    top: 2200px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.serv-content1 .card {
-    background: #D9CECD;
-    text-align: center;
-    border-radius: 6px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-.serv-content1 .card:hover {
-    background: crimson;
-}
-
-.serv-content1 .card .box {
-    transition: all 0.3s ease;
-}
-
-.serv-content1 .card:hover .box {
-    transform: scale(1.05);
-}
-
-.serv-content1 .card i {
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-.serv-content1 .card:hover i {
-    color: #fff;
-}
-
-.serv-content1 .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.verButtn {
-    height: 10px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    border-radius: 40px;
-    border: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    white-space: nowrap;
-    cursor: pointer;
-
-}
-
-.Btn2 {
-
-    border-radius: 40px;
-    border: 0;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 1rem 0;
-    padding: 2rem 3rem;
-    text-transform: uppercase;
-    white-space: nowrap;
-    cursor: pointer;
-    margin-left: 50px;
-    margin-right: 20px;
-    margin-bottom: 409px;
-
-    background: aqua;
-    color: white;
-}
-
-.imgProject {
-    position: absolute;
-    top: 1400px;
-    right: 0;
-    left: 0;
-    margin: auto;
-    width: auto;
-}
-
-.Btn2:hover {
-    background-color: transparent;
-    border: 1px solid aqua;
-    color: aqua;
-}
-
-.maintopTheme {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -500px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: crimson;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.maintopTheme h1 {
-    color: black;
-}
-
-.about h2 {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.headerabout h2 {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.about1 {
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.about2 {
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.downNavHeader .social {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -270px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: #888888;
-}
-
-.downNavHeader .social a {
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid #ccc;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-}
-
-.downNavHeader .social a:hover {
-    color: crimson;
-    opacity: 0.9;
-}
+/*Start Nav Bar Style*/
 
 .mainNavBar {
     background-color: #1c1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: #010103;
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    height: 40px;
+    /*position: fixed;
     z-index: 999;
     width: 100%;
     height: 80px;
-    box-shadow: -2px 6px 9px -4px #917a7a;
+    box-shadow: -2px 6px 9px -4px #917a7a;*/
 }
 
 .mainNavBar.sticky {
@@ -301,9 +48,33 @@ header {
     color: crimson;
 }
 
-.mainNavBar img {
-    width: 43px;
+.mainNavBar .img {
+    width: 52px;
+    height: 65px;
     margin: 10px;
+    position: relative;
+    left: -86px;
+    background-color: #cf0d68;
+}
+.mainNavBar .img img{
+    position: absolute;
+    margin:auto;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.mainNavBar .img img:hover{
+    transform: rotate(360deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.mainNavBar .img img:hover section{
+    transform: rotate(-360deg);
+    transition: all 1s;
 }
 
 .mainNavBar ul {
@@ -353,6 +124,8 @@ header {
     color: crimson;
 }
 
+/*End Nav Bar Style*/
+
 .home-content .text-1 {
     font-size: 27px;
 }
@@ -371,7 +144,7 @@ header {
 .home-content {
     color: white;
     position: absolute;
-    top: 283px;
+    top: 150px;
     right: 100px;
 }
 
@@ -380,11 +153,308 @@ header {
     font-weight: 500;
 }
 
-.about {
-    background: black;
+.headerabout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    bottom: -350px;
+    text-align: center;
+    color: white;
+}
+
+.headerabout h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about1 {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.about2 {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.downNavHeader .social {
+    padding-bottom: 25px;
+    color: #888888;
+}
+
+.downNavHeader .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.downNavHeader .social a:hover {
+    color: crimson;
+    opacity: 0.9;
+}
+
+/*Header Section End*/
+
+/*Main Section Start*/
+/*Start Project Section Styling*/
+.maintopTheme {
     position: absolute;
-    top: 2500px;
+    left: 0;
+    right: 0;
+    bottom: -500px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.maintopTheme h1 {
+    color: black;
+    font-size: 20px;
+}
+
+/*Start Slider Styling*/
+.slide {
+    position: relative;
+    top: 265px;
+}
+.slide-about {
+    position: relative;
+    top: 150px;
+}
+.slide h1 {
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+    color: #9d0191;
+}
+
+.main {
+    background-color: #f4f4f4;
+    padding: 4rem 0;
+}
+
+.slide-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.arrow {
+    width: 2rem;
+    margin: 0 1rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.container::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background: #d5d5d5;
+}
+
+.container::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #d90191;
+    outline: 1px solid #eee;
+}
+
+.container .thumbnail {
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+
+.container .thumbnail:hover {
+    transform: scale(1);
+}
+
+.project-details {
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.project-details h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.project-details p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+.project-details a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #db6400;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+.project-details a:hover {
+    background-color: #9d0191;
+}
+
+/*End Slider Styling*/
+
+/*End Project Section Styling*/
+/*Start Service Section Styling*/
+.serv-content {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    /*top: 1900px;*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv-content .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.serv-content .card:hover {
+    background: crimson;
+}
+
+.serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+.serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+.serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.serv-content .card:hover i {
+    color: #fff;
+}
+
+.serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.fullserve {
+    position: relative;
+    top: 450px;
+}
+.serv-content1 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    /*top: 2200px;*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.serv-content1 .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 6px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.serv-content1 .card:hover {
+    background: crimson;
+}
+
+.serv-content1 .card .box {
+    transition: all 0.3s ease;
+}
+
+.serv-content1 .card:hover .box {
+    transform: scale(1.05);
+}
+
+.serv-content1 .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+.serv-content1 .card:hover i {
+    color: #fff;
+}
+
+.serv-content1 .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*End Service Section Styling*/
+/*Start About Section Styling*/
+.about {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -460px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+    background: black;
     height: 1500px;
+}
+
+.about h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .aboutme h1 {
@@ -418,6 +488,8 @@ header {
     font-weight: 600;
 }
 
+/*End About Section Styling*/
+/*Start Skill Section Styling*/
 .skills h2 {
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
@@ -430,23 +502,16 @@ header {
 
     position: relative;
     height: 17px;
-    top: 305px;
+    top: 190px;
     /* bottom: -6px; */
     border: none;
     border-radius: 10px;
     background: linear-gradient(to left, black, crimson);
 }
 
+/*End Skill Section Styling*/
+/*Start Gallery Section Styling*/
 .gallryHr {
-    height: 17px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(to left, black, crimson);
-}
-
-.hobbyEnd {
-    position: relative;
-    top: 3000px;
     height: 17px;
     border: none;
     border-radius: 10px;
@@ -457,7 +522,7 @@ header {
     position: relative;
     left: 0;
     right: 0;
-    bottom: -2587px;
+    bottom: -520px;
     text-align: center;
     padding-bottom: 25px;
     color: crimson;
@@ -530,11 +595,13 @@ header {
     filter: brightness(1) grayscale(0);
 }
 
+/*End Gallery Section Styling*/
+/*Start Hobby Section Styling*/
 .hobby {
     position: relative;
     left: 0;
     right: 0;
-    bottom: -2587px;
+    bottom: -520px;
     text-align: center;
     padding-bottom: 25px;
     font-size: 20px;
@@ -599,47 +666,26 @@ header {
     transform: scale(1.5);
 }
 
-
+/*Start Footer section*/
 footer {
     font-weight: 400;
     background-color: white;
-    /* padding: 40px 0;*/
+    display: flex;
+    width: 100%;
     background-color: black;
     position: relative;
-    bottom: -2994px;
+    bottom: -520px;
     height: 225px;
 }
-
-.footer {
+.footer{
     position: relative;
-    top: -297px;
-}
-
-.footer .footersocial {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     text-align: center;
-    padding-bottom: 25px;
-    color: #888888;
+    color: white;
 }
-
-.footer .footersocial a {
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid #ccc;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-}
-
-.footer .footersocial a:hover {
-    color: crimson;
-    opacity: 0.9;
-}
-
 .footer ul {
     color: white;
     margin-top: 0;
@@ -681,266 +727,204 @@ footer {
     color: white;
 }
 
-
-.maintopTheme h1 {
-    font-size: 20px;
+/*Footer Section End*/
+.skills{
+    position: relative;
 }
 
-
-@media all and (max-width: 425px) {
-
-    .headerabout {
-        top: 241px;
-    }
-
-    .headerabout h2 {
-        top: 260px;
-        font-size: 10px;
-        left: 12px;
-    }
-
-    .about1 {
-        font-size: 8px;
-        left: 19px;
-        top: 271px;
-    }
-
-    .about2 {
-        font-size: 8px;
-        left: 34px;
-        top: 280px;
-    }
-
-    .downNavHeader .social {
-        top: 304px;
-    }
-
-    .downNavHeader .social a {
-        font-size: 16px;
-        width: 30px;
-        height: 30px;
-        line-height: 31px;
-    }
-
-    .downNavHeader .social {
-        bottom: -217px;
-    }
-
+/*Media Queries*/
+@media (max-width: 425px) {
     .mainNavBar .logo a {
-        top: 29px;
+        top: 0px;
         font-size: 20px;
     }
-
-    header {
-        background-image: url("../images/mainHeader.png");
-        height: 70vh;
+    .mainNavBar .img {
+        left: -20px;
+    }
+    .mainNavBar ul {
+        right: 125px;
+        bottom: 20px;
+        margin: 0;
+        font-size: 8px;
     }
 
     .home-content .text-1 {
-        font-size: 10px;
+        font-size: 17px;
     }
-
     .home-content .text-2 {
-        font-size: 13px;
+        font-size: 25px;
     }
-
     .home-content .text-3 {
-        font-size: 10px;
+        font-size: 15px;
     }
-
     .home-content {
-        top: 183px;
-        right: 13px;
+        right: 20px;
     }
-
-    .mainNavBar ul > li > a {
-        margin-left: 0px;
-    }
-
-    .mainNavBar ul {
-        right: 21px;
-        bottom: -8px;
-        font-size: 13px;
-    }
-
-    .maintopTheme {
-        bottom: 0px;
-        font-size: 6px;
-    }
-
-    .maintopTheme h1 {
-        font-size: 20px;
-    }
-
-    .Btn {
-        border-radius: 45px;
+    .headerabout h2 {
         font-size: 10px;
-        padding: 10px 10px;
-        margin-left: 37px;
-        margin-right: 35px;
     }
-
-    .horiButtn {
-        height: 297px;
-        border-radius: 5px;
-        border: 0;
-        font-size: 10px;
-
-    }
-
-    .Btn2 {
-        font-size: 10px;
-        padding: 10px 10px;
-        margin-left: 18px;
-        margin-right: 20px;
-    }
-
-    .verButtn {
-        height: 176px;
-    }
-
-    .imgProject {
-        top: 576px;
-        left: -231px;
-    }
-
-    .serv-content {
-        flex-wrap: wrap;
-        top: 1006px;
-    }
-
-    .serv-content1 {
-        flex-wrap: wrap;
-        top: 1790px;
-    }
-    .gallery {
-        bottom: -3225px;
-    }
-    .gallery h2 {
+    .about1 {
         font-size: 8px;
     }
-    .hobby {
-        bottom: -3178px;
+    .about2 {
+        font-size: 8px;
+    }
+    .headerabout {
+        bottom: -240px;
+    }
+    .downNavHeader .social a {
+        font-size: 15px;
+        width: 23px;
+        height: 23px;
+        line-height: 24px;
+    }
+    .footer ul {
+        font-size: 13px;
+    }
+    .maintopTheme {
+        font-size: 7px;
+        bottom: -414px;
+    }
+    .serv-content{
+        flex-wrap: wrap;
+    }
+    .serv-content1 {
+        flex-wrap: wrap;
+    }
+    .about {
+        position: relative;
+        bottom: -500px;
+        height: 1185px;
+    }
+    .aboutme h1 {
+        font-size: 20px;
+    }
+    .aboutme h2 {
         font-size: 10px;
     }
+    .treepng {
+        left: -45px;
+        height: 252px;
+        width: auto;
+    }
+    .aboutpre {
+        font-size: 15px;
+    }
+    .skills h2 {
+        font-size: 10px;
+        position: relative;
+        top: 269px;
+    }
+    .slide {
+        top: 300px;
+    }
+    .gallery {
+        bottom: -500px;
+    }
+    .gallery h1 {
+        font-size: 20px;
+    }
+    .gallery h2 {
+        font-size: 7px;
+    }
+    .hobby h1 {
+        font-size: 15px;
+    }
+    .hobby h3 {
+        font-size: 12px;
+    }
+    .hobby p {
+        font-size: 10px;
+    }
+    .hobby {
+        bottom: -490px;
+    }
     footer {
-        bottom: -3500px;
+        bottom: -500px;
     }
 }
 
 @media all and (min-width: 425px) and (max-width: 768px) {
     .mainNavBar ul {
-        right: 23px;
-        bottom: -18px;
-        font-size: 23px;
+        right: 0px;
+        bottom: -15px;
+        font-size: 20px;
     }
-
-
-    .gallery {
-        bottom: -3004px;
+    .mainNavBar .logo a {
+        top: 0px;
+        left: 85px;
+        font-size: 30px;
+    }
+    .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home-content .text-2 {
+        font-size: 30px;
+    }
+    .home-content .text-3 {
+        font-size: 20px;
+    }
+    .headerabout h2 {
+        font-size: 13px;
+    }
+    .about1 {
+        font-size: 10px;
+    }
+    .about2 {
+        font-size: 10px;
+    }
+    .headerabout {
+        bottom: -280px;
+    }
+    .serv-content{
+        flex-wrap: wrap;
+    }
+    .serv-content1 {
+        flex-wrap: wrap;
+    }
+    .about {
+        bottom: -461px;
+        height: 1523px;
+    }
+    .treepng {
+        left: 0;
+        right: 0;
+        margin: 0;
+        height: 305px;
+    }
+    .aboutpre {
+        top: 430px;
+        right: 0;
+        left: 0;
+        margin: 0;
+        font-size: 19px;
+    }
+    .slide {
+        top: 40px;
+    }
+    .aboutmehr {
+        top: 155px;
     }
     .gallery h2 {
         font-size: 10px;
     }
-    .hobby {
-        bottom: -2964px;
-        font-size: 14px;
+    .gallery {
+        bottom: -500px;
     }
-    .hobby p {
-        font-size: 11px;
+    .skills {
+        top: 304px;
+    }
+    .hobby h1 {
+        font-size: 1.5em;
+    }
+    .hobby {
+        bottom: -470px;
     }
     footer {
-        bottom: -3298px;
+        bottom: -500px;
     }
-
-    .maintopTheme {
-        bottom: -156px;
-    }
-
-    .horiButtn {
-        height: 334px;
-    }
-    .verButtn {
-        height: 205px;
-    }
-
-    .Btn {
-        border-radius: 30px;
-        font-size: 10px;
-        margin-left: 14px;
-        margin-right: 20px;
-    }
-
-    .Btn2 {
-        border-radius: 30px;
-        font-size: 10px;
-        margin-left: 14px;
-        margin-right: 20px;
-    }
-
-    .mainNavBar .logo a {
-        top: 4px;
-    }
-
-    .headerabout h2 {
-        font-size: 14px;
-    }
-
-    .about1 {
-        font-size: 11px;
-    }
-
-    .about2 {
-        font-size: 11px;
-    }
-
-    .home-content .text-3 {
-        font-size: 21px;
-    }
-
-    .home-content .text-2 {
-        font-size: 30px;
-    }
-
-    .home-content .text-1 {
-        font-size: 22px;
-    }
-
-    .home-content {
-        top: 238px;
-        right: 12px;
-    }
-
-    header {
-        background-image: url("../images/secondmainheader.png");
-        height: 100vh;
-    }
-
-    .headerabout {
-        bottom: 15px;
-    }
-
-    .downNavHeader .social {
-        bottom: -22px;
-        padding-bottom: 29px;
-    }
-
-    .downNavHeader .social a {
-        width: 33px;
-        height: 33px;
-    }
-
-    .maintopTheme h2 {
-        font-size: 10px;
-    }
-    .serv-content {
-        flex-wrap: wrap;
-        top: 1006px;
-    }
-
-    .serv-content1 {
-        flex-wrap: wrap;
-        top: 1790px;
+    .mainNavBar .img {
+        left: -20px;
     }
 }
 
@@ -948,83 +932,22 @@ footer {
     .home-content .text-1 {
         font-size: 20px;
     }
-
     .home-content .text-2 {
-        font-size: 36px;
+        font-size: 53px;
     }
-
     .home-content .text-3 {
-        font-size: 26px;
+        font-size: 30px;
     }
-    footer {
-        bottom: -3008px;
-    }
-    .footer {
-        top: -324px;
-    }
-    .home-content {
-        top: 461px;
-        right: 16px;
-    }
-
-    .headerabout {
-        bottom: -351px;
-    }
-
     .headerabout h2 {
-        font-size: 25px;
+        font-size: 20px;
     }
-
     .about1 {
-        font-size: 19px;
+        font-size: 16px;
     }
-
     .about2 {
-        font-size: 19px;
+        font-size: 16px;
     }
-
-    .about {
-        bottom: -350px;
-    }
-
-    header {
-        height: 175vh;
-    }
-
-    .downNavHeader .social {
-        bottom: -387px;
-    }
-
-    .maintopTheme {
-        bottom: -580px;
-    }
-    .serv-content {
-        flex-wrap: nowrap;
-        top: 1465px;
-    }
-
-    .serv-content1 {
-        flex-wrap: nowrap;
-        top: 1790px;
-    }
-}
-/*
-
-@media all and (min-width: 1024px) and (max-width: 1440px) {
     .headerabout {
-        bottom: -361px;
-    }
-    .downNavHeader .social {
-        bottom: -391px;
-    }
-    .home-content {
-        right: 22px;
-    }
-    header {
-        height: 176vh;
-    }
-    .maintopTheme {
-        bottom: -580px;
+        bottom: -280px;
     }
 }
-*/

@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*Header Section Start*/
+header {
+    background-image: url("../images/vlog.png");
+    height: 80vh;
+}
+
+/*Start Nav Bar Style*/
+
+.headerabout {
+    color: white;
+    position: absolute;
+    top: 200px;
+    right: 260px;
+}
+.headerabout h2 {
+    font-size: 75px;
+    font-weight: 600;
+    text-align: center;
+}
+.headerabout h3{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+.mainNavBar {
+    background-color: #1c1a1a;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    box-shadow: -2px 6px 9px -4px #917a7a;
+}
+
+.mainNavBar.sticky {
+    padding: 15px 0;
+    background-color: gray;
+}
+
+.mainNavBar.sticky:hover {
+    color: crimson;
+}
+
+.mainNavBar img {
+    width: 43px;
+    margin: 10px;
+}
+
+.mainNavBar ul {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.mainNavBar ul > li > a {
+    text-decoration: none;
+    color: #f3f1f1;
+    padding-bottom: 4px;
+    margin-left: 13px;
+}
+
+.mainNavBar ul > li {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+}
+
+
+.mainNavBar .menu li a:hover {
+    color: crimson;
+}
+
+.mainNavBar .logo a {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainNavBar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.mainNavBar.sticky .logo a span {
+    color: crimson;
+}
+/*End Nav Bar Style*/
+
+/*Header Section End*/
+
+/*Main Section Start*/
+.design{
+    padding: 4.5rem 0;
+}
+.title{
+    text-align: center;
+    padding: 1rem 0;
+}
+.title h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.4rem;
+}
+.title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+.design-content{
+    margin: 2rem 0;
+}
+.design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+.design-img{
+    position: relative;
+    overflow: hidden;
+}
+.design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+.design-img img{
+    transition:  all 0.5s ease;
+}
+.design-item:hover img{
+    transform: scale(1.2);
+}
+.design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+.design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.design-title a{
+    color: var(--dark);
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+}
+.design-title span{
+    font-weight: 600;
+    font-size: 20px;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+/*Main Section End*/
+
+/*Footer Section Start*/
+footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: -5px;
+    height: 225px;
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+/*Footer Section End*/
+
+
+
+
+/* Media Queries */
+@media screen and (max-width: 540px){
+    .headerabout h2 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    .headerabout {
+        right: 100px;
+    }
+    .mainNavBar ul {
+        right: 0px;
+        bottom: -17px;
+        font-size: 20px;
+    }
+    .mainNavBar .logo a {
+        top: 5px;
+    }
+    .footer ul {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .headerabout {
+        top: 172px;
+        right: 59px;
+    }
+    .headerabout h2 {
+        font-size: 59px;
+    }
+    .mainNavBar ul {
+        right: 2px;
+        bottom: -17px;
+        font-size: 24px;
+    }
+    .mainNavBar .logo a {
+        top: 4px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search-input{
+        padding: 0.8rem 0;
+    }
+    .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .design-item{
+        margin: 0;
+    }
+    .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
