@@ -1,20 +1,15 @@
 html {
     background-color: #888888;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 /*Header Section Start*/
-header {
-    min-height: 135vh;
-    background-color: black;
-}
-
-.mainHeader {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("../images/header.png") no-repeat;
-    background-size: cover;
-    background-position: center;
+header{
+    background-image: url("../images/about.png");
+    height: 145vh;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
 }
 
 /*Start Nav Bar Style*/
@@ -29,12 +24,11 @@ header {
 }
 .decoration {
     position: fixed;
-   /* background-color: #1c1a1a;*/
-    background: linear-gradient(45deg ,crimson , orange,yellow,green,dodgerblue,rebeccapurple,purple);
+    /* background-color: #1c1a1a;*/
+    background: linear-gradient(45deg ,yellow , orange,green,blue);
     border-bottom: #010103;
     width: 100%;
     height: 15%;
-    filter: blur(10px);
     z-index: 1;
 }
 .decoBox{
@@ -151,62 +145,32 @@ header {
 
 /*End Nav Bar Style*/
 
-.home-content .text-1 {
-    font-size: 27px;
-}
-
-.home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home-content {
-    color: white;
-    position: absolute;
-    top: 150px;
-    right: 100px;
-}
-
-.home-content .text-3 span {
-    color: crimson;
-    font-weight: 500;
-}
-
 .headerabout {
     position: relative;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    bottom: -350px;
+    bottom: -679px;
     text-align: center;
     color: white;
 }
-
 .headerabout h2 {
-    font-size: 30px;
+    font-size: 33px;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .about1 {
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.about2 {
-    font-size: 20px;
+    font-size: 16px;
+    margin-top: -20px;
+    color: #888888;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .downNavHeader .social {
-    padding-bottom: 25px;
+    padding-bottom: 30px;
     color: #888888;
+    margin-top: -30px;
 }
 
 .downNavHeader .social a {
@@ -227,188 +191,18 @@ header {
     color: crimson;
     opacity: 0.9;
 }
-.rider{
-    width: 100%;
-    height: 5px;
-    position: relative;
-    bottom: 0;
-    background-color: crimson;
-    filter: blur(5px);
-}
-.knight{
-    width: 50px;
-    height: 100%;
-    background-color: #480202;
-    animation-name: ride;
-    animation-duration: 5s;
-    position: absolute;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: both;
-}
-@keyframes ride {
-    from {
-        left: 0;
-    }
-    to {
-        left: 98%;
-    }
 
-}
 /*Header Section End*/
 
 /*Main Section Start*/
-/*Start Project Section Styling*/
-.maintopTheme {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -500px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: crimson;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.maintopTheme h1 {
-    color: black;
-    font-size: 20px;
-}
-
-/*Start Slider Styling*/
-.slide {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    top: 265px;
-}
-.slide-about {
-    position: relative;
-    top: 150px;
-}
-.slide h1 {
-    font-size: 3.5rem;
-    line-height: 2;
-    text-align: center;
-    color: #9d0191;
-}
-
-.main {
-    background-color: black;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 4rem 0px;
-    border-radius: 3%;
-}
-
-.slide-container {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.arrowleft{
-    position: absolute;
-    left: 0;
-}
-.arrowright{
-    position: absolute;
-    right: 0;
-}
-/*.arrow {
-    position: absolute;
-    width: 2rem;
-    margin: 0 1rem;
-}
-#slide-left{
-    left: 0;
-}
-#slide-right{
-    right: 0;
-}*/
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    animation-name: gogo;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.pject {
-    background-color: white;
-    position: relative;
-    background: deeppink;
-    height: 550px;
-}
-@keyframes gogo {
-    from{
-        right: 0;
-    }
-    to{
-        right: 100%;
+/*about section start*/
+    .about .abouttext{
+        font-size: 30px;
+        display: flex;
+        padding: 10px 125px;
     }
 
-}
-.container .thumbnail {
-    flex: 0 0 auto;
-    object-fit: cover;
-    cursor: pointer;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 25% 0;
-    overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-    background-color: crimson;
-}
 
-.container .thumbnail:hover {
-    transform: scale(1);
-}
-
-.project-details {
-    text-align: center;
-    padding-bottom: 2rem;
-    background-color: #f3a2b2;
-}
-
-.project-details h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-}
-
-.project-details p {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-    color: green;
-    font-weight: 700;
-}
-
-.project-details a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: #db6400;
-    color: white;
-    padding: 7px 10px;
-    border-radius: 3px;
-    transition: all .3s;
-}
-
-.project-details a:hover {
-    background-color: #9d0191;
-}
-
-/*End Slider Styling*/
-
-/*End Project Section Styling*/
 /*Start Service Section Styling*/
 .serv-content {
     display: flex;
@@ -420,7 +214,7 @@ header {
 }
 
 .serv-content .card {
-    background: #D9CECD;
+    background: #6c6a6a;
     text-align: center;
     border-radius: 0 25%;
     margin-left: 50px;
@@ -445,7 +239,7 @@ header {
 
 .serv-content .card i {
     font-size: 50px;
-    color: crimson;
+    color: darkgreen;
     transition: color 0.3s ease;
 }
 
@@ -462,59 +256,12 @@ header {
 .fullserve {
     font-family: 'Ubuntu', sans-serif;
     position: relative;
-    top: 450px;
-}
-.serv-content1 {
     display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    /*top: 2200px;*/
-    align-items: center;
-    justify-content: space-between;
+    top: 0;
 }
-
-.serv-content1 .card {
-    background: #D9CECD;
-    text-align: center;
-    border-radius: 25% 0;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-.serv-content1 .card:hover {
-    background: crimson;
-}
-
-.serv-content1 .card .box {
-    transition: all 0.3s ease;
-}
-
-.serv-content1 .card:hover .box {
-    transform: scale(1.05);
-}
-
-.serv-content1 .card i {
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-.serv-content1 .card:hover i {
-    color: #fff;
-}
-
-.serv-content1 .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
 /*End Service Section Styling*/
 /*Start About Section Styling*/
+
 .headAbout {
     position: absolute;
     top: 0;
@@ -524,11 +271,11 @@ header {
             180deg, #e70b0b, #efefef00);
     filter: blur(3px);
 }
-.about {
+.about2 {
     position: relative;
     left: 0;
     right: 0;
-    bottom: -460px;
+    bottom: -100px;
     text-align: center;
     padding-bottom: 25px;
     color: white;
@@ -536,7 +283,7 @@ header {
     height: 1500px;
 }
 
-.about h2 {
+.about2 h2 {
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -648,163 +395,158 @@ header {
     filter: blur(3px);
 }
 
-/*End Skill Section Styling*/
-/*Start Gallery Section Styling*/
-.gallryHr {
-    height: 17px;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(to left, black, crimson);
+/*Start Slider Styling*/
+.slide {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 265px;
+}
+.slide-about {
+    position: relative;
+    top: 150px;
+}
+.slide h1 {
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+    color: #9d0191;
 }
 
-.gallery {
-    position: relative;
+.main {
+    background-color: black;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
     left: 0;
     right: 0;
-    bottom: -520px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: crimson;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.gallery h1 {
-    color: black;
-}
-
-.gallery h2 {
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.gallaryphoto {
-    position: relative;
-    height: auto;
-    width: 90%;
     margin: auto;
-    padding: 45px 0;
-    display: grid;
-    grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
-    grid-gap: 2vh;
-    grid-auto-flow: dense;
+    padding: 4rem 0px;
+    border-radius: 3%;
 }
 
-.gallaryphoto .img {
-    position: relative;
-    height: 100%;
-    width: 100%;
+.slide-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
     overflow: hidden;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
-    border-radius: 2px;
 }
-
-.gallaryphoto .img:first-child {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
-
-.gallaryphoto .img:nth-child(2n+3) {
-    grid-row-start: span 2;
-}
-
-.gallaryphoto .img:nth-child(4n+5) {
-    grid-column-start: span 2;
-    grid-row-start: span 2;
-}
-
-.gallaryphoto .img:nth-child(6n+7) {
-    grid-row-start: span 1;
-}
-
-.gallaryphoto .img:nth-child(8n+9) {
-    grid-column-start: span 1;
-    grid-row-start: span 1;
-}
-
-.gallaryphoto .img img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    filter: brightness(0.5) grayscale(100);
-    border-radius: 2px;
-    transition: 0.3s ease-in-out;
-}
-
-.gallaryphoto .img:hover img {
-    filter: brightness(1) grayscale(0);
-}
-
-/*End Gallery Section Styling*/
-/*Start Hobby Section Styling*/
-.hobby {
-    position: relative;
+.arrowleft{
+    position: absolute;
     left: 0;
+}
+.arrowright{
+    position: absolute;
     right: 0;
-    bottom: -520px;
-    text-align: center;
-    padding-bottom: 25px;
-    font-size: 20px;
-    color: black;
-    font-family: 'Poppins', sans-serif;
 }
-
-.hobby .image {
-    display: inline-block;
-    text-align: center;
-    width: 33%;
-    float: left;
+.container2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    animation-name: gogo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
-
-.hobby figure {
-    border: 5px solid crimson;
-    height: 175px;
-    overflow: hidden;
-    margin: 0 10px;
+.pject {
+    background-color: white;
+    position: relative;
+    background: deeppink;
+    height: 550px;
 }
+@keyframes gogo {
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
 
-.hobby h3 {
-    color: #000;
-    margin-top: 40px;
 }
-
-.hobby p {
-    padding: 0 10px;
-}
-
-.image img {
-    display: block;
-    /*width: 100%;*/
-    height: auto;
+.container .thumbnail {
+    flex: 0 0 auto;
+    object-fit: cover;
     cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25% 0;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+    background-color: crimson;
 }
 
-.image #zoom-in img {
+.container .thumbnail:hover {
     transform: scale(1);
-    transition: 0.3s ease-in-out;
 }
 
-.image #zoom-in:hover img {
-    transform: scale(1.5);
+.project-details {
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #f3a2b2;
 }
 
-.image #zoom-inTwo img {
-    transform: scale(1);
-    transition: 0.3s ease-in-out;
+.project-details h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
 }
 
-.image #zoom-inTwo:hover img {
-    transform: scale(1.5);
+.project-details p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
 }
 
-.image #zoom-inThree img {
-    transform: scale(1);
-    transition: 0.3s ease-in-out;
+.project-details a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #db6400;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: all .3s;
 }
 
-.image #zoom-inThree:hover img {
-    transform: scale(1.5);
+.project-details a:hover {
+    background-color: #9d0191;
 }
-
+/*End Slider Styling*/
+/*End Skill Section Styling*/
+/*about section end*/
+/*start hobby section*/
+.hobby{
+    position: relative;
+    top: 173px;
+}
+.hobby h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 55px;
+}
+.hobby img {
+    border-style: none;
+    position: absolute;
+    border-radius: 20% 0;
+    height: 283px;
+    left: 55px;
+}
+.hobby-cont {
+    position: absolute;
+    display: flex;
+    width: 429px;
+    right: 50px;
+}
+.hobby p {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    text-align: left;
+}
+/*Hobby section End*/
 /*Start Footer section*/
 footer {
     font-weight: 400;
@@ -876,19 +618,26 @@ footer::before{
 }
 
 /*Footer Section End*/
-.skills{
-    position: relative;
-}
 
-/*Media Queries*/
-@media (max-width: 425px) {
+@media screen and (max-width: 460px){
 
 }
 
-@media all and (min-width: 425px) and (max-width: 768px) {
+@media screen and (min-width: 678px){
 
 }
 
-@media all and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px){
+
+}
+@media screen and (min-width: 992px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+@media screen and (min-width: 1400px){
 
 }
