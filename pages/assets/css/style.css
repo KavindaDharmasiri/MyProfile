@@ -314,23 +314,13 @@ header {
 }
 .arrowleft{
     position: absolute;
+    z-index: 1;
     left: 0;
 }
 .arrowright{
     position: absolute;
     right: 0;
 }
-/*.arrow {
-    position: absolute;
-    width: 2rem;
-    margin: 0 1rem;
-}
-#slide-left{
-    left: 0;
-}
-#slide-right{
-    right: 0;
-}*/
 .container {
     position: relative;
     display: flex;
@@ -629,6 +619,9 @@ header {
 }
 /*End About Section Styling*/
 /*Start Skill Section Styling*/
+.skills{
+    position: relative;
+}
 .skills h2 {
     font-size: 30px;
     font-family: 'Ubuntu', sans-serif;
@@ -876,19 +869,291 @@ footer::before{
 }
 
 /*Footer Section End*/
-.skills{
-    position: relative;
-}
 
 /*Media Queries*/
 @media (max-width: 425px) {
-
+    .mainNavBar ul {
+        right: 10px;
+        font-size: 10px;
+    }
+    .mainNavBar .logo a {
+        font-size: 20px;
+     }
+    .home-content .text-2 {
+        font-size: 22px;
+    }
+    .home-content .text-1 {
+        font-size: 10px;
+    }
+    .home-content .text-3 {
+        font-size: 15px;
+    }
+    .home-content {
+        top: 220px;
+        right: 15px;
+    }
+    .headerabout h2 {
+        font-size: 10px;
+    }
+    .about1 {
+        font-size: 7px;
+    }
+    .about2 {
+        font-size: 7px;
+    }
+    .headerabout {
+        bottom: -260px;
+    }
+    .downNavHeader .social a {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    header {
+        min-height: 110vh;
+    }
+    .maintopTheme {
+        bottom: -300px;
+        font-size: 7px;
+    }
+    .slide h1 {
+        font-size: 2.5rem;
+    }
+    .slide-container {
+        max-width: 300px;
+    }
+    .serv-content {
+        flex-wrap: wrap;
+    }
+    .serv-content1 {
+        flex-wrap: wrap;
+    }
+    .treepng {
+        left: 0;
+        right: 0;
+        height: 220px;
+    }
+    .study {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 242px;
+        width: 222px;
+    }
+    .boxabout {
+        width: 218px;
+        height: 285px;
+        top: 436px;
+        right: 0;
+        left: 0;
+        font-size: 17px;
+    }
+    .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 395px;
+        width: 250px;
+        height: 365px;
+    }
+    .slide-about {
+        top: 35px;
+    }
+    .skills {
+        position: relative;
+        top: 825px;
+    }
+    .aboutmehr {
+        bottom: -495px;
+    }
+    .gallery h2 {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    .hobby {
+        font-size: 10px;
+    }
 }
 
 @media all and (min-width: 425px) and (max-width: 768px) {
-
+    .mainNavBar ul {
+        right: 10px;
+        bottom: -15px;
+    }
+    .mainNavBar .logo a {
+        top: 10px;
+        left: 80px;
+        font-size: 25px;
+    }
+    .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home-content .text-2 {
+        font-size: 30px;
+    }
+    .home-content .text-3 {
+        font-size: 20px;
+    }
+    .home-content {
+        top: 208px;
+        right: 25px;
+    }
+    .about2 {
+        font-size: 9px;
+    }
+    .about1 {
+        font-size: 9px;
+    }
+    .headerabout h2 {
+        font-size: 12px;
+    }
+    .headerabout {
+        bottom: -260px;
+    }
+    .downNavHeader .social a {
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    header {
+        min-height: 110vh;
+    }
+    .maintopTheme {
+        bottom: -320px;
+        font-size: 8px;
+    }
+    .serv-content {
+        flex-wrap: wrap;
+    }
+    .serv-content1 {
+        flex-wrap: wrap;
+    }
+    .treepng {
+        left: 0;
+        right: 0;
+        height: 266px;
+    }
+    .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 288px;
+        width: 270px;
+    }
+    .boxabout {
+        width: 279px;
+        height: 400px;
+        top: 478px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 465px;
+        width: 305px;
+        height: 410px;
+    }
+    .slide-about {
+        top: 50px;
+    }
+    .skills {
+        top: 835px;
+    }
+    .aboutmehr {
+        bottom: -495px;
+    }
+    .gallery h2 {
+        font-size: 12px;
+    }
+    .gallery h2 {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    .hobby {
+        font-size: 10px;
+    }
 }
 
 @media all and (min-width: 768px) and (max-width: 1024px) {
+    .home-content .text-1 {
+        font-size: 20px;
+    }
+    .home-content .text-2 {
+        font-size: 40px;
+    }
+    .home-content .text-3 {
+        font-size: 25px;
+    }
+    .home-content {
+        top: 200px;
+    }
+    .headerabout h2 {
+        font-size: 20px;
+    }
+    .about1 {
+        font-size: 15px;
+    }
+    .about2 {
+        font-size: 15px;
+    }
+    .serv-content1 .card {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 50px 13px;
+        margin-bottom: 15px;
+    }
+    .serv-content .card {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 50px 15px;
+        margin-bottom: 15px;
+    }
+    .boxabout {
+        top: 806px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 796px;
+        width: 310px;
+        height: 410px;
+    }
+    .treepng {
 
+        left: 0;
+        right: 0;
+    }
+    .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .skills {
+        top: 1125px;
+    }
+    .slide-about {
+        top: 25px;
+    }
+    .aboutmehr {
+        bottom: -535px;
+    }
+    .about {
+        height: 1835px;
+    }
 }
