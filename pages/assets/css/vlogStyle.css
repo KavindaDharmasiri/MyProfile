@@ -36,10 +36,11 @@ header {
 .decoration {
     position: fixed;
     /* background-color: #1c1a1a;*/
-    background: linear-gradient(45deg ,yellow , orange,green,blue);
+    background: linear-gradient(45deg ,crimson , orange,yellow,green,dodgerblue,rebeccapurple,purple);
     border-bottom: #010103;
     width: 100%;
     height: 15%;
+    filter: blur(10px);
     z-index: 1;
 }
 .decoBox{
@@ -54,7 +55,9 @@ header {
     animation-fill-mode: both;
 
 }
-
+.decoBox::after{
+    filter: blur(10px);
+}
 @keyframes testt {
     from {
         left: 0;
@@ -151,6 +154,34 @@ header {
 .mainNavBar.sticky .logo a span {
     color: crimson;
 }
+.rider{
+    width: 100%;
+    height: 5px;
+    position: relative;
+    bottom: 55px;
+    background-color: crimson;
+    filter: blur(5px);
+}
+.knight{
+    width: 50px;
+    height: 100%;
+    background-color: #480202;
+    animation-name: ride;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+@keyframes ride {
+    from {
+        left: 0;
+    }
+    to {
+        left: 98%;
+    }
+
+}
 /*End Nav Bar Style*/
 
 /*Header Section End*/
@@ -178,9 +209,26 @@ header {
     cursor: pointer;
     margin: 1.5rem 0;
 }
-.design-img{
+.design-img {
     position: relative;
     overflow: hidden;
+    height: 500px;
+    width: 374px;
+    border-radius: 25% 0;
+    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    animation: colour1 10s linear infinite;
+}
+
+@keyframes colour1 {
+    0%{
+        background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    }
+    50%{
+        background: linear-gradient(235deg,#00bcd4,#89ff00,#060c21);
+    }
+    100%{
+        background: linear-gradient(235deg,#060c21,#00bcd4,#89ff00);
+    }
 }
 .design-img::after{
     position: absolute;
@@ -191,8 +239,17 @@ header {
     height: 100%;
     background: rgba(0, 0, 0, 0.3);
 }
-.design-img img{
-    transition:  all 0.5s ease;
+.design-img img {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s ease;
+    border-radius: 25% 0;
+    position: absolute;
+    top: 0;
+    height: 97%;
+    width: 97%;
 }
 .design-item:hover img{
     transform: scale(1.2);
@@ -222,7 +279,7 @@ header {
     margin: 0 auto;
 }
 .design-title a{
-    color: var(--dark);
+    color: black;
     text-decoration: none;
     text-transform: capitalize;
     font-family: 'Ubuntu', sans-serif;
@@ -250,7 +307,7 @@ footer {
     width: 100%;
     background-color: black;
     position: relative;
-    bottom: -5px;
+    bottom: 0;
     height: 225px;
 }
 .footer{
@@ -302,6 +359,16 @@ footer {
     font-size: 13px;
     color: white;
 }
+footer::before{
+    content: "";
+    position: absolute;
+    background-color: lightseagreen;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
 
 /*Footer Section End*/
 
@@ -328,6 +395,14 @@ footer {
     }
     .footer ul {
         font-size: 15px;
+    }
+    .mainNavBar ul {
+        right: 10px;
+        top: 40px;
+        font-size: 10px;
+    }
+    .mainNavBar .logo a {
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 540px){
