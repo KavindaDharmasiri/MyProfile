@@ -170,7 +170,7 @@ header {
     color: white;
     position: absolute;
     top: 150px;
-    right: 100px;
+    left: 100px;
 }
 
 .home-content .text-3 span {
@@ -184,7 +184,7 @@ header {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    bottom: -350px;
+    bottom: -400px;
     text-align: center;
     color: white;
 }
@@ -196,16 +196,20 @@ header {
 
 .about1 {
     font-size: 20px;
+    margin-top: -12px;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .about2 {
     font-size: 20px;
+    margin-top: -12px;
     font-family: 'Ubuntu', sans-serif;
 }
 
 .downNavHeader .social {
-    padding-bottom: 25px;
+    padding-bottom: 0;
+    position: relative;
+    top: -30px;
     color: #888888;
 }
 
@@ -897,6 +901,8 @@ footer::before{
     }
     .about1 {
         font-size: 7px;
+        margin-bottom: 12px;
+        margin-top: -5px;
     }
     .about2 {
         font-size: 7px;

@@ -233,62 +233,103 @@ header{
 
 
 /*Start Service Section Styling*/
-.serv-content {
+.container{
     display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    /*top: 1900px;*/
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
 }
-
-.serv-content .card {
-    background: #6c6a6a;
-    text-align: center;
-    border-radius: 0 25%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-.serv-content .card:hover {
-    background: crimson;
-}
-
-.serv-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.serv-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-.serv-content .card i {
-    font-size: 50px;
-    color: darkgreen;
-    transition: color 0.3s ease;
-}
-
-.serv-content .card:hover i {
-    color: #fff;
-}
-
-.serv-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-.fullserve {
-    font-family: 'Ubuntu', sans-serif;
+.card{
     position: relative;
+    width: 270px;
+    height: 280px;
+    margin: 30px;
+    background: #287bff;
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 15px 0 #fff,
+    inset 0 -15px 0 rgba(255,255,255,0.25),0 45px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
     display: flex;
-    top: 0;
+    justify-content: center;
+    align-items: flex-start;
 }
-/*End Service Section Styling*/
+.card::before{
+    content: "";
+    position: absolute;
+    top: -140px;
+    left: -40px;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
+    transform: rotate(35deg);
+    pointer-events: none;
+    filter: blur(5px);
+}
+.card:nth-child(1){
+    background: linear-gradient(to bottom,#ff2ae0,#645bf6);
+}
+.card:nth-child(2){
+    background: linear-gradient(to bottom,#ffec61,#645bf6);
+}
+.card:nth-child(3){
+    background: linear-gradient(to bottom,#ff2ae0,#9a4eff);
+}
+.icon{
+    position: relative;
+    width: 140px;
+    height: 120px;
+    background: #888888;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+    inset 0 -8px 0 #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+.icon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px #888888;
+}
+.icon::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -20px -15px 0 15px #888888;
+}
+.icon ion-icon{
+    color: green;
+    position: relative;
+    font-size: 6em;
+    z-index: 1000;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-top: 140px;
+    text-align: center;
+}
+.content p{
+    color: #fff;
+    line-height: 1.5em;
+}/*End Service Section Styling*/
 /*Start About Section Styling*/
 
 .headAbout {
@@ -693,12 +734,6 @@ footer::before{
     .slide-container {
         max-width: 300px;
     }
-    .serv-content {
-        flex-wrap: wrap;
-    }
-    .serv-content1 {
-        flex-wrap: wrap;
-    }
     .treepng {
         left: 0;
         right: 0;
@@ -804,12 +839,6 @@ footer::before{
     header {
         min-height: 110vh;
     }
-    .serv-content {
-        flex-wrap: wrap;
-    }
-    .serv-content1 {
-        flex-wrap: wrap;
-    }
     .treepng {
         left: 0;
         right: 0;
@@ -893,18 +922,6 @@ footer::before{
     .headerabout {
         bottom: -700px;
     }
-    .serv-content1 .card {
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 50px 13px;
-        margin-bottom: 15px;
-    }
-    .serv-content .card {
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 50px 15px;
-        margin-bottom: 15px;
-    }
     .treepng {
 
         left: 0;
@@ -972,3 +989,7 @@ footer::before{
         top: 248px;
     }
 }
+
+
+
+
