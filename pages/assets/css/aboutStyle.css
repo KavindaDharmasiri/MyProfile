@@ -4,13 +4,20 @@ html {
 }
 
 /*Header Section Start*/
-header{
-    background-image: url("../images/about.png");
-    height: 145vh;
-    flex-direction: column;
-    color: #fff;
-    text-align: center;
+header {
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
 }
+.mainHeader{
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/about.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 
 /*Start Nav Bar Style*/
 
@@ -20,6 +27,7 @@ header{
     z-index: 999;
     width: 100%;
     height: 80px;
+    top: 0;
     box-shadow: -2px 6px 9px -4px #917a7a;
 }
 .decoration {
@@ -28,7 +36,8 @@ header{
     background: linear-gradient(45deg ,crimson , orange,yellow,green,dodgerblue,rebeccapurple,purple);
     border-bottom: #010103;
     width: 100%;
-    height: 15%;
+    height: 80px;
+    top: 0;
     filter: blur(10px);
     z-index: 1;
 }
@@ -152,7 +161,7 @@ header{
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    bottom: -679px;
+    bottom: -270px;
     text-align: center;
     color: white;
 }
@@ -516,10 +525,11 @@ header{
     flex-direction: row;
     height: 100%;
     width: 100%;
-    animation-name: gogo;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+}
+.thumbnail img {
+    border-radius: 25% 0;
+    margin-right: 40px;
+    border: 2px solid;
 }
 .pject {
     background-color: white;
@@ -527,15 +537,7 @@ header{
     background: deeppink;
     height: 550px;
 }
-@keyframes gogo {
-    from{
-        right: 0;
-    }
-    to{
-        right: 100%;
-    }
 
-}
 .container .thumbnail {
     flex: 0 0 auto;
     object-fit: cover;
@@ -556,6 +558,9 @@ header{
 .project-details {
     text-align: center;
     padding-bottom: 2rem;
+    border-radius: 0 25%;
+    margin-right: 40px;
+    border: 2px solid;
     background-color: #f3a2b2;
 }
 
@@ -717,7 +722,7 @@ footer::before{
         font-family: 'Ubuntu', sans-serif;
     }
     .headerabout {
-        bottom: -773px;
+        bottom: -300px;
     }
     .downNavHeader .social a {
         font-size: 15px;
@@ -828,7 +833,7 @@ footer::before{
         font-size: 12px;
     }
     .headerabout {
-        bottom: -773px;
+        bottom: -300px;
     }
     .downNavHeader .social a {
         font-size: 17px;
@@ -920,7 +925,7 @@ footer::before{
         font-size: 12px;
     }
     .headerabout {
-        bottom: -700px;
+        bottom: -300px;
     }
     .treepng {
 

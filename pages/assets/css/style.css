@@ -4,6 +4,7 @@ html {
 
 /*Header Section Start*/
 header {
+    position: relative;
     min-height: 135vh;
     background-color: black;
 }
@@ -33,7 +34,7 @@ header {
     background: linear-gradient(45deg ,crimson , orange,yellow,green,dodgerblue,rebeccapurple,purple);
     border-bottom: #010103;
     width: 100%;
-    height: 15%;
+    height: 80px;
     filter: blur(10px);
     z-index: 1;
 }
@@ -179,12 +180,12 @@ header {
 }
 
 .headerabout {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    bottom: -400px;
+    bottom: 0;
     text-align: center;
     color: white;
 }
@@ -263,11 +264,14 @@ header {
 
 /*Main Section Start*/
 /*Start Project Section Styling*/
+.mainProject{
+    position: relative;
+}
 .maintopTheme {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
-    bottom: -500px;
+    bottom: -100px;
     text-align: center;
     padding-bottom: 25px;
     color: crimson;
@@ -770,8 +774,8 @@ header {
 
 .image img {
     display: block;
-    /*width: 100%;*/
-    height: auto;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
@@ -907,9 +911,6 @@ footer::before{
     .about2 {
         font-size: 7px;
     }
-    .headerabout {
-        bottom: -260px;
-    }
     .downNavHeader .social a {
         font-size: 15px;
         width: 25px;
@@ -1005,8 +1006,15 @@ footer::before{
         font-size: 20px;
     }
     .home-content {
-        top: 208px;
-        right: 25px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        /* top: 208px; */
+        /* right: 25px; */
+        /* right: auto; */
+        width: 500px;
+        left: 40px;
+        position: relative;
     }
     .about2 {
         font-size: 9px;
@@ -1016,9 +1024,6 @@ footer::before{
     }
     .headerabout h2 {
         font-size: 12px;
-    }
-    .headerabout {
-        bottom: -260px;
     }
     .downNavHeader .social a {
         font-size: 17px;

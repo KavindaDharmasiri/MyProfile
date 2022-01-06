@@ -1,7 +1,16 @@
 /*Start Header Section*/
 header {
-    background-image: url("../images/vlog.png");
-    height: 80vh;
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+}
+.mainHeader{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/vlog.png") no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 header, main ,footer{
     font-family: 'Ubuntu', sans-serif;
@@ -13,6 +22,7 @@ header, main ,footer{
     z-index: 999;
     width: 100%;
     height: 80px;
+    top: 0;
     box-shadow: -2px 6px 9px -4px #917a7a;
 }
 
@@ -22,7 +32,8 @@ header, main ,footer{
     background: linear-gradient(45deg ,crimson , orange,yellow,green,dodgerblue,rebeccapurple,purple);
     border-bottom: #010103;
     width: 100%;
-    height: 15%;
+    height: 80px;
+    top: 0;
     filter: blur(10px);
     z-index: 1;
 }
@@ -190,7 +201,6 @@ header, main ,footer{
     position: absolute;
     left: 0;
     right: 0;
-    top: 500px;
     text-align: center;
     padding-bottom: 25px;
     color: crimson;
@@ -258,13 +268,24 @@ header, main ,footer{
     background-color: #d90191;
     outline: 1px solid #eee;
 }
-.container .thumbnail{
+.container .thumbnail {
     flex: 0 0 auto;
     object-fit: cover;
     cursor: pointer;
     margin: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
+    border: 2px solid black;
+    border-radius: 25% 0;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+}
+.htmlthumbnail {
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 25% 0;
     overflow: hidden;
     transform: scale(.95);
     transition: all .3s;
