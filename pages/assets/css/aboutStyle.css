@@ -1,5 +1,5 @@
 html {
-    background-color: #888888;
+    background-color: #fff;
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -229,7 +229,7 @@ header {
         left: 0;
     }
     to {
-        left: 98%;
+        left: 90%;
     }
 
 }
@@ -290,7 +290,7 @@ header {
     position: relative;
     width: 140px;
     height: 120px;
-    background: #888888;
+    background: #fff;
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 
@@ -309,7 +309,7 @@ header {
     height: 50px;
     background: transparent;
     border-top-right-radius: 50px;
-    box-shadow: 15px -15px 0 15px #888888;
+    box-shadow: 15px -15px 0 15px #fff;
 }
 .icon::after{
     content: "";
@@ -320,7 +320,7 @@ header {
     height: 50px;
     background: transparent;
     border-top-left-radius: 50px;
-    box-shadow: -20px -15px 0 15px #888888;
+    box-shadow: -20px -15px 0 15px #fff;
 }
 .icon ion-icon{
     color: green;
@@ -525,11 +525,24 @@ header {
     flex-direction: row;
     height: 100%;
     width: 100%;
+    animation-name: gogo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes gogo {
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
+
 }
 .thumbnail img {
     border-radius: 25% 0;
     margin-right: 40px;
-    border: 2px solid;
+    border: 10px solid #1f66d3;
 }
 .pject {
     background-color: white;
@@ -560,7 +573,7 @@ header {
     padding-bottom: 2rem;
     border-radius: 0 25%;
     margin-right: 40px;
-    border: 2px solid;
+    border: 10px solid #09b336;
     background-color: #f3a2b2;
 }
 
@@ -605,6 +618,7 @@ header {
 .hobby img {
     border-style: none;
     position: absolute;
+    border: 10px solid #0089ff;
     border-radius: 20% 0;
     height: 283px;
     left: 55px;

@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
-
 /*Header Section Start*/
-/*header {
-    background: url("../images/vlog.png") no-repeat;
-    height: 70vh;
-    position: relative;
-}*/
+
 header {
     position: relative;
     min-height: 135vh;
@@ -194,7 +188,7 @@ header {
         left: 0;
     }
     to {
-        left: 98%;
+        left: 90%;
     }
 
 }
@@ -387,9 +381,6 @@ footer::before{
 
 
 /*Footer Section End*/
-
-
-
 
 /* Media Queries */
 @media screen and (max-width: 540px){
