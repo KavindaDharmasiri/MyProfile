@@ -633,7 +633,7 @@ header {
     position: relative;
     display: flex;
     font-size: 25px;
-    text-align: left;
+    text-align: center;
 }
 /*Hobby section End*/
 /*Start Footer section*/
@@ -644,7 +644,7 @@ footer {
     width: 100%;
     background-color: black;
     position: relative;
-    bottom: -520px;
+    bottom: -550px;
     height: 225px;
 }
 .footer{
@@ -916,7 +916,7 @@ footer::before{
         height: 220px;
     }
     .hobby p {
-        top: 200px;
+        top: 225px;
     }
 }
 

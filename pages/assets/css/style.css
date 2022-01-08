@@ -970,8 +970,11 @@ footer::before{
         position: relative;
         top: 825px;
     }
+    .about{
+        height: 1670px;
+    }
     .aboutmehr {
-        bottom: -495px;
+        bottom: -670px;
     }
     .gallery h2 {
         font-size: 10px;
@@ -1074,8 +1077,11 @@ footer::before{
     .skills {
         top: 835px;
     }
+    .about{
+        height: 1670px;
+    }
     .aboutmehr {
-        bottom: -495px;
+        bottom: -655px;
     }
     .gallery h2 {
         font-size: 12px;
@@ -1157,9 +1163,9 @@ footer::before{
         top: 25px;
     }
     .aboutmehr {
-        bottom: -535px;
+        bottom: -638px;
     }
     .about {
-        height: 1835px;
+        height: 1940px;
     }
 }
