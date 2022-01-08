@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Kavinda Gimhan</h1>
 <h3 align="center">A passionate developer from Sri Lanka</h3>
 
-- 🔭 I’m currently working on [My Web Site](https://github.com/KavindaDharmasiri/myProfile)
+- 🔭 I’m currently working on [My Web Site](https://kavindagimhan.000webhostapp.com/)
 
 - 🌱 I’m currently learning **GDSE (Graduated Diploma in Software Engineering)**
 
