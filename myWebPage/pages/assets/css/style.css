@@ -1,0 +1,3682 @@
+html {
+    background-color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*
+
+#preloader {
+    height: 50px;
+    background: #000;
+}
+
+#preloader h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 90%;
+    text-align: center;
+    color: #ddd;
+    font-size: 1em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+
+}
+
+#preloader h1 span {
+    opacity: 0;
+    display: inline-block;
+    animation: animate5 1s linear forwards;
+}
+
+@keyframes animate5 {
+    0% {
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}
+
+#preloader video{
+    object-fit: cover;
+    height: 100px;
+
+}
+#preloader h1 span:nth-child(1){
+    animation-delay: 1s;
+}
+#preloader h1 span:nth-child(2){
+    animation-delay: 2s;
+}
+#preloader h1 span:nth-child(3){
+    animation-delay: 2.5s;
+}
+#preloader h1 span:nth-child(4){
+    animation-delay: 3s;
+}
+#preloader h1 span:nth-child(5){
+    animation-delay: 3.5s;
+}
+#preloader h1 span:nth-child(6){
+    animation-delay: 3.75s;
+}
+#preloader h1 span:nth-child(7){
+    animation-delay: 4s;
+}
+*/
+
+/*Header Section Start*/
+#indexPage header {
+    position: relative;
+    min-height: 135vh;
+    background-color: black;
+}
+
+#indexPage .mainHeader {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/header.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Start Nav Bar Style*/
+
+.mainNavBar {
+    background-color: transparent;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    height: 80px;
+    box-shadow: -2px 6px 9px -4px #917a7a;
+    transition: all 0.3s ease;
+}
+
+.decoration {
+    position: fixed;
+    //background: linear-gradient(45deg, crimson, orange, yellow, green, dodgerblue, rebeccapurple, purple);
+    border-bottom: #010103;
+    width: 100%;
+    height: 80px;
+    filter: blur(10px);
+    z-index: 1;
+}
+
+.decoBox {
+    width: 50px;
+    height: 100%;
+    background-color: red;
+    animation-name: testt;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+
+}
+
+.decoBox::after {
+    filter: blur(10px);
+}
+
+@keyframes testt {
+    from {
+        left: 0;
+        background-color: blue;
+    }
+    to {
+        left: 98%;
+        background-color: deeppink;
+    }
+}
+
+.mainNavBar.sticky {
+    padding: 10px 0;
+    background-color: #1c1a1a;
+
+}
+
+.mainNavBar.sticky:hover {
+    color: crimson;
+}
+
+.mainNavBar .img {
+    width: 52px;
+    height: 65px;
+    position: relative;
+    top: 7px;
+    left: 10px;
+    background-color: #cf0d68;
+}
+
+.mainNavBar .img img {
+    position: absolute;
+    margin: auto;
+    height: 50px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.mainNavBar .img img:hover {
+    transform: rotate(360deg);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.mainNavBar .img img:hover section {
+    transform: rotate(-360deg);
+    transition: all 1s;
+}
+
+.mainNavBar .img:hover {
+    transform: scale(1.2);
+}
+
+.mainNavBar ul {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    font-size: 24px;
+    font-family: 'Lobster', cursive;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.mainNavBar ul > li > a {
+    text-decoration: none;
+    color: #f3f1f1;
+    padding-bottom: 4px;
+    margin-left: 13px;
+}
+
+.mainNavBar ul > li {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+}
+
+
+.mainNavBar .menu li a:hover {
+    color: crimson;
+}
+
+.mainNavBar .logo a {
+    position: absolute;
+    top: 20px;
+    left: 85px;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.mainNavBar .logo a span {
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.mainNavBar.sticky .logo a span {
+    color: crimson;
+}
+
+/*End Nav Bar Style*/
+
+#indexPage .home-content .text-1 {
+    font-size: 27px;
+}
+
+#indexPage .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+#indexPage .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+#indexPage .home-content {
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 100px;
+}
+
+#indexPage .home-content .text-3 span {
+    color: crimson;
+    font-weight: 500;
+}
+
+#indexPage .headerabout {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    color: white;
+}
+
+#indexPage .headerabout h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .about1 {
+    font-size: 20px;
+    margin-top: -12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .about2 {
+    font-size: 20px;
+    margin-top: -12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .downNavHeader .social {
+    padding-bottom: 0;
+    position: relative;
+    top: -30px;
+    color: #888888;
+}
+
+#indexPage .downNavHeader .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+.features .heading {
+    text-align: center;
+    background: #888888;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+
+}
+
+.features {
+    position: relative;
+    text-align: center;
+}
+
+.features .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.features .box-container .box {
+    flex: 1 1 15rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    margin: 1.5rem;
+    padding: 3rem 2rem;
+    border-radius: 5rem;
+    transition: 0.2s linear;
+}
+
+.features .box-container .box img {
+    height: 15rem;
+
+}
+
+.features .box-container .box h3 {
+    font-size: 2rem;
+    color: #333;
+    padding-top: 1rem;
+}
+
+.features .box-container .box p {
+    font-size: 1.3rem;
+    color: #666;
+    padding: 1rem 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btnView {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 5rem;
+    background: linear-gradient(90deg, #814096, #f83292);
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: all 0.3s linear;
+}
+
+.btnView:hover {
+    transform: scale(1.1);
+}
+
+
+#indexPage .downNavHeader .social a:hover {
+    color: crimson;
+    opacity: 0.9;
+}
+
+#indexPage .rider {
+    width: 100%;
+    height: 5px;
+    position: relative;
+    bottom: 0;
+    background-color: crimson;
+    filter: blur(5px);
+}
+
+#indexPage .knight {
+    width: 50px;
+    height: 100%;
+    background-color: #480202;
+    animation-name: ride;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+
+@keyframes ride {
+    from {
+        left: 0;
+    }
+    to {
+        left: 90%;
+    }
+
+}
+
+/*Header Section End*/
+/*Main Section Start*/
+/*Start Project Section Styling*/
+#indexPage .mainProject {
+    position: relative;
+}
+
+#indexPage .maintopTheme {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .maintopTheme h1 {
+    color: black;
+    font-size: 20px;
+}
+
+/*Start Slider Styling*/
+
+
+#indexPage body {
+    overflow: hidden;
+    display: flex;
+    background: #111;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+
+#indexPage .slider-main,
+#indexPage .slider-item {
+    position: relative;
+    display: flex;
+    margin: auto;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg);
+}
+
+#indexPage .slider-main img {
+    transform-style: preserve-3d;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 200px;
+    font-size: 50px;
+    text-align: center;
+    box-shadow: 0 0 8px 5px #111;
+    border-radius: 12px;
+    transition: all .2s linear;
+    box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+    /*-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);*/
+    -moz-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+    -o-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#indexPage .slider-main img:hover {
+    box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+    /*-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);*/
+    -moz-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+    -o-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#indexPage .slider-main p {
+    font-family: Serif;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    color: #fff;
+    font-size: 34px;
+}
+
+#indexPage .ground {
+    width: 900px;
+    height: 900px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotateX(90deg);
+    background: -webkit-radial-gradient(center center, farthest-side, #9993, transparent);
+}
+
+#indexPage .space {
+    position: relative;
+    height: 500px;
+    top: 100px;
+}
+
+@keyframes spin {
+    from {
+        transform: rotateY(0deg);
+    }
+
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes spinRevert {
+    from {
+        transform: rotateY(360deg);
+    }
+
+    to {
+        transform: rotateY(0deg);
+    }
+}
+
+
+
+.projectSlider .btnNeon {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.projectSlider .btnNeon:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2198f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.projectSlider .btnNeon span {
+    position: absolute;
+    display: block;
+}
+
+.projectSlider .btnNeon .sp1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.projectSlider .btnNeon:hover .sp1 {
+    left: 100%;
+    transition: 1s
+}
+
+
+.projectSlider .btnNeon .sp3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.projectSlider .btnNeon:hover .sp3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.projectSlider .btnNeon .sp2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.projectSlider .btnNeon:hover .sp2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.projectSlider .btnNeon .sp4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.projectSlider .btnNeon:hover .sp4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+.dialogBoxType .btnNeon {
+    position: absolute;
+    top: 50px;
+    right: 5px;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.dialogBoxType .btnNeon:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2198f3, 0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.dialogBoxType .btnNeon span {
+    position: absolute;
+    display: block;
+}
+
+.dialogBoxType .btnNeon .sp1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+.dialogBoxType .btnNeon:hover .sp1 {
+    left: 100%;
+    transition: 1s
+}
+
+
+.dialogBoxType .btnNeon .sp3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+.dialogBoxType .btnNeon:hover .sp3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+.dialogBoxType .btnNeon .sp2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+.dialogBoxType .btnNeon:hover .sp2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+.dialogBoxType .btnNeon .sp4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+.dialogBoxType .btnNeon:hover .sp4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+
+
+.projectSlider .wrapper .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.projectSlider {
+    position: relative;
+    top: 169px;
+    height: 550px;
+}
+.projectSlider .outer .card {
+    background: #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 100px 20px 20px 100px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+
+
+    animation: animate1 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+}
+
+.projectSlider .outer:hover .card {
+    animation-play-state: paused;
+}
+
+.projectSlider .wrapper .card:last-child {
+    animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate1 {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+    5%, 20% {
+        opacity: 0.4;
+        transform: translateY(325%) scale(0.7);
+    }
+    25%, 40% {
+        opacity: 1;
+        transform: translateY(100%) scale(1);
+        pointer-events: auto;
+    }
+    45%, 60% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
+
+.projectSlider .card .content {
+    display: flex;
+    align-items: center;
+}
+
+.projectSlider .card .img {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: -5px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.projectSlider .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.projectSlider .card .details {
+    margin-left: 80px;
+}
+
+.projectSlider .details span {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.card a {
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100% );
+    transition: all 0.3s ease;
+}
+
+.card a:hover {
+    transform: scale(0.95);
+}
+
+
+
+
+
+.dialogBoxType .wrapper .outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dialogBoxType .outer .card {
+    background: #fff;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    opacity: 0;
+    position: absolute;
+    justify-content: space-between;
+    border-radius: 100px 20px 20px 100px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+
+
+    animation: animate 15s linear infinite;
+    animation-delay: calc(3s * var(--delay));
+}
+
+.dialogBoxType .outer:hover .card {
+    animation-play-state: paused;
+}
+
+.dialogBoxType .wrapper .card:last-child {
+    animation-delay: calc(-3s * var(--delay));
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: translateY(100%) scale(0.5);
+    }
+    5%, 20% {
+        opacity: 0.4;
+        transform: translateY(325%) scale(0.7);
+    }
+    25%, 40% {
+        opacity: 1;
+        transform: translateY(100%) scale(1);
+        pointer-events: auto;
+    }
+    45%, 60% {
+        opacity: 0.4;
+        transform: translateY(-100%) scale(0.7);
+    }
+    65%, 100% {
+        opacity: 0;
+        transform: translateY(-100%) scale(0.5);
+    }
+}
+
+.dialogBoxType .card .content {
+    display: flex;
+    align-items: center;
+}
+
+.dialogBoxType .card .img {
+    height: 90px;
+    width: 90px;
+    position: absolute;
+    left: -5px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dialogBoxType .card .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.dialogBoxType .card .details {
+    margin-left: 80px;
+}
+
+.dialogBoxType .details span {
+    font-weight: 600;
+    font-size: 18px;
+    color: black;
+}
+.dialogBoxType p{
+    color: black;
+}
+.dialogBoxType {
+    position: relative;
+    top: 150px;
+}
+.dialogBoxType .card a {
+    text-decoration: none;
+    padding: 7px 18px;
+    border-radius: 25px;
+    color: #fff;
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100% );
+    transition: all 0.3s ease;
+}
+
+.dialogBoxType .card a:hover {
+    transform: scale(0.95);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#indexPage .slide h1{
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+    color: purple;
+}
+#indexPage .main{
+    background-color: #eee;
+    padding: 4rem 0;
+}
+
+#indexPage .skills .main{
+    background-color: black;
+    padding: 4rem 0;
+}
+#indexPage .slide-container{
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#indexPage .arrow{
+    width: 2rem;
+    margin: 0 1rem;
+}
+#indexPage .container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+#indexPage .container::-webkit-scrollbar{
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background-color: #d5d5d5;
+}
+#indexPage .container::-webkit-scrollbar-track{
+    --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
+}
+#indexPage .container::-webkit-scrollbar-thumb{
+    background-color: #9d0191;
+    outline: 1px solid #eee;
+}
+#indexPage .container .thumbnail{
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(0.95);
+    transition: all 0.3s ;
+}
+#indexPage .container .thumbnail:hover{
+    transform: scale(1);
+}
+
+#indexPage .container .thumbnail2{
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(0.95);
+    transition: all 0.3s ;
+}
+#indexPage .container .thumbnail2:hover{
+    transform: scale(1);
+}
+#indexPage .project-details{
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #fff;
+}
+#indexPage .thumbnail h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#indexPage .thumbnail p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+#indexPage .thumbnail a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+#indexPage .thumbnail a:hover{
+    background-color: deeppink;
+
+}
+
+#indexPage .thumbnail2 h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+#indexPage .thumbnail2 p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+#indexPage .thumbnail2 a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+#indexPage .thumbnail2 a:hover{
+    background-color: deeppink;
+
+}
+#indexPage .product-details{
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+
+
+/*
+#indexPage .slide {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    bottom: 0;
+}
+
+#indexPage .slide-about {
+    position: relative;
+    top: 150px;
+}
+
+#indexPage .slide h1 {
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+    color: #9d0191;
+}
+
+#indexPage .main {
+    background-color: #8d8d8d;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    right: 25px;
+    margin: auto;
+    padding: 4rem 0px;
+    border-radius: 3%;
+}
+
+#indexPage .slide-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#indexPage .arrowleft {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+}
+
+#indexPage .arrowright {
+    position: absolute;
+    right: 0;
+}
+
+#indexPage .container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    animation-name: gogo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#indexPage .pject {
+    background-color: white;
+    position: relative;
+    background: #979797;
+    height: 550px;
+}
+
+@keyframes gogo {
+    from {
+        right: 0;
+    }
+    to {
+        right: 100%;
+    }
+
+}
+
+#indexPage .container .thumbnail {
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 10px solid cyan;
+    border-radius: 25% 0;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+    background-color: crimson;
+}
+
+#indexPage .container .thumbnail:hover {
+    transform: scale(1);
+}
+
+#indexPage .project-details {
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #61a1d7;
+}
+
+#indexPage .project-details h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+#indexPage .project-details p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+#indexPage .project-details a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #db6400;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#indexPage .project-details a:hover {
+    background-color: #9d0191;
+}
+*/
+
+/*End Slider Styling*/
+
+/*End Project Section Styling*/
+/*Start Service Section Styling*/
+#indexPage .serv-content {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    /*top: 1900px;*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+#indexPage .serv-content .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 0 25%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#indexPage .serv-content .card:hover {
+    background: crimson;
+}
+
+#indexPage .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+#indexPage .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+#indexPage .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+#indexPage .serv-content .card:hover i {
+    color: #fff;
+}
+
+#indexPage .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+#indexPage .fullserve {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    bottom: -25px;
+}
+
+#indexPage .serv-content1 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    /*top: 2200px;*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+#indexPage .serv-content1 .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 25% 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#indexPage .serv-content1 .card:hover {
+    background: crimson;
+}
+
+#indexPage .serv-content1 .card .box {
+    transition: all 0.3s ease;
+}
+
+#indexPage .serv-content1 .card:hover .box {
+    transform: scale(1.05);
+}
+
+#indexPage .serv-content1 .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+#indexPage .serv-content1 .card:hover i {
+    color: #fff;
+}
+
+#indexPage .serv-content1 .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/*End Service Section Styling*/
+/*Start About Section Styling*/
+#indexPage .headAbout {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(
+            180deg, #e70b0b, #efefef00);
+    filter: blur(3px);
+}
+
+#indexPage .about {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+    background: black;
+    height: 1500px;
+}
+
+#indexPage .about h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .aboutme h1 {
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+#indexPage .aboutme h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: crimson;
+    margin-left: 50px;
+}
+
+#indexPage .treepng {
+    position: absolute;
+    left: 105px;
+    /* right: 0; */
+    top: 139px;
+    /* bottom: 0; */
+    border-radius: 25% 0 25% 0;
+    margin: auto;
+    height: 552px;
+}
+
+#indexPage .study {
+    position: relative;
+    left: 100px;
+    height: 562px;
+    width: 563px;
+    border-radius: 25% 0 25% 0;
+    background: linear-gradient(-45deg, #00ff66, #00ff66, #ff00ff, #ff0099, #099fff);
+    filter: blur(20px);
+    animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+    0% {
+        background: linear-gradient(-45deg, #099fff, #00ff66, #00ff66, #ff00ff, #ff0099);
+    }
+    50% {
+        background: linear-gradient(-45deg, #ff0099, #099fff, #00ff66, #00ff66, #ff00ff);
+    }
+    100% {
+        background: linear-gradient(-45deg, #ff00ff, #ff0099, #099fff, #00ff66, #00ff66);
+    }
+}
+
+#indexPage .boxabout {
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 200px;
+    right: 45px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1c2648, black);
+}
+
+#indexPage .aboutbefore {
+    position: absolute;
+    right: 40px;
+    top: 195px;
+    width: 310px;
+    height: 410px;
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+    filter: blur(20px);
+    animation: colour1 10s linear infinite;
+}
+
+@keyframes colour1 {
+    0% {
+        background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
+    }
+    50% {
+        background: linear-gradient(235deg, #00bcd4, #89ff00, #060c21);
+    }
+    100% {
+        background: linear-gradient(235deg, #060c21, #00bcd4, #89ff00);
+    }
+}
+
+/*End About Section Styling*/
+/*Start Skill Section Styling*/
+#indexPage .skills {
+    position: relative;
+}
+
+#indexPage .skills h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: crimson;
+    margin-left: 50px;
+}
+
+#indexPage .aboutmehr {
+    position: relative;
+    height: 17px;
+    bottom: -740px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(
+            0deg, #e70b0b, #080707);
+    filter: blur(3px);
+}
+
+/*End Skill Section Styling*/
+/*Start Gallery Section Styling*/
+#indexPage .gallryHr {
+    height: 17px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, crimson);
+}
+
+#indexPage .gallery {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .gallery h1 {
+    color: black;
+}
+
+#indexPage .gallery h2 {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#indexPage .gallaryphoto {
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
+}
+
+#indexPage .gallaryphoto .img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border: 10px solid #3edb8b;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+}
+
+#indexPage .gallaryphoto .img:first-child {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.gallaryphoto .img:nth-child(2n+3) {
+    grid-row-start: span 2;
+}
+
+.gallaryphoto .img:nth-child(4n+5) {
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.gallaryphoto .img:nth-child(6n+7) {
+    grid-row-start: span 1;
+}
+
+.gallaryphoto .img:nth-child(8n+9) {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+
+.gallaryphoto .img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(100);
+    border-radius: 2px;
+    transition: 0.3s ease-in-out;
+}
+
+#indexPage .gallaryphoto .img:hover img {
+    filter: brightness(1) grayscale(0);
+}
+
+/*End Gallery Section Styling*/
+/*Start Hobby Section Styling*/
+#indexPage .hobby {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+    padding-bottom: 25px;
+    font-size: 20px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+#indexPage .hobby .image {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+#indexPage .hobby figure {
+    border: 5px solid crimson;
+    height: 175px;
+    overflow: hidden;
+    margin: 0 10px;
+}
+
+#indexPage .hobby h3 {
+    color: #000;
+    margin-top: 40px;
+}
+
+#indexPage .hobby p {
+    padding: 0 10px;
+}
+
+#indexPage .image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#indexPage .image #zoom-in img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+#indexPage .image #zoom-in:hover img {
+    transform: scale(1.5);
+}
+
+#indexPage .image #zoom-inTwo img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+#indexPage .image #zoom-inTwo:hover img {
+    transform: scale(1.5);
+}
+
+#indexPage .image #zoom-inThree img {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+}
+
+#indexPage .image #zoom-inThree:hover img {
+    transform: scale(1.5);
+}
+
+/*Start Footer section*/
+#indexPage footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: -520px;
+    height: 225px;
+}
+
+#indexPage .footer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+#indexPage .footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#indexPage .footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#indexPage .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#indexPage .footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+#indexPage .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#indexPage .footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+
+#indexPage footer::before {
+    content: "";
+    position: absolute;
+    background-color: lightseagreen;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Footer Section End*/
+
+
+
+
+/* ----------------------------------------------------------------------------*/
+
+
+/*Header Section Start*/
+#aboutPage header {
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+}
+#aboutPage .mainHeader{
+    min-height: 150vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/about.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+#aboutPage .headerabout {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    bottom: -270px;
+    text-align: center;
+    color: white;
+}
+#aboutPage .headerabout h2 {
+    font-size: 33px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#aboutPage .about1 {
+    font-size: 16px;
+    margin-top: -20px;
+    color: #888888;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#aboutPage .downNavHeader .social {
+    padding-bottom: 30px;
+    color: #888888;
+    margin-top: -30px;
+}
+
+#aboutPage .downNavHeader .social a {
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+}
+
+#aboutPage .downNavHeader .social a:hover {
+    color: crimson;
+    opacity: 0.9;
+}
+
+/*Header Section End*/
+
+/*Main Section Start*/
+#aboutPage .rider{
+    width: 100%;
+    height: 5px;
+    position: relative;
+    bottom: 0;
+    background-color: crimson;
+    filter: blur(5px);
+}
+#aboutPage .knight{
+    width: 50px;
+    height: 100%;
+    background-color: #480202;
+    animation-name: ride;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+@keyframes ride {
+    from {
+        left: 0;
+    }
+    to {
+        left: 90%;
+    }
+
+}
+/*about section start*/
+#aboutPage .about .abouttext{
+    font-size: 30px;
+    display: flex;
+    padding: 10px 125px;
+}
+
+
+/*Start Service Section Styling*/
+#aboutPage .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+#aboutPage .card{
+    position: relative;
+    width: 270px;
+    height: 280px;
+    margin: 30px;
+    background: #287bff;
+    border-radius: 20px;
+    border-bottom-left-radius: 160px;
+    border-bottom-right-radius: 160px;
+    box-shadow: 0 15px 0 #fff,
+    inset 0 -15px 0 rgba(255,255,255,0.25),0 45px 0 rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+#aboutPage .card::before{
+    content: "";
+    position: absolute;
+    top: -140px;
+    left: -40px;
+    width: 100%;
+    height: 150%;
+    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
+    transform: rotate(35deg);
+    pointer-events: none;
+    filter: blur(5px);
+}
+#aboutPage .card:nth-child(1){
+    background: linear-gradient(to bottom,#ff2ae0,#645bf6);
+}
+#aboutPage .card:nth-child(2){
+    background: linear-gradient(to bottom,#ffec61,#645bf6);
+}
+#aboutPage .card:nth-child(3){
+    background: linear-gradient(to bottom,#ff2ae0,#9a4eff);
+}
+#aboutPage .icon{
+    position: relative;
+    width: 140px;
+    height: 120px;
+    background: #fff;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+    inset 0 -8px 0 #fff;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+}
+#aboutPage .icon::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 15px -15px 0 15px #fff;
+}
+#aboutPage .icon::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -20px -15px 0 15px #fff;
+}
+#aboutPage .icon ion-icon{
+    color: green;
+    position: relative;
+    font-size: 6em;
+    z-index: 1000;
+}
+#aboutPage .content{
+    position: absolute;
+    width: 100%;
+    padding: 30px;
+    padding-top: 140px;
+    text-align: center;
+}
+#aboutPage .content p{
+    color: #fff;
+    line-height: 1.5em;
+}/*End Service Section Styling*/
+/*Start About Section Styling*/
+
+#aboutPage .headAbout {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(
+            180deg, #e70b0b, #efefef00);
+    filter: blur(3px);
+}
+#aboutPage .about2 {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+    background: black;
+    height: 1500px;
+}
+
+.about2 h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.aboutme h1 {
+    font-size: 40px;
+    position: relative;
+    top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.aboutme h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: crimson;
+    margin-left: 50px;
+}
+
+.treepng {
+    position: absolute;
+    left: 105px;
+    /* right: 0; */
+    top: 139px;
+    /* bottom: 0; */
+    border-radius: 25% 0 25% 0;
+    margin: auto;
+    height: 552px;
+}
+
+#aboutPage .study {
+    position: relative;
+    left: 100px;
+    height: 562px;
+    width: 563px;
+    border-radius: 25% 0 25% 0;
+    background: linear-gradient(-45deg, #00ff66 , #00ff66 , #ff00ff , #ff0099 , #099fff);
+    filter: blur(20px);
+    animation: anim 10s linear infinite;
+}
+
+@keyframes anim {
+    0%{
+        background: linear-gradient(-45deg, #099fff, #00ff66 , #00ff66 , #ff00ff , #ff0099 );
+    }
+    50%{
+        background: linear-gradient(-45deg, #ff0099 , #099fff, #00ff66 , #00ff66 , #ff00ff );
+    }
+    100%{
+        background: linear-gradient(-45deg, #ff00ff , #ff0099 , #099fff, #00ff66 , #00ff66 );
+    }
+}
+
+#aboutPage .boxabout{
+    position: absolute;
+    width: 300px;
+    height: 400px;
+    top: 200px;
+    right: 45px;
+    margin: auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, #1c2648, black);
+}
+
+#aboutPage .aboutbefore {
+    position: absolute;
+    right: 45px;
+    top: 200px;
+    width: 310px;
+    height: 410px;
+    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    filter: blur(20px);
+    animation: colour1 10s linear infinite;
+}
+@keyframes colour1 {
+    0%{
+        background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    }
+    50%{
+        background: linear-gradient(235deg,#00bcd4,#89ff00,#060c21);
+    }
+    100%{
+        background: linear-gradient(235deg,#060c21,#00bcd4,#89ff00);
+    }
+}
+/*End About Section Styling*/
+/*Start Skill Section Styling*/
+#aboutPage .skills h2 {
+    font-size: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: left;
+    color: crimson;
+    margin-left: 50px;
+}
+
+#aboutPage .aboutmehr {
+    position: relative;
+    height: 17px;
+    bottom: 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(
+            0deg, #e70b0b, #080707);
+    filter: blur(3px);
+}
+
+/*Start Slider Styling*/
+#aboutPage .slide {
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    top: 265px;
+}
+#aboutPage .slide-about {
+    position: relative;
+    top: 150px;
+}
+#aboutPage .slide h1 {
+    font-size: 3.5rem;
+    line-height: 2;
+    text-align: center;
+    color: #9d0191;
+}
+
+#aboutPage .main {
+    background-color: black;
+    position: relative;
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 4rem 0px;
+    border-radius: 3%;
+}
+
+#aboutPage .slide-container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#aboutPage .arrowleft{
+    position: absolute;
+    left: 0;
+}
+#aboutPage .arrowright{
+    position: absolute;
+    right: 0;
+}
+#aboutPage .container2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    animation-name: gogo;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes gogo {
+    from{
+        right: 0;
+    }
+    to{
+        right: 100%;
+    }
+
+}
+#aboutPage .thumbnail img {
+    border-radius: 25% 0;
+    margin-right: 40px;
+    border: 10px solid #1f66d3;
+}
+#aboutPage .pject {
+    background-color: white;
+    position: relative;
+    background: deeppink;
+    height: 550px;
+}
+
+#aboutPage .container .thumbnail {
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 25% 0;
+    overflow: hidden;
+    transform: scale(.95);
+    transition: all .3s;
+    background-color: crimson;
+}
+
+#aboutPage .container .thumbnail:hover {
+    transform: scale(1);
+}
+
+#aboutPage .project-details {
+    text-align: center;
+    padding-bottom: 2rem;
+    border-radius: 0 25%;
+    margin-right: 40px;
+    border: 10px solid #09b336;
+    background-color: #f3a2b2;
+}
+
+#aboutPage .project-details h2 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+#aboutPage .project-details p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+#aboutPage .project-details a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: #db6400;
+    color: white;
+    padding: 7px 10px;
+    border-radius: 3px;
+    transition: all .3s;
+}
+
+#aboutPage .project-details a:hover {
+    background-color: #9d0191;
+}
+/*End Slider Styling*/
+/*End Skill Section Styling*/
+/*about section end*/
+/*start hobby section*/
+#aboutPage .hobby{
+    position: relative;
+    bottom: 0;
+}
+#aboutPage .hobby h1{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 55px;
+}
+#aboutPage .hobby img {
+    border-style: none;
+    position: absolute;
+    border: 10px solid #0089ff;
+    border-radius: 20% 0;
+    height: 283px;
+    left: 55px;
+}
+#aboutPage .hobby-cont {
+    position: absolute;
+    display: flex;
+    width: 429px;
+    right: 50px;
+}
+#aboutPage .hobby p {
+    position: relative;
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+}
+/*Hobby section End*/
+/*Start Footer section*/
+#aboutPage footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: -550px;
+    height: 225px;
+}
+#aboutPage .footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#aboutPage .footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#aboutPage .footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#aboutPage .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#aboutPage .footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+#aboutPage .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#aboutPage .footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+#aboutPage footer::before{
+    content: "";
+    position: absolute;
+    background-color: lightseagreen;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+/*Footer Section End*/
+
+
+
+ /*----------------------------------------------------------- */
+/*Start Header Section*/
+#projectPage header {
+    position: relative;
+    min-height: 100vh;
+    background-color: black;
+}
+#projectPage .mainHeader{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/vlog.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Start Rest*/
+#projectPage .home-content {
+    color: white;
+    position: absolute;
+    top: 250px;
+    right: 180px;
+    text-align: center;
+}
+
+#projectPage .home-content .text-1 {
+    font-size: 27px;
+    color: gray;
+}
+
+#projectPage .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+/*End Rest*/
+/*Start Project Section*/
+#projectPage .rider{
+    width: 100%;
+    height: 5px;
+    position: relative;
+    bottom: 0;
+    background-color: crimson;
+    filter: blur(5px);
+}
+#projectPage .knight{
+    width: 50px;
+    height: 100%;
+    background-color: #480202;
+    animation-name: ride;
+    animation-duration: 5s;
+    position: absolute;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+}
+@keyframes ride {
+    from {
+        left: 0;
+    }
+    to {
+        left: 90%;
+    }
+
+}
+#projectPage .maintopTheme {
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 25px;
+    color: crimson;
+    font-family: 'Ubuntu', sans-serif;
+}
+#projectPage .maintopTheme h1 {
+    color: black;
+}
+#projectPage .maintopTheme h3{
+    font-size: 23px;
+    color: gray;
+    position: relative;
+    top: 50px;
+}
+
+
+
+
+
+/*End Project Section*/
+/*End Header Section*/
+
+/*Start Main Section*/
+/*Start Service Section*/
+#projectPage .serv-content {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projectPage .serv-content .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 25% 0;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#projectPage .serv-content .card:hover {
+    background: crimson;
+}
+
+#projectPage .serv-content .card .box {
+    transition: all 0.3s ease;
+}
+
+#projectPage .serv-content .card:hover .box {
+    transform: scale(1.05);
+}
+
+#projectPage .serv-content .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+#projectPage .serv-content .card:hover i {
+    color: #fff;
+}
+
+#projectPage .serv-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+
+#projectPage .serv-content1 {
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    bottom: 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#projectPage .serv-content1 .card {
+    background: #D9CECD;
+    text-align: center;
+    border-radius: 0 25%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px 25px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#projectPage .serv-content1 .card:hover {
+    background: crimson;
+}
+
+#projectPage .serv-content1 .card .box {
+    transition: all 0.3s ease;
+}
+
+#projectPage .serv-content1 .card:hover .box {
+    transform: scale(1.05);
+}
+
+#projectPage .serv-content1 .card i {
+    font-size: 50px;
+    color: crimson;
+    transition: color 0.3s ease;
+}
+
+#projectPage .serv-content1 .card:hover i {
+    color: #fff;
+}
+
+#projectPage .serv-content1 .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+#projectPage .service {
+    position: relative;
+    bottom: 0;
+}
+/*End Service Section*/
+/*End Main Section*/
+
+/*Start Footer Section*/
+#projectPage footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: -1100px;
+    height: 225px;
+}
+#projectPage .footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#projectPage .footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#projectPage .footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#projectPage .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#projectPage .footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+#projectPage .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#projectPage .footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+#projectPage footer::before{
+    content: "";
+    position: absolute;
+    background-color: lightseagreen;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*End Footer Section*/
+
+#projectPage hr {
+
+    position: relative;
+    height: 17px;
+    bottom: 0;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to left, black, crimson);
+}
+
+
+
+
+/* ------------------------------------------------------------*/
+/*Header Section Start*/
+
+#vlogPage header {
+    position: relative;
+    min-height: 135vh;
+    background-color: black;
+}
+#vlogPage .mainHeader {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url("../images/vlog.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*Start Nav Bar Style*/
+
+#vlogPage .headerabout {
+    color: white;
+    position: absolute;
+    top: 200px;
+    right: 260px;
+}
+#vlogPage .headerabout h2 {
+    font-size: 75px;
+    font-weight: 600;
+    text-align: center;
+}
+#vlogPage .headerabout h3{
+    font-size: 20px;
+    color: gray;
+    text-align: center;
+}
+
+/*Header Section End*/
+
+/*Main Section Start*/
+#vlogPage .design{
+    padding: 4.5rem 0;
+}
+#vlogPage .title{
+    text-align: center;
+    padding: 1rem 0;
+}
+#vlogPage .title h2{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.4rem;
+}
+#vlogPage .title p{
+    text-transform: uppercase;
+    padding: 0.6rem 0;
+}
+#vlogPage .design-content{
+    margin: 2rem 0;
+}
+#vlogPage .design-item{
+    cursor: pointer;
+    margin: 1.5rem 0;
+}
+#vlogPage .design-img {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+    width: 374px;
+    border-radius: 25% 0;
+    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    animation: colour1 10s linear infinite;
+}
+
+@keyframes colour1 {
+    0%{
+        background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    }
+    50%{
+        background: linear-gradient(235deg,#00bcd4,#89ff00,#060c21);
+    }
+    100%{
+        background: linear-gradient(235deg,#060c21,#00bcd4,#89ff00);
+    }
+}
+#vlogPage .design-img::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+#vlogPage .design-img img {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: all 0.5s ease;
+    border-radius: 25% 0;
+    position: absolute;
+    top: 0;
+    height: 97%;
+    width: 97%;
+}
+#vlogPage .design-item:hover img{
+    transform: scale(1.2);
+}
+#vlogPage .design-img span:first-of-type{
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    padding: 0.25rem 1rem;
+}
+#vlogPage .design-img span:last-of-type{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    right: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+#vlogPage .design-title{
+    padding: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+#vlogPage .design-title a{
+    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+}
+#vlogPage .design-title span{
+    font-weight: 600;
+    font-size: 20px;
+}
+#vlogPage img{
+    width: 100%;
+    display: block;
+}
+#vlogPage .container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+/*Main Section End*/
+
+/*Footer Section Start*/
+#vlogPage footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 225px;
+}
+#vlogPage .footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+#vlogPage .footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+#vlogPage .footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+#vlogPage .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+#vlogPage .footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+#vlogPage .footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+#vlogPage .footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+#vlogPage footer::before{
+    content: "";
+    position: absolute;
+    background-color: lightseagreen;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/*Footer Section Start*/
+footer {
+    font-weight: 400;
+    background-color: white;
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    bottom: 0;
+    height: 225px;
+}
+.footer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.footer ul {
+    color: white;
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer ul li a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    color: crimson;
+    opacity: 1;
+}
+
+.footer .copyright {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.footer .intro {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: white;
+}
+footer::before{
+    content: "";
+    position: absolute;
+    background-color: lightseagreen;
+    height: 4px;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/*Footer Section End*/
+
+/* Media Queries */
+@media screen and (max-width: 540px){
+    #vlogPage .headerabout h2 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+    #vlogPage .headerabout {
+        right: 100px;
+    }
+    #vlogPage .footer ul {
+        font-size: 15px;
+    }
+
+    /*///////////////*/
+    .footer ul {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 540px){
+    #vlogPage .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    #vlogPage .banner-title{
+        font-size: 5rem;
+    }
+    #vlogPage .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #vlogPage .headerabout {
+        top: 172px;
+        right: 59px;
+    }
+    #vlogPage .headerabout h2 {
+        font-size: 59px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #vlogPage .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #vlogPage .search-input{
+        padding: 0.8rem 0;
+    }
+    #vlogPage .design-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    #vlogPage .design-item{
+        margin: 0;
+    }
+    #vlogPage .blog-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px){
+    #vlogPage .blog-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #vlogPage .about-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #vlogPage .design-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries*/
+@media (max-width: 425px) {
+    .mainNavBar ul {
+        right: 10px;
+        font-size: 10px;
+    }
+
+    .mainNavBar .logo a {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content .text-2 {
+        font-size: 22px;
+    }
+
+    #indexPage .home-content .text-1 {
+        font-size: 10px;
+    }
+
+    #indexPage .home-content .text-3 {
+        font-size: 15px;
+    }
+
+    #indexPage .home-content {
+        top: 220px;
+        right: 15px;
+    }
+
+    #indexPage .headerabout h2 {
+        font-size: 10px;
+    }
+
+    #indexPage .about1 {
+        font-size: 7px;
+        margin-bottom: 12px;
+        margin-top: -5px;
+    }
+
+    #indexPage .about2 {
+        font-size: 7px;
+    }
+
+    #indexPage .downNavHeader .social a {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    #indexPage header {
+        min-height: 110vh;
+    }
+
+    #indexPage .maintopTheme {
+        bottom: -300px;
+        font-size: 7px;
+    }
+
+    #indexPage .slide h1 {
+        font-size: 2.5rem;
+    }
+
+    #indexPage .slide-container {
+        max-width: 300px;
+    }
+
+    #indexPage .serv-content {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .serv-content1 {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .treepng {
+        left: 0;
+        right: 0;
+        height: 220px;
+    }
+
+    #indexPage .study {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 242px;
+        width: 222px;
+    }
+
+    #indexPage .boxabout {
+        width: 218px;
+        height: 285px;
+        top: 436px;
+        right: 0;
+        left: 0;
+        font-size: 17px;
+    }
+
+    #indexPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 395px;
+        width: 250px;
+        height: 365px;
+    }
+
+    #indexPage .slide-about {
+        top: 35px;
+    }
+
+    #indexPage .skills {
+        position: relative;
+        top: 825px;
+    }
+
+    #indexPage .about {
+        height: 1670px;
+    }
+
+    #indexPage .aboutmehr {
+        bottom: -670px;
+    }
+
+    #indexPage .gallery h2 {
+        font-size: 10px;
+    }
+
+    #indexPage h1 {
+        font-size: 1em;
+    }
+
+    #indexPage .hobby {
+        font-size: 10px;
+    }
+
+    #aboutPage .home-content .text-2 {
+        font-size: 22px;
+    }
+    #aboutPage .home-content .text-1 {
+        font-size: 10px;
+    }
+    #aboutPage .home-content .text-3 {
+        font-size: 15px;
+    }
+    #aboutPage .home-content {
+        top: 220px;
+        right: 15px;
+    }
+    #aboutPage .headerabout h2 {
+        font-size: 15px;
+        position: relative;
+        top: -16px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #aboutPage .headerabout {
+        bottom: -300px;
+    }
+    #aboutPage .downNavHeader .social a {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+    #aboutPage header {
+        min-height: 110vh;
+    }
+    #aboutPage .slide h1 {
+        font-size: 2.5rem;
+    }
+    #aboutPage .slide-container {
+        max-width: 300px;
+    }
+    #aboutPage .treepng {
+        left: 0;
+        right: 0;
+        height: 220px;
+    }
+    #aboutPage .study {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 242px;
+        width: 222px;
+    }
+    #aboutPage .boxabout {
+        width: 218px;
+        height: 285px;
+        top: 436px;
+        right: 0;
+        left: 0;
+        font-size: 17px;
+    }
+    #aboutPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 395px;
+        width: 250px;
+        height: 365px;
+    }
+    #aboutPage .slide-about {
+        top: 35px;
+    }
+    #aboutPage .aboutmehr {
+        bottom: -495px;
+    }
+    #aboutPage h1 {
+        font-size: 1em;
+    }
+    #aboutPage .about .abouttext {
+        font-size: 10px;
+    }
+    #aboutPage .about1 {
+        font-size: 7px;
+    }
+    #aboutPage .about2 {
+        font-size: 7px;
+    }
+    #aboutPage .skills {
+        position: relative;
+        top: 825px;
+    }
+    #aboutPage .hobby {
+        font-size: 10px;
+    }
+    #aboutPage .hobby img {
+        height: 155px;
+    }
+    #aboutPage .hobby p {
+        font-size: 15px;
+    }
+    #aboutPage .hobby-cont {
+        bottom: -370px;
+    }
+
+    #projectPage header {
+        background-image: url("../images/mainHeader.png");
+        height: 70vh;
+    }
+
+    #projectPage .home-content .text-1 {
+        font-size: 10px;
+    }
+
+    #projectPage .home-content .text-2 {
+        font-size: 13px;
+    }
+
+    #projectPage .home-content .text-3 {
+        font-size: 10px;
+    }
+
+    #projectPage .aboutHeader .home-content {
+        top: 261px;
+        left: 125px;
+    }
+    #projectPage .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    #projectPage .serv-content1 {
+        flex-wrap: wrap;
+        top: 1920px;
+    }
+    #projectPage .service {
+        bottom: 550px;
+    }
+    #projectPage footer {
+        bottom: -2305px;
+    }
+    #projectPage .maintopTheme {
+        font-size: 6px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    .mainNavBar ul {
+        right: 10px;
+        bottom: -15px;
+    }
+
+    .mainNavBar .logo a {
+        top: 10px;
+        left: 80px;
+        font-size: 25px;
+    }
+
+    #indexPage .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content .text-2 {
+        font-size: 30px;
+    }
+
+    #indexPage .home-content .text-3 {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 500px;
+        left: 40px;
+        position: relative;
+    }
+
+    #indexPage .about2 {
+        font-size: 9px;
+    }
+
+    #indexPage .about1 {
+        font-size: 9px;
+    }
+
+    #indexPage .headerabout h2 {
+        font-size: 12px;
+    }
+
+    #indexPage .downNavHeader .social a {
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #indexPage header {
+        min-height: 110vh;
+    }
+    .projectSlider {
+        top: 463px;
+        height: 850px;
+    }
+    #indexPage .maintopTheme {
+        bottom: -320px;
+        font-size: 8px;
+    }
+
+    #indexPage .serv-content {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .serv-content1 {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .treepng {
+        left: 0;
+        right: 0;
+        height: 266px;
+    }
+
+     .study {
+         position: absolute;
+         left: 0;
+         right: 0;
+         margin: auto;
+         height: 288px;
+         width: 270px;
+     }
+
+
+    #indexPage .boxabout {
+        width: 279px;
+        height: 400px;
+            top: 478px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #indexPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 465px;
+        width: 305px;
+        height: 410px;
+    }
+
+    #indexPage .slide-about {
+        top: 50px;
+    }
+
+    #indexPage .skills {
+        top: 835px;
+    }
+
+    #indexPage .about {
+        height: 1670px;
+    }
+
+    #indexPage .aboutmehr {
+        bottom: -655px;
+    }
+
+    #indexPage .gallery h2 {
+        font-size: 12px;
+    }
+
+    #indexPage .gallery h2 {
+        font-size: 10px;
+    }
+
+    #indexPage h1 {
+        font-size: 1em;
+    }
+
+    #indexPage .hobby {
+        font-size: 10px;
+    }
+
+    #aboutPage .home-content .text-1 {
+        font-size: 20px;
+    }
+    #aboutPage .home-content .text-2 {
+        font-size: 30px;
+    }
+    #aboutPage .home-content .text-3 {
+        font-size: 20px;
+    }
+    #aboutPage .home-content {
+        top: 208px;
+        right: 25px;
+    }
+    #aboutPage .headerabout h2 {
+        position: relative;
+        top: -16px;
+        font-size: 12px;
+    }
+    #aboutPage .headerabout {
+        bottom: -300px;
+    }
+    #aboutPage .downNavHeader .social a {
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #aboutPage header {
+        min-height: 110vh;
+    }
+    #aboutPage  .treepng {
+        left: 0;
+        right: 0;
+        height: 266px;
+    }
+    #aboutPage  .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 288px;
+        width: 270px;
+    }
+    #aboutPage .boxabout {
+        width: 279px;
+        height: 400px;
+        top: 478px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    #aboutPage h1 {
+        font-size: 1em;
+    }
+    #aboutPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 465px;
+        width: 305px;
+        height: 410px;
+    }
+    #aboutPage .slide-about {
+        top: 50px;
+    }
+    #aboutPage .aboutmehr {
+        bottom: -495px;
+    }
+    #aboutPage .about .abouttext {
+        font-size: 15px;
+    }
+    #aboutPage .about2 {
+        font-size: 9px;
+    }
+    #aboutPage .about1 {
+        font-size: 9px;
+    }
+    #aboutPage .skills {
+        position: relative;
+        top: 835px;
+    }
+    #aboutPage .hobby {
+        font-size: 10px;
+        bottom: -100px;
+    }
+    #aboutPage main {
+        height: 3100px;
+    }
+    #aboutPage .hobby img {
+        height: 220px;
+    }
+    #aboutPage .hobby p {
+        top: 225px;
+    }
+
+    #projectPage .home-content .text-3 {
+        font-size: 21px;
+    }
+
+    #projectPage .home-content .text-2 {
+        font-size: 30px;
+    }
+
+    #projectPage .home-content .text-1 {
+        font-size: 22px;
+    }
+
+    #projectPage .home-content {
+        top: 238px;
+        right: 12px;
+    }
+
+    #projectPage  header {
+        background-image: url("../images/secondmainheader.png");
+        height: 100vh;
+    }
+
+    #projectPage .aboutHeader .home-content {
+        top: 254px;
+        left: 200px;
+    }
+    #projectPage .maintopTheme {
+        font-size: 8px;
+        top: 0;
+    }
+    #projectPage footer {
+        bottom: -2000px;
+    }
+    #projectPage .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    #projectPage .serv-content1 {
+        flex-wrap: wrap;
+        top: 1790px;
+    }
+    #projectPage .service {
+        bottom: 600px;
+    }
+    #aboutPage main {
+        height: 3600px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #indexPage .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    #indexPage .home-content .text-3 {
+        font-size: 25px;
+    }
+
+    #indexPage .home-content {
+        top: 200px;
+    }
+
+    #indexPage .headerabout h2 {
+        font-size: 20px;
+    }
+
+    #indexPage .about1 {
+        font-size: 15px;
+    }
+
+    #indexPage .about2 {
+        font-size: 15px;
+    }
+
+    #indexPage .serv-content1 .card {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 50px 13px;
+        margin-bottom: 15px;
+    }
+
+    #indexPage .serv-content .card {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 50px 15px;
+        margin-bottom: 15px;
+    }
+
+    #indexPage .boxabout {
+        top: 806px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #indexPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 796px;
+        width: 310px;
+        height: 410px;
+    }
+
+    #indexPage .treepng {
+
+        left: 0;
+        right: 0;
+    }
+
+    #indexPage .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #indexPage .skills {
+        top: 1125px;
+    }
+
+    #indexPage .slide-about {
+        top: 25px;
+    }
+
+    #indexPage .aboutmehr {
+        bottom: -638px;
+    }
+
+    #indexPage .about {
+        height: 1940px;
+    }
+
+    #aboutPage .home-content .text-1 {
+        font-size: 20px;
+    }
+    #aboutPage .home-content .text-2 {
+        font-size: 40px;
+    }
+    #aboutPage .home-content .text-3 {
+        font-size: 25px;
+    }
+    #aboutPage .home-content {
+        top: 200px;
+    }
+    #aboutPage .headerabout h2 {
+        position: relative;
+        top: -16px;
+        font-size: 12px;
+    }
+    #aboutPage .headerabout {
+        bottom: -300px;
+    }
+    #aboutPage  .treepng {
+
+        left: 0;
+        right: 0;
+    }
+    #aboutPage .study {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #aboutPage footer {
+        bottom: -500px
+    }
+    #aboutPage main {
+        height: 3500px;
+    }
+    #aboutPage .boxabout {
+        top: 806px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    #aboutPage .aboutbefore {
+        right: 0;
+        left: 0;
+        top: 806px;
+        margin: auto;
+
+        width: 310px;
+        height: 410px;
+    }
+    #aboutPage .about2 {
+        font-size: 15px;
+    }
+    #aboutPage .about1 {
+        font-size: 15px;
+    }
+    #aboutPage .skills {
+        position: relative;
+        bottom: -500px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    #aboutPage .slide-about {
+        top: 25px;
+    }
+    #aboutPage .hobby img {
+        height: 189px;
+    }
+    #aboutPage .hobby{
+        bottom: -400px;
+    }
+    #aboutPage main {
+        height: 3200px;
+    }
+}
+#aboutPage main {
+    height: 2900px;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css Stiky Position</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        section {
+            position: relative;
+            height: 700px;
+        }
+
+        body>section:nth-child(1)>div{
+            background: red;
+            position: sticky;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            margin: -15px;
+        }
+
+        body>section:nth-child(1)>div>h2{
+            position: absolute;
+            color: white;
+            left: 20px;
+        }
+
+        body>section:nth-child(1)>h1{
+            font-size: 100px;
+            position: absolute;
+            left: 40%;
+            top: 30%;
+        }
+
+
+        body>section:nth-child(2){
+            background: #5f74eb;
+        }
+
+        body>section:nth-child(2)>div{
+            background: #34428f;
+            position: sticky;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            margin: -15px;
+        }
+
+        body>section:nth-child(2)>div>h2{
+            position: absolute;
+            color: white;
+            left: 20px;
+        }
+
+        body>section:nth-child(2)>h1{
+            font-size: 100px;
+            position: relative;
+            left: 40%;
+            top: 30%;
+        }
+
+        body>section:nth-child(3){
+            background: #50342a;
+        }
+
+        body>section:nth-child(3)>div{
+            background: #2e2521;
+            position: sticky;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            margin: -15px;
+        }
+
+        body>section:nth-child(3)>div>h2{
+            position: absolute;
+            color: white;
+            left: 20px;
+        }
+
+        body>section:nth-child(3)>h1{
+            font-size: 100px;
+            position: relative;
+            left: 40%;
+            top: 30%;
+        }
+
+        body>section:nth-child(4){
+            background: #a70202;
+        }
+
+        body>section:nth-child(4)>div{
+            background: #4e0606;
+            position: sticky;
+            z-index: 2;
+            top: 0;
+            width: 100%;
+            height: 50px;
+            margin: -15px;
+        }
+
+        body>section:nth-child(4)>div>h2{
+            position: absolute;
+            color: white;
+            left: 20px;
+        }
+
+        body>section:nth-child(4)>h1{
+            font-size: 100px;
+            position: relative;
+            left: 40%;
+            top: 30%;
+        }
+    </style>
+</head>
+<body>
+<section><div><h2>Card 1</h2></div>
+    <h1>Hello</h1>
+</section>
+<section><div><h2>Card 2</h2></div>
+    <h1>How</h1>
+</section>
+<section><div><h2>Card 3</h2></div>
+    <h1>Are</h1>
+</section>
+<section><div><h2>Card 4</h2></div>
+    <h1>You..?</h1>
+</section>
+</body>
+</html>

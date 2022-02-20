@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pos System</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<section class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Uresha POS System</a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="item.html">Items</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                           id="navbarDropdown" role="button">
+                            Others
+                        </a>
+                        <ul aria-labelledby="navbarDropdown" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="index.html">Customer</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-lg btn-primary" disabled type="button">Sign Up</button>
+                    <button class="btn btn-secondary btn-lg" disabled type="button">Log Out</button>
+                </form>
+            </div>
+        </div>
+        <hr>
+    </nav>
+</section>
+
+<br><br><br>
+<table class="table table-dark table-striped" style="position: relative;
+    top: 12px;">
+    <thead>
+    <tr>
+        <th scope="col">Home > Orders</th>
+    </tr>
+    </thead>
+</table>
+<section style="background-color: gray;padding: 20px" >
+
+    <form class="col-4 " style="background-color: white; padding: 20px;display: inline-block">
+        <legend style="background-color: green">Invoice Details</legend>
+        <div class="row">
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail1">Order ID:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" type="email">
+            </div>
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail4">Date:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail4" type="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail2">Customer:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail2" type="email">
+            </div>
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail5">Customer ID:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail5" type="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail3">Name:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail3" type="email">
+            </div>
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail6">Salary:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail6" type="email">
+            </div>
+        </div>
+        <div class="col-12">
+            <label class="form-label" for="exampleInputEmail7">Address:</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail7" type="email">
+        </div>
+    </form>
+
+    <form class="col-4 " style="background-color: white; padding: 20px;display: inline-block">
+        <legend style="background-color: green">Item Select</legend>
+        <div class="row">
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail8">Item:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail8" type="email">
+            </div>
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail9">Item Code:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail9" type="email">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-5">
+                <label class="form-label" for="exampleInputEmail10">Item Name:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail10" type="email">
+            </div>
+            <div class="col col-4">
+                <label class="form-label" for="exampleInputEmail11">Price:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail11" type="email">
+            </div>
+            <div class="col col-3">
+                <label class="form-label" for="exampleInputEmail12">QtyOnH:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail12" type="email">
+            </div>
+        </div>
+        <div class="col-12">
+            <label class="form-label" for="exampleInputEmail13">Order Quantity:</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail13" type="email">
+        </div>
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <button class="btn btn-danger" type="button">Add Item</button>
+        </div>
+    </form>
+
+    <form class="col-3 " style="background-color: white; padding: 20px;display: inline-block">
+        <br>
+        <label class="form-label" style="color: #0dcaf0;font-size: 20px">Total : 1050Rs/=</label><br>
+        <label class="form-label" style="color: #bb2d3b;font-size: 20px">SubTotal : 945Rs/=</label>
+        <div class="row">
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail14">Cash:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail14" type="email">
+            </div>
+            <div class="col col-6">
+                <label class="form-label" for="exampleInputEmail15">Discount:</label>
+                <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail15" type="email">
+            </div>
+        </div>
+        <div class="col-12">
+            <label class="form-label" for="exampleInputEmail16">Balance:</label>
+            <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail16" type="email">
+        </div>
+        <br>
+        <div class="d-grid gap-2 col-6 mx-auto">
+            <button class="btn btn-success" type="button">Purchase</button>
+        </div>
+    </form>
+    <br><br>
+
+    <table class="table">
+        <thead class="table-success">
+        <tr>
+            <th scope="col">Item Code</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th scope="row">P002</th>
+            <td>Keerisamba 5Kg</td>
+            <td>525.00</td>
+            <td>2</td>
+            <td>1050</td>
+        </tr>
+        </tbody>
+    </table>
+</section>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

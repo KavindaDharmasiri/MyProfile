@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        section {
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 1px solid red;
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 500px;
+        }
+        div{
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+            animation-name: gogo;
+            animation-duration: 30s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        div img{
+            height: 100%;
+            width: 100%;
+        }
+
+        @keyframes gogo {
+            0%{
+                right: 2000px;
+            }
+            10%{
+                right: 2000px;
+            }
+            20%{
+                right: 1500px;
+            }
+            30% {
+                right: 1500px;
+            }
+            40%{
+                right: 1000px;
+            }
+            50%{
+                right: 1000px;
+            }
+            60%{
+                right: 500px;
+            }
+            70%{
+                right: 500px;
+            }
+            80%{
+                right: 0px;
+            }
+            100%{
+                right: 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+        <img alt="" src="assets/images/art-design-4.jpg">
+        <img alt="" src="assets/images/art-design-5.jpg">
+        <img alt="" src="assets/images/about-bg.jpg">
+        <img alt="" src="assets/images/art-design-2.jpg">
+        <img alt="" src="assets/images/art-design-3.jpg">
+    </div>
+</section>
+</body>
+</html>

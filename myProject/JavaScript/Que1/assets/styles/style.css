@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    background-color: #fcfefc;
+}
+
+.theame{
+    font-size: 50px;
+    font-weight: bolder;
+    color: crimson;
+    text-align: center;
+}
+.imgHome{
+    position: absolute;
+    width: 200px;
+    bottom: 10%;
+    right: 10%;
+}
+.walkImg1{
+    position: absolute;
+    width: 200px;
+    bottom: 10%;
+    left: 10%;
+}
+.walkImg2{
+    position: absolute;
+    width: 200px;
+    bottom: 10%;
+    left: 25%;
+}
+.walkImg3{
+    position: absolute;
+    width: 200px;
+    bottom: 10%;
+    left: 40%;
+}
+.walkImg4{
+    position: absolute;
+    width: 200px;
+    bottom: 10%;
+    left: 55%;
+}
+h2{
+    color: aqua;
+    font-size: 20px;
+    position: absolute;
+}
+.h21{
+    left: 10%;
+    bottom: 30%;
+}
+.h22{
+    left: 25%;
+    bottom: 30%;
+}
+.h23{
+    left: 40%;
+    bottom: 30%;
+}
+.h24{
+    left: 55%;
+    bottom: 30%;
+}

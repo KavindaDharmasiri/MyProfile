@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphycal View</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+<section class="background">
+    <h1 class="theame">JS Que</h1>
+    <img alt="house" class="imgHome" src="assets/images/home.png">
+    <img alt="walk" class="walkImg1" src="assets/images/walkMan.gif">
+    <h2 class="h21" id="1class">A</h2>
+    <img alt="walk" class="walkImg2" src="assets/images/walkMan.gif">
+    <h2 class="h22" id="2class">B</h2>
+    <img alt="walk" class="walkImg3" src="assets/images/walkMan.gif">
+    <h2 class="h23" id="3class">C</h2>
+    <img alt="walk" class="walkImg4" src="assets/images/walkMan.gif">
+    <h2 class="h24" id="4class">D</h2>
+</section>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+    let timerID;
+    $(document).ready(function () {
+        clearInterval(timerID); // off the previous timer
+        timerID = setInterval(incrementValue, 1000);
+
+    });
+    let count = 0;
+    let count1 = 1;
+    let count2 = 2;
+    let count3 = 3;
+    var number=["A","B","C","D"];
+    function incrementValue() {
+
+
+            if (count > 3) {
+                count = 0;
+            }
+            if (count1 > 3) {
+                count1 = 0;
+            }
+            if (count2 > 3) {
+                count2 = 0;
+            }
+            if (count3 > 3) {
+                count3 = 0;
+            }
+
+            $("#4class").text(number[count]);
+            $("#3class").text(number[count1]);
+            $("#2class").text(number[count2]);
+            $("#1class").text(number[count3]);
+            count++;
+            count1++;
+            count2++;
+            count3++;
+
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Css Fixed Layout</title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <style>
+        body>section:nth-child(1){
+            z-index: 2;
+            height: 630px;
+            width: 1200px;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        section>div{
+            position: relative;
+            border: 8px solid brown;
+            border-radius: 100%;
+            height: 160px;
+            width: 160px;
+        }
+
+        section>div>div{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border: 8px solid red;
+            border-radius: 100%;
+
+        }
+
+        .middle{
+            height: 1000px;
+            width: 1200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .middle .hello{
+            height: 144px;
+            width: 144px;
+            background: #b53e67;
+            border-radius: 100%;
+            border-width: 0;
+        }
+
+        .middle .hello h2{
+            position: absolute;
+            left: 37%;
+            top: 34%;
+            color: white;
+        }
+
+        .middle2{
+            height: 400px;
+            width: 1200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .middle2 .wellcome{
+            height: 144px;
+            width: 144px;
+            background: #009688;
+            border-radius: 100%;
+            border-width: 0;
+        }
+
+        .middle2 .wellcome h2{
+            position: absolute;
+            left: 21%;
+            top: 34%;
+            color: white;
+        }
+
+        .middle3{
+            height: 1400px;
+            width: 1200px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .middle3 .institute{
+            height: 144px;
+            width: 144px;
+            background: #fd3749;
+            border-radius: 100%;
+            border-width: 0;
+        }
+
+        .middle3 .institute pre{
+            position: absolute;
+            left: -6%;
+            top: 25%;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+</section>
+
+<section class="middle">
+    <div class="hello"><h2>Hello</h2></div>
+</section>
+<section class="middle2">
+    <div class="wellcome"><h2>Welcome To</h2></div>
+</section>
+<section class="middle3">
+    <div class="institute"><pre>
+        Institute
+           of
+        Software
+       Engineering</pre></div>
+</section>
+</body>
+</html>

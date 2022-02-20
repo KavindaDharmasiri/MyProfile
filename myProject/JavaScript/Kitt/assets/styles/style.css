@@ -1,0 +1,62 @@
+body{
+    background-color: black;
+}
+h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: crimson;
+    text-align: center;
+}
+body>section{
+    height: 100px;
+    margin: 20px;
+    top: 0;
+    bottom: 0;
+    position: relative;
+}
+
+section>div{
+    border: 1px solid black;
+    position: absolute;
+    padding-left: 20px;
+    padding-right: 20px;
+    top: 0;
+    bottom: 0;
+    height: 50%;
+    width: 20%;
+    /*background-color: red;*/
+}
+section>div:nth-child(1){
+    left: 0;
+}
+section>div:nth-child(2){
+    left: 20%;
+}
+
+section>div:nth-child(3){
+    left: 40%;
+}
+
+section>div:nth-child(4){
+    left: 60%;
+}
+section>div:nth-child(5){
+    left: 80%;
+
+}
+.btn{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.startbtn{
+    background-color: blue;
+    width: 70px;
+}
+.endbtn{
+    background-color: red;
+    width: 70px;
+}

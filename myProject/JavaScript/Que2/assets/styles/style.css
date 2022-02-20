@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    background-color: #0f5132;
+}
+.theame{
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+hr{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+
+}
+.hr1{
+    top: 45%;
+    width: 60%;
+}
+.hr2{
+    bottom: 45%;
+    width: 60%;
+}
+div{
+    margin: auto;
+    width: 100px;
+    position: absolute;
+    height: 50px;
+    background-color: pi;
+}
+.up{
+    top: 36%;
+    left: 20%;
+}
+.down{
+    bottom: 36%;
+    right: 20%;
+}
+.middle1{
+    top: 0;
+    bottom: 0;
+    left: 30%;
+}
+.middle4{
+    top: 0;
+    bottom: 0;
+    right:30%;
+}
+.middle2{
+    top: 0;
+    bottom: 0;
+    left: 40%;
+}
+.middle3{
+    top: 0;
+    bottom: 0;
+    right: 40%;
+}

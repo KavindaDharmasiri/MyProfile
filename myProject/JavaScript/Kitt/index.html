@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphycal View</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+<h1>Knight Rider</h1>
+<section>
+    <div id="dark"></div>
+    <div id="dark1"></div>
+    <div id="dark2"></div>
+    <div id="dark3"></div>
+    <div id="dark4"></div>
+
+
+</section>
+<section class="btn">
+    <button id="start" class="startbtn">start</button>
+    <button id="stop" class="endbtn">stop</button>
+</section>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+    let timerID;
+    var sound=new Audio();
+    sound.src="./assets/mp3/scannerSweep.wav";
+
+    $("#start").click(function () {
+        clearInterval(timerID);
+        timerID = setInterval(incrementValue, 100);
+    });
+
+    $("#stop").click(function () {
+        clearInterval(timerID);
+    });
+
+    var number = ["#FF0000", "#DC143C", "#FF6347", "#FFA07A", "#FFFFFF"];
+    var nu = 0;
+    var z = 0;
+
+    function incrementValue() {
+
+        if (z == 0) {
+            sound.play();
+            document.getElementById("dark").style.backgroundColor = number[nu];
+            document.getElementById("dark1").style.backgroundColor = number[nu - 1];
+            document.getElementById("dark2").style.backgroundColor = number[nu - 2];
+            document.getElementById("dark3").style.backgroundColor = number[nu - 3];
+            document.getElementById("dark4").style.backgroundColor = number[nu - 4];
+
+            nu++;
+            if (nu == 9) {
+                nu = 0;
+                z = 1;
+            }
+
+        }
+        if (z == 1) {
+            document.getElementById("dark4").style.backgroundColor = number[nu];
+            document.getElementById("dark3").style.backgroundColor = number[nu - 1];
+            document.getElementById("dark2").style.backgroundColor = number[nu - 2];
+            document.getElementById("dark1").style.backgroundColor = number[nu - 3];
+            document.getElementById("dark").style.backgroundColor = number[nu - 4];
+
+            nu++;
+            if (nu == 9) {
+                nu = 0;
+                z = 0;
+            }
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>

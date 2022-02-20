@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Graphycal View</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+<section>
+    <h1 class="theame">Java Script Queue</h1>
+    <div id="red" class="up"></div>
+    <hr class="hr1">
+    <div id="green" class="middle1"></div>
+    <div id="blue" class="middle2"></div>
+    <div id="yellow" class="middle3"></div>
+    <div id="rose" class="middle4"></div>
+    <hr class="hr2">
+    <div id="pink" class="down"></div>
+</section>
+<script src="assets/jQuery/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script>
+
+    let timerID;
+    $(document).ready(function () {
+        clearInterval(timerID);
+        timerID = setInterval(incrementValue, 1000);
+
+    });
+    let count = 0;
+    let count1 = 1;
+    let count2 = 2;
+    let count3 = 3;
+    let count4 = 4;
+    let count5 = 5;
+
+    var number=["#FF0000","#00FF00","#0000FF","#FFFF00","#964B00","#FFC0CB"];
+    function incrementValue() {
+
+
+        if (count > 5) {
+            count = 0;
+        }
+        if (count1 > 5) {
+            count1 = 0;
+        }
+        if (count2 > 5) {
+            count2 = 0;
+        }
+        if (count3 > 5) {
+            count3 = 0;
+        }
+        if (count4 > 5) {
+            count4 = 0;
+        }
+        if (count5 > 5) {
+            count5 = 0;
+        }
+
+        document.getElementById("blue").style.backgroundColor = number[count5];
+        document.getElementById("yellow").style.backgroundColor = number[count4];
+        document.getElementById("rose").style.backgroundColor = number[count3];
+        document.getElementById("pink").style.backgroundColor = number[count2];
+        document.getElementById("red").style.backgroundColor = number[count1];
+        document.getElementById("green").style.backgroundColor = number[count];
+
+
+        count++;
+        count1++;
+        count2++;
+        count3++;
+        count4++;
+        count5++;
+
+    }
+</script>
+</body>
+</html>
