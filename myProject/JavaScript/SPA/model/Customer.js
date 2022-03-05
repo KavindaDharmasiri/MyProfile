@@ -13,18 +13,18 @@ function Customer(id, name, address, tp) {
         return __name;
     }
     this.setCustomerName = function (name) {
-        __name=name;
+        __name = name;
     }
     this.getCustomerAddress = function () {
         return __address;
     }
     this.setCustomerAddress = function (address) {
-        __address=address;
+        __address = address;
     }
     this.getCustomerTp = function () {
         return __tp;
     }
     this.setCustomerTp = function (tp) {
-        __tp=tp;
+        __tp = tp;
     }
 }

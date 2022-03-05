@@ -1,5 +1,5 @@
-function Details(oId , code , cusId , name, price, qty , total) {
-    var __orderId =oId;
+function Details(oId, code, cusId, name, price, qty, total) {
+    var __orderId = oId;
     var __code = code;
     var __cusId = cusId;
     var __name = name;
@@ -29,24 +29,24 @@ function Details(oId , code , cusId , name, price, qty , total) {
         return __name;
     }
     this.setOrderDetailName = function (name) {
-        __name=name;
+        __name = name;
     }
     this.getOrderDetailPrice = function () {
         return __price;
     }
     this.setOrderDetailPrice = function (price) {
-        __price=price;
+        __price = price;
     }
     this.getOrderDetailQty = function () {
         return __qty;
     }
     this.setOrderDetailQty = function (qty) {
-        __qty=qty;
+        __qty = qty;
     }
     this.getOrderDetailTotal = function () {
         return __total;
     }
     this.setOrderDetailTotal = function (total) {
-        __total=total;
+        __total = total;
     }
 }

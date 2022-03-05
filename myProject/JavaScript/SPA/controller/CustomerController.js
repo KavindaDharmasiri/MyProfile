@@ -1,48 +1,7 @@
-/*Table Data*/
-
+/*METHOD CALLING*/
 enableBtn();
 
-
-$("#custId").keydown(function (event) { // event data object
-
-    if (event.key == "Enter") {
-        if (cuId == 1) {
-            $("#custName").focus();
-        } else {
-            alert("wrong Input");
-        }
-    }
-});
-
-$("#custName").keydown(function (event) { // event data object
-    if (event.key == "Enter") { // if the enter key press
-        if (cuName == 1) {
-            $("#custAddress").focus();
-        } else {
-            alert("Wrong Input");
-        }
-    }
-});
-
-$("#custAddress").keydown(function (event) { // event data object
-    if (event.key == "Enter") { // if the enter key press
-        if (cuAddress == 1) {
-            $("#custTP").focus();
-        } else {
-            alert("Wrong Input");
-        }
-    }
-});
-
-$("#custTP").keydown(function (event) { // event data object
-    if (event.key == "Enter") { // if the enter key press
-        if (cuTp == 1) {
-            saveCus();
-        } else {
-            alert("Wrong Input");
-        }
-    }
-});
+/*START FUNCTIONS*/
 
 function saveCustomer() {
     var cusTemp = new Customer($("#custId").val(), $("#custName").val(), $("#custAddress").val(), $("#custTP").val());
@@ -54,15 +13,15 @@ function saveCustomer() {
         salary: cusTemp.getCustomerTp()
     };
 
-    if(customerObject.name==""){
+    if (customerObject.name == "") {
         return;
-    }else {
+    } else {
 
         customerDB.push(customerObject);
 
     }
 
-    for (var i=0;i<customerDB.length;i++) {
+    for (var i = 0; i < customerDB.length; i++) {
         let option = document.createElement("option");
         option.value = customerDB[i].id;
         option.text = customerDB[i].id;
@@ -85,27 +44,6 @@ function loadAllCustomers() {
         $("#customerTable").append(row);
     }
 }
-
-$("#clearCustomer").click(function () {
-    clearAll();
-    saveCus();
-});
-
-
-$("#searchCustomer").click(function () {
-    var searchID = $("#customerIdSearch").val();
-
-    var response = searchCustomer(searchID);
-    if (response) {
-        $("#custId").val(response.id);
-        $("#custName").val(response.name);
-        $("#custAddress").val(response.address);
-        $("#custTP").val(response.salary);
-    } else {
-        clearAll();
-        alert("No Such a Customer");
-    }
-});
 
 function searchCustomer(id) {
     for (let i = 0; i < customerDB.length; i++) {
@@ -182,10 +120,88 @@ function saveCus() {
 
 }
 
+function enableBtn() {
+    const saveCustomerBtn = document.getElementById("saveCustomer");
+    const updateCustomerBtn = document.getElementById("updateCustomer");
+    saveCustomerBtn.disabled = true;
+    updateCustomerBtn.disabled = true;
+    var isTrue = (cuId + cuName + cuAddress + cuTp) == 4;
+    if (isTrue) {
+        saveCustomerBtn.disabled = false;
+        updateCustomerBtn.disabled = false;
+    }
+}
+
+/*END FUNCTIONS*/
+
+/*START EVENTS*/
+
+$("#custId").keydown(function (event) { // event data object
+
+    if (event.key == "Enter") {
+        if (cuId == 1) {
+            $("#custName").focus();
+        } else {
+            alert("wrong Input");
+        }
+    }
+});
+
+$("#custName").keydown(function (event) { // event data object
+    if (event.key == "Enter") { // if the enter key press
+        if (cuName == 1) {
+            $("#custAddress").focus();
+        } else {
+            alert("Wrong Input");
+        }
+    }
+});
+
+$("#custAddress").keydown(function (event) { // event data object
+    if (event.key == "Enter") { // if the enter key press
+        if (cuAddress == 1) {
+            $("#custTP").focus();
+        } else {
+            alert("Wrong Input");
+        }
+    }
+});
+
+$("#custTP").keydown(function (event) { // event data object
+    if (event.key == "Enter") { // if the enter key press
+        if (cuTp == 1) {
+            saveCus();
+        } else {
+            alert("Wrong Input");
+        }
+    }
+});
+
+$("#clearCustomer").click(function () {
+    clearAll();
+    saveCus();
+});
+
+$("#searchCustomer").click(function () {
+    var searchID = $("#customerIdSearch").val();
+
+    var response = searchCustomer(searchID);
+    if (response) {
+        $("#custId").val(response.id);
+        $("#custName").val(response.name);
+        $("#custAddress").val(response.address);
+        $("#custTP").val(response.salary);
+    } else {
+        clearAll();
+        alert("No Such a Customer");
+    }
+});
+
 $("#saveCustomer").click(function () {
     saveCus();
 });
 
+/*START REGEX*/
 // validation Customer
 
 var cuId = 0;
@@ -256,14 +272,4 @@ $("#custTP").keyup(function () {
     }
 });
 
-function enableBtn() {
-    const saveCustomerBtn = document.getElementById("saveCustomer");
-    const updateCustomerBtn = document.getElementById("updateCustomer");
-    saveCustomerBtn.disabled = true;
-    updateCustomerBtn.disabled = true;
-    var isTrue = (cuId + cuName + cuAddress + cuTp) == 4;
-    if (isTrue) {
-        saveCustomerBtn.disabled = false;
-        updateCustomerBtn.disabled = false;
-    }
-}
+/*END REGEX*/
