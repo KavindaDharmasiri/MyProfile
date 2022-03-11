@@ -101,14 +101,14 @@
 
 
 /*Start Service Section Styling*/
-#aboutPage .container{
+#aboutPage .container5{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     padding: 40px;
 }
-#aboutPage .card{
+#aboutPage .card5{
     position: relative;
     width: 270px;
     height: 280px;
@@ -124,7 +124,7 @@
     justify-content: center;
     align-items: flex-start;
 }
-#aboutPage .card::before{
+#aboutPage .card5::before{
     content: "";
     position: absolute;
     top: -140px;
@@ -136,13 +136,13 @@
     pointer-events: none;
     filter: blur(5px);
 }
-#aboutPage .card:nth-child(1){
+#aboutPage .card5:nth-child(1){
     background: linear-gradient(to bottom,#ff2ae0,#645bf6);
 }
-#aboutPage .card:nth-child(2){
+#aboutPage .card5:nth-child(2){
     background: linear-gradient(to bottom,#ffec61,#645bf6);
 }
-#aboutPage .card:nth-child(3){
+#aboutPage .card5:nth-child(3){
     background: linear-gradient(to bottom,#ff2ae0,#9a4eff);
 }
 #aboutPage .icon{
@@ -187,17 +187,18 @@
     font-size: 6em;
     z-index: 1000;
 }
-#aboutPage .content{
+#aboutPage .content5{
     position: absolute;
     width: 100%;
     padding: 30px;
     padding-top: 140px;
     text-align: center;
 }
-#aboutPage .content p{
+#aboutPage .content5 p{
     color: #fff;
     line-height: 1.5em;
-}/*End Service Section Styling*/
+}
+/*End Service Section Styling*/
 /*Start About Section Styling*/
 
 #aboutPage .headAbout {
@@ -218,7 +219,7 @@
     padding-bottom: 25px;
     color: white;
     background: black;
-    height: 1500px;
+    height: 1200px;
 }
 
 .about2 h2 {
@@ -333,135 +334,6 @@
     filter: blur(3px);
 }
 
-/*Start Slider Styling*/
-/*#aboutPage .slide-about {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    top: 265px;
-}*/
-#aboutPage .slide-about {
-    position: relative;
-    top: 150px;
-}
-#aboutPage .slide h1 {
-    font-size: 3.5rem;
-    line-height: 2;
-    text-align: center;
-    color: #9d0191;
-}
-
-#aboutPage .main {
-    background-color: black;
-    position: relative;
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 4rem 0px;
-    border-radius: 3%;
-}
-
-#aboutPage .slide-container {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-}
-#aboutPage .arrowleft{
-    position: absolute;
-    left: 0;
-}
-#aboutPage .arrowright{
-    position: absolute;
-    right: 0;
-}
-#aboutPage .container2 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    animation-name: gogo;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes gogo {
-    from{
-        right: 0;
-    }
-    to{
-        right: 100%;
-    }
-
-}
-#aboutPage .thumbnail3 img {
-    border-radius: 25% 0;
-    margin-right: 40px;
-    border: 10px solid #1f66d3;
-}
-#aboutPage .pject {
-    background-color: white;
-    position: relative;
-    background: deeppink;
-    height: 550px;
-}
-
-#aboutPage .container2 .thumbnail3 {
-    flex: 0 0 auto;
-    object-fit: cover;
-    cursor: pointer;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 25% 0;
-    overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-    background-color: crimson;
-}
-
-#aboutPage .container2 .thumbnail3:hover {
-    transform: scale(1);
-}
-
-#aboutPage .project-details {
-    text-align: center;
-    padding-bottom: 2rem;
-    border-radius: 0 25%;
-    margin-right: 40px;
-    border: 10px solid #09b336;
-    background-color: #f3a2b2;
-}
-
-#aboutPage .project-details h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-}
-
-#aboutPage .project-details p {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-    color: green;
-    font-weight: 700;
-}
-
-#aboutPage .project-details a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: #db6400;
-    color: white;
-    padding: 7px 10px;
-    border-radius: 3px;
-    transition: all .3s;
-}
-
-#aboutPage .project-details a:hover {
-    background-color: #9d0191;
-}
-/*End Slider Styling*/
 /*End Skill Section Styling*/
 /*about section end*/
 /*start hobby section*/
@@ -566,127 +438,65 @@
 }
 
 
-/*Start Slider Styling*/
-.slide {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    top: 265px;
-}
-.slide-about {
-    position: relative;
-    top: 150px;
-}
-.slide h1 {
-    font-size: 3.5rem;
-    line-height: 2;
-    text-align: center;
-    color: #9d0191;
-}
-.main2 {
-    background-color: black;
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 4rem 0px;
-    border-radius: 3%;
-}
-.slide-container {
-    max-width: 1000px;
+
+
+
+
+.skillSlider .slider{
+    max-width: 1100px;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
+    color: black;
 }
-.arrowleft{
-    position: absolute;
-    z-index: 1;
-    left: 0;
+.skillSlider .slider .card1{
+    flex: 1;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 50px;
 }
-.arrowright{
-    position: absolute;
-    right: 0;
+.skillSlider .slider .card1 .img1{
+    height: 200px;
+    width: 100%;
+    border-radius: 50px;
 }
-/*.arrow {
-    position: absolute;
-    width: 2rem;
-    margin: 0 1rem;
-}
-#slide-left{
-    left: 0;
-}
-#slide-right{
-    right: 0;
-}*/
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: row;
+.skillSlider .slider .card1 .img1 img{
     height: 100%;
     width: 100%;
-    animation-name: gogo;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-.pject {
-    background-color: white;
-    position: relative;
-    background: deeppink;
-    height: 550px;
-}
-@keyframes gogo {
-    from{
-        right: 0;
-    }
-    to{
-        right: 100%;
-    }
-}
-.container .thumbnail {
-    flex: 0 0 auto;
     object-fit: cover;
-    cursor: pointer;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 25% 0;
-    overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-    background-color: crimson;
 }
-.container .thumbnail:hover {
-    transform: scale(1);
+.skillSlider .slider .card1 .content1{
+    padding: 10px 20px;
 }
-.project-details {
-    text-align: center;
-    padding-bottom: 2rem;
-    background-color: #f3a2b2;
-}
-.project-details h2 {
-    font-size: 2.2rem;
+.skillSlider .card1 .content1 .title1{
+    font-size: 25px;
     font-weight: 600;
 }
-.project-details p {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-    color: green;
-    font-weight: 700;
+.skillSlider .card1 .content1 .sub-title1{
+    font-size: 20px;
+    font-weight: 600;
+    color: #e74c3c;
+    line-height: 20px;
 }
-.project-details a {
-    font-size: 1.5rem;
+.skillSlider .card1 .content1 p{
+    text-align: justify;
+    margin: 10px 0;
+}
+.skillSlider .card1 .content1 .btn1{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+}
+.skillSlider .card1 .content1 .btn1 a{
     text-decoration: none;
-    background-color: #db6400;
-    color: white;
-    padding: 7px 10px;
-    border-radius: 3px;
-    transition: all .3s;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s;
 }
-.project-details a:hover {
-    background-color: #9d0191;
+.skillSlider .card1 .content1 .btn1 button:hover{
+    transform: scale(0.9);
 }
-/*End Slider Styling*/

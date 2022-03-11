@@ -12,6 +12,11 @@
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
@@ -518,28 +523,28 @@
                 <br><br>
                 I wish to work in software company in future and work in freelancer web site too.</p>
 
-            <div class="container">
-                <div class="card">
+            <div class="container5">
+                <div class="card5">
                     <div class="icon">
                         <ion-icon name="leaf-outline"></ion-icon>
                     </div>
-                    <div class="content">
+                    <div class="content5">
                         <p>I live in mapalagama , Galle.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card5">
                     <div class="icon">
                         <ion-icon name="musical-notes-outline"></ion-icon>
                     </div>
-                    <div class="content">
+                    <div class="content5">
                         <p>I like listen music in free time.</p>
                     </div>
                 </div>
-                <div class="card">
+                <div class="card5">
                     <div class="icon">
                         <ion-icon name="cafe-outline"></ion-icon>
                     </div>
-                    <div class="content">
+                    <div class="content5">
                         <p>I look forward to my morning coffee</p>
                     </div>
                 </div>
@@ -570,165 +575,93 @@
             </section>
             <section class="skills">
                 <h2>MY SKILLS.</h2>
-                <!--<section class="slide-about">
-                    <section class="main">
-                        <div class="slide-container">
-                            <img alt="left" class="arrowleft" id="arrowLeft3"
-                                 src="assets/icon/icons8-arrow-left-64.png">
 
-                            <section class="container2" id="slider3">
-
-                                <div class="thumbnail3">
-                                    <img alt="java" src="assets/images/java.png">
-                                    <div class="project-details">
-                                        <h2>Java</h2>
-                                        <p><span>java</span></p>
-                                        <a href="https://www.java.com/en/" target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="mysql" src="assets/images/mysql.png">
-                                    <div class="project-details">
-                                        <h2>My Sql</h2>
-                                        <p><span>mysql</span></p>
-                                        <a href="https://www.mysql.com/" target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="hibernate" src="assets/images/hibernate.png">
-                                    <div class="project-details">
-                                        <h2>Hibernate</h2>
-                                        <p><span>hibernate</span></p>
-                                        <a href="https://hibernate.org/" target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="html" src="assets/images/html.png">
-                                    <div class="project-details">
-                                        <h2>HTML</h2>
-                                        <p><span>html</span></p>
-                                        <a href="https://www.w3schools.com/html/" target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="css" src="assets/images/css.png">
-                                    <div class="project-details">
-                                        <h2>CSS</h2>
-                                        <p><span>css</span></p>
-                                        <a href="https://www.w3schools.com/css/" target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="javascript" src="assets/images/javascript.png">
-                                    <div class="project-details">
-                                        <h2>JAVA SCRIPT</h2>
-                                        <p><span>js</span></p>
-                                        <a href="https://www.w3schools.com/js/" target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="photoshop" src="assets/images/photoshop.png">
-                                    <div class="project-details">
-                                        <h2>PHOTOSHOP</h2>
-                                        <p><span>photoshop</span></p>
-                                        <a href="https://www.adobe.com/products/photoshop.html" target="_blank">View
-                                            Page</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail3">
-                                    <img alt="figma" src="assets/images/figma.png">
-                                    <div class="project-details">
-                                        <h2>FIGMA</h2>
-                                        <p><span>figma</span></p>
-                                        <a href="https://www.figma.com/files/recent?fuid=990195285291776907"
-                                           target="_blank">View Page</a>
-                                    </div>
-                                </div>
-                            </section>
-
-                            <img alt="right" class="arrowright" id="arrowRight3"
-                                 src="assets/icon/icons8-arrow-right-64.png">
+                <section class="skillSlider">
+                <div id="sli" class="slider owl-carousel">
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/figma.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">FIGMA</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.figma.com/files/recent?fuid=990195285291776907"
+                                   target="_blank">View Page</a>
+                            </div>
                         </div>
-                    </section>
-                </section>-->
-
-
-                <section class="pject">
-                    <section class="main2">
-                        <div class="slide-container">
-                            <img alt="left" class="arrowleft" id="slide-left"
-                                 src="assets/icon/icons8-arrow-left-64.png">
-                            <section class="container" id="slider">
-
-                                <div class="thumbnail">
-                                    <img alt="hospital" src="assets/images/hospital.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="market" src="assets/images/superMarket.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="hotel" src="assets/images/hotel.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="hospital" src="assets/images/hospital.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="market" src="assets/images/superMarket.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="hotel" src="assets/images/hotel.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="hospital" src="assets/images/hospital.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                                <div class="thumbnail">
-                                    <img alt="market" src="assets/images/superMarket.png">
-                                    <div class="project-details">
-                                        <h2>Demo Project</h2>
-                                        <p><span>java</span></p>
-                                        <a href="#">View Project</a>
-                                    </div>
-                                </div>
-                            </section>
-                            <img alt="right" class="arrowright" id="slide-right"
-                                 src="assets/icon/icons8-arrow-right-64.png">
+                    </div>
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/javascript.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">JAVA SCRIPT</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.w3schools.com/js/" target="_blank">View Page</a>
+                            </div>
                         </div>
-                    </section>
+                    </div>
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/photoshop.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">PHOTOSHOP</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.adobe.com/products/photoshop.html" target="_blank">View
+                                    Page</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/css.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">CSS</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.w3schools.com/css/" target="_blank">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/html.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">HTML</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.w3schools.com/html/" target="_blank">View Page</a>                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/hibernate.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">HIBERNATE</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://hibernate.org/" target="_blank">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/mysql.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">MYSQL</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.mysql.com/" target="_blank">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <div class="img1"><img src="assets/images/java.png" alt=""></div>
+                        <div class="content1">
+                            <div class="title1">JAVA</div>
+                            <div class="sub-title1">since 2021</div>
+                            <div class="btn1">
+                                <a href="https://www.java.com/en/" target="_blank">View Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 </section>
 
             </section>
@@ -1203,6 +1136,15 @@
     </div>
 </footer>
 <script src="assets/js/script.js"></script>
+<script>
+    $("#sli").owlCarousel({
+        loop: true,
+        autoplay: true,
+        autoplayTimeout: 2000, //2000ms = 2s;
+        autoplayHoverPause: true,
+    });
+</script>
+
 <script>
 
 
