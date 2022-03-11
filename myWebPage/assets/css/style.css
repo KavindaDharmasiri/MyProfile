@@ -3,74 +3,6 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-/*
-
-#preloader {
-    height: 50px;
-    background: #000;
-}
-
-#preloader h1 {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 90%;
-    text-align: center;
-    color: #ddd;
-    font-size: 1em;
-    font-family: sans-serif;
-    letter-spacing: 0.2em;
-
-}
-
-#preloader h1 span {
-    opacity: 0;
-    display: inline-block;
-    animation: animate5 1s linear forwards;
-}
-
-@keyframes animate5 {
-    0% {
-        opacity: 0;
-        transform: rotateY(90deg);
-        filter: blur(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: rotateY(0deg);
-        filter: blur(0);
-    }
-}
-
-#preloader video{
-    object-fit: cover;
-    height: 100px;
-
-}
-#preloader h1 span:nth-child(1){
-    animation-delay: 1s;
-}
-#preloader h1 span:nth-child(2){
-    animation-delay: 2s;
-}
-#preloader h1 span:nth-child(3){
-    animation-delay: 2.5s;
-}
-#preloader h1 span:nth-child(4){
-    animation-delay: 3s;
-}
-#preloader h1 span:nth-child(5){
-    animation-delay: 3.5s;
-}
-#preloader h1 span:nth-child(6){
-    animation-delay: 3.75s;
-}
-#preloader h1 span:nth-child(7){
-    animation-delay: 4s;
-}
-*/
 
 /*Header Section Start*/
 #indexPage header {
@@ -475,14 +407,12 @@ a {
     border-radius: 12px;
     transition: all .2s linear;
     box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-    /*-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);*/
     -moz-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
     -o-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
 }
 
 #indexPage .slider-main img:hover {
     box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-    /*-webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);*/
     -moz-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
     -o-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
 }
@@ -729,8 +659,6 @@ a {
     border-radius: 100px 20px 20px 100px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     pointer-events: none;
-
-
     animation: animate1 15s linear infinite;
     animation-delay: calc(3s * var(--delay));
 }
@@ -811,10 +739,6 @@ a {
 .card a:hover {
     transform: scale(0.95);
 }
-
-
-
-
 
 .dialogBoxType .wrapper .outer {
     display: flex;
@@ -923,19 +847,6 @@ a {
 .dialogBoxType .card a:hover {
     transform: scale(0.95);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #indexPage .slide h1{
     font-size: 3.5rem;
@@ -1682,1098 +1593,6 @@ a {
     width: 100%;
 }
 
-/*Footer Section End*/
-
-
-
-
-/* ----------------------------------------------------------------------------*/
-
-
-/*Header Section Start*/
-#aboutPage header {
-    position: relative;
-    min-height: 100vh;
-    background-color: black;
-}
-#aboutPage .mainHeader{
-    min-height: 150vh;
-    display: flex;
-    align-items: center;
-    background: url("../images/about.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-
-
-#aboutPage .headerabout {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    bottom: -270px;
-    text-align: center;
-    color: white;
-}
-#aboutPage .headerabout h2 {
-    font-size: 33px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-#aboutPage .about1 {
-    font-size: 16px;
-    margin-top: -20px;
-    color: #888888;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-#aboutPage .downNavHeader .social {
-    padding-bottom: 30px;
-    color: #888888;
-    margin-top: -30px;
-}
-
-#aboutPage .downNavHeader .social a {
-    font-size: 24px;
-    color: inherit;
-    border: 1px solid #ccc;
-    width: 40px;
-    height: 40px;
-    line-height: 38px;
-    display: inline-block;
-    text-align: center;
-    border-radius: 50%;
-    margin: 0 8px;
-    opacity: 0.75;
-}
-
-#aboutPage .downNavHeader .social a:hover {
-    color: crimson;
-    opacity: 0.9;
-}
-
-/*Header Section End*/
-
-/*Main Section Start*/
-#aboutPage .rider{
-    width: 100%;
-    height: 5px;
-    position: relative;
-    bottom: 0;
-    background-color: crimson;
-    filter: blur(5px);
-}
-#aboutPage .knight{
-    width: 50px;
-    height: 100%;
-    background-color: #480202;
-    animation-name: ride;
-    animation-duration: 5s;
-    position: absolute;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: both;
-}
-@keyframes ride {
-    from {
-        left: 0;
-    }
-    to {
-        left: 90%;
-    }
-
-}
-/*about section start*/
-#aboutPage .about .abouttext{
-    font-size: 30px;
-    display: flex;
-    padding: 10px 125px;
-}
-
-
-/*Start Service Section Styling*/
-#aboutPage .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 40px;
-}
-#aboutPage .card{
-    position: relative;
-    width: 270px;
-    height: 280px;
-    margin: 30px;
-    background: #287bff;
-    border-radius: 20px;
-    border-bottom-left-radius: 160px;
-    border-bottom-right-radius: 160px;
-    box-shadow: 0 15px 0 #fff,
-    inset 0 -15px 0 rgba(255,255,255,0.25),0 45px 0 rgba(0,0,0,0.15);
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-#aboutPage .card::before{
-    content: "";
-    position: absolute;
-    top: -140px;
-    left: -40px;
-    width: 100%;
-    height: 150%;
-    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
-    transform: rotate(35deg);
-    pointer-events: none;
-    filter: blur(5px);
-}
-#aboutPage .card:nth-child(1){
-    background: linear-gradient(to bottom,#ff2ae0,#645bf6);
-}
-#aboutPage .card:nth-child(2){
-    background: linear-gradient(to bottom,#ffec61,#645bf6);
-}
-#aboutPage .card:nth-child(3){
-    background: linear-gradient(to bottom,#ff2ae0,#9a4eff);
-}
-#aboutPage .icon{
-    position: relative;
-    width: 140px;
-    height: 120px;
-    background: #fff;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-
-    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
-    inset 0 -8px 0 #fff;
-    z-index: 100;
-    display: flex;
-    justify-content: center;
-}
-#aboutPage .icon::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50px;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border-top-right-radius: 50px;
-    box-shadow: 15px -15px 0 15px #fff;
-}
-#aboutPage .icon::after{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: -50px;
-    width: 50px;
-    height: 50px;
-    background: transparent;
-    border-top-left-radius: 50px;
-    box-shadow: -20px -15px 0 15px #fff;
-}
-#aboutPage .icon ion-icon{
-    color: green;
-    position: relative;
-    font-size: 6em;
-    z-index: 1000;
-}
-#aboutPage .content{
-    position: absolute;
-    width: 100%;
-    padding: 30px;
-    padding-top: 140px;
-    text-align: center;
-}
-#aboutPage .content p{
-    color: #fff;
-    line-height: 1.5em;
-}/*End Service Section Styling*/
-/*Start About Section Styling*/
-
-#aboutPage .headAbout {
-    position: relative;
-    top: 0;
-    width: 100%;
-    height: 20px;
-    background: linear-gradient(
-            180deg, #e70b0b, #efefef00);
-    filter: blur(3px);
-}
-#aboutPage .about2 {
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0px;
-    text-align: center;
-    padding-bottom: 25px;
-    color: white;
-    background: black;
-    height: 1500px;
-}
-
-.about2 h2 {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.aboutme h1 {
-    font-size: 40px;
-    position: relative;
-    top: 25px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
-}
-
-.aboutme h2 {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: left;
-    color: crimson;
-    margin-left: 50px;
-}
-
-.treepng {
-    position: absolute;
-    left: 105px;
-    /* right: 0; */
-    top: 139px;
-    /* bottom: 0; */
-    border-radius: 25% 0 25% 0;
-    margin: auto;
-    height: 552px;
-}
-
-#aboutPage .study {
-    position: relative;
-    left: 100px;
-    height: 562px;
-    width: 563px;
-    border-radius: 25% 0 25% 0;
-    background: linear-gradient(-45deg, #00ff66 , #00ff66 , #ff00ff , #ff0099 , #099fff);
-    filter: blur(20px);
-    animation: anim 10s linear infinite;
-}
-
-@keyframes anim {
-    0%{
-        background: linear-gradient(-45deg, #099fff, #00ff66 , #00ff66 , #ff00ff , #ff0099 );
-    }
-    50%{
-        background: linear-gradient(-45deg, #ff0099 , #099fff, #00ff66 , #00ff66 , #ff00ff );
-    }
-    100%{
-        background: linear-gradient(-45deg, #ff00ff , #ff0099 , #099fff, #00ff66 , #00ff66 );
-    }
-}
-
-#aboutPage .boxabout{
-    position: absolute;
-    width: 300px;
-    height: 400px;
-    top: 200px;
-    right: 45px;
-    margin: auto;
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, #1c2648, black);
-}
-
-#aboutPage .aboutbefore {
-    position: absolute;
-    right: 45px;
-    top: 200px;
-    width: 310px;
-    height: 410px;
-    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
-    filter: blur(20px);
-    animation: colour1 10s linear infinite;
-}
-@keyframes colour1 {
-    0%{
-        background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
-    }
-    50%{
-        background: linear-gradient(235deg,#00bcd4,#89ff00,#060c21);
-    }
-    100%{
-        background: linear-gradient(235deg,#060c21,#00bcd4,#89ff00);
-    }
-}
-/*End About Section Styling*/
-/*Start Skill Section Styling*/
-#aboutPage .skills h2 {
-    font-size: 30px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: left;
-    color: crimson;
-    margin-left: 50px;
-}
-
-#aboutPage .aboutmehr {
-    position: relative;
-    height: 17px;
-    bottom: 0;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(
-            0deg, #e70b0b, #080707);
-    filter: blur(3px);
-}
-
-/*Start Slider Styling*/
-#aboutPage .slide {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    top: 265px;
-}
-#aboutPage .slide-about {
-    position: relative;
-    top: 150px;
-}
-#aboutPage .slide h1 {
-    font-size: 3.5rem;
-    line-height: 2;
-    text-align: center;
-    color: #9d0191;
-}
-
-#aboutPage .main {
-    background-color: black;
-    position: relative;
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 4rem 0px;
-    border-radius: 3%;
-}
-
-#aboutPage .slide-container {
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    overflow: hidden;
-}
-#aboutPage .arrowleft{
-    position: absolute;
-    left: 0;
-}
-#aboutPage .arrowright{
-    position: absolute;
-    right: 0;
-}
-#aboutPage .container2 {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    animation-name: gogo;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-@keyframes gogo {
-    from{
-        right: 0;
-    }
-    to{
-        right: 100%;
-    }
-
-}
-#aboutPage .thumbnail img {
-    border-radius: 25% 0;
-    margin-right: 40px;
-    border: 10px solid #1f66d3;
-}
-#aboutPage .pject {
-    background-color: white;
-    position: relative;
-    background: deeppink;
-    height: 550px;
-}
-
-#aboutPage .container .thumbnail {
-    flex: 0 0 auto;
-    object-fit: cover;
-    cursor: pointer;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 25% 0;
-    overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-    background-color: crimson;
-}
-
-#aboutPage .container .thumbnail:hover {
-    transform: scale(1);
-}
-
-#aboutPage .project-details {
-    text-align: center;
-    padding-bottom: 2rem;
-    border-radius: 0 25%;
-    margin-right: 40px;
-    border: 10px solid #09b336;
-    background-color: #f3a2b2;
-}
-
-#aboutPage .project-details h2 {
-    font-size: 2.2rem;
-    font-weight: 600;
-}
-
-#aboutPage .project-details p {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-    color: green;
-    font-weight: 700;
-}
-
-#aboutPage .project-details a {
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: #db6400;
-    color: white;
-    padding: 7px 10px;
-    border-radius: 3px;
-    transition: all .3s;
-}
-
-#aboutPage .project-details a:hover {
-    background-color: #9d0191;
-}
-/*End Slider Styling*/
-/*End Skill Section Styling*/
-/*about section end*/
-/*start hobby section*/
-#aboutPage .hobby{
-    position: relative;
-    bottom: 0;
-}
-#aboutPage .hobby h1{
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 55px;
-}
-#aboutPage .hobby img {
-    border-style: none;
-    position: absolute;
-    border: 10px solid #0089ff;
-    border-radius: 20% 0;
-    height: 283px;
-    left: 55px;
-}
-#aboutPage .hobby-cont {
-    position: absolute;
-    display: flex;
-    width: 429px;
-    right: 50px;
-}
-#aboutPage .hobby p {
-    position: relative;
-    display: flex;
-    font-size: 25px;
-    text-align: center;
-}
-/*Hobby section End*/
-/*Start Footer section*/
-#aboutPage footer {
-    font-weight: 400;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    bottom: -550px;
-    height: 225px;
-}
-#aboutPage .footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-#aboutPage .footer ul {
-    color: white;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#aboutPage .footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#aboutPage .footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-#aboutPage .footer ul li a:hover {
-    color: crimson;
-    opacity: 1;
-}
-
-#aboutPage .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
-
-#aboutPage .footer .intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-}
-#aboutPage footer::before{
-    content: "";
-    position: absolute;
-    background-color: lightseagreen;
-    height: 4px;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-
-
-/*Footer Section End*/
-
-
-
- /*----------------------------------------------------------- */
-/*Start Header Section*/
-#projectPage header {
-    position: relative;
-    min-height: 100vh;
-    background-color: black;
-}
-#projectPage .mainHeader{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("../images/vlog.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-/*Start Rest*/
-#projectPage .home-content {
-    color: white;
-    position: absolute;
-    top: 250px;
-    right: 180px;
-    text-align: center;
-}
-
-#projectPage .home-content .text-1 {
-    font-size: 27px;
-    color: gray;
-}
-
-#projectPage .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-/*End Rest*/
-/*Start Project Section*/
-#projectPage .rider{
-    width: 100%;
-    height: 5px;
-    position: relative;
-    bottom: 0;
-    background-color: crimson;
-    filter: blur(5px);
-}
-#projectPage .knight{
-    width: 50px;
-    height: 100%;
-    background-color: #480202;
-    animation-name: ride;
-    animation-duration: 5s;
-    position: absolute;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
-    animation-fill-mode: both;
-}
-@keyframes ride {
-    from {
-        left: 0;
-    }
-    to {
-        left: 90%;
-    }
-
-}
-#projectPage .maintopTheme {
-    position: relative;
-    left: 0;
-    right: 0;
-    text-align: center;
-    padding-bottom: 25px;
-    color: crimson;
-    font-family: 'Ubuntu', sans-serif;
-}
-#projectPage .maintopTheme h1 {
-    color: black;
-}
-#projectPage .maintopTheme h3{
-    font-size: 23px;
-    color: gray;
-    position: relative;
-    top: 50px;
-}
-
-
-
-
-
-/*End Project Section*/
-/*End Header Section*/
-
-/*Start Main Section*/
-/*Start Service Section*/
-#projectPage .serv-content {
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    bottom: 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#projectPage .serv-content .card {
-    background: #D9CECD;
-    text-align: center;
-    border-radius: 25% 0;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-#projectPage .serv-content .card:hover {
-    background: crimson;
-}
-
-#projectPage .serv-content .card .box {
-    transition: all 0.3s ease;
-}
-
-#projectPage .serv-content .card:hover .box {
-    transform: scale(1.05);
-}
-
-#projectPage .serv-content .card i {
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-#projectPage .serv-content .card:hover i {
-    color: #fff;
-}
-
-#projectPage .serv-content .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-
-
-#projectPage .serv-content1 {
-    display: flex;
-    flex-wrap: nowrap;
-    position: relative;
-    bottom: 0;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#projectPage .serv-content1 .card {
-    background: #D9CECD;
-    text-align: center;
-    border-radius: 0 25%;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 25px;
-    cursor: pointer;
-    margin-bottom: 20px;
-    transition: all 0.3s ease;
-}
-
-#projectPage .serv-content1 .card:hover {
-    background: crimson;
-}
-
-#projectPage .serv-content1 .card .box {
-    transition: all 0.3s ease;
-}
-
-#projectPage .serv-content1 .card:hover .box {
-    transform: scale(1.05);
-}
-
-#projectPage .serv-content1 .card i {
-    font-size: 50px;
-    color: crimson;
-    transition: color 0.3s ease;
-}
-
-#projectPage .serv-content1 .card:hover i {
-    color: #fff;
-}
-
-#projectPage .serv-content1 .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-}
-#projectPage .service {
-    position: relative;
-    bottom: 0;
-}
-/*End Service Section*/
-/*End Main Section*/
-
-/*Start Footer Section*/
-#projectPage footer {
-    font-weight: 400;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    bottom: -1100px;
-    height: 225px;
-}
-#projectPage .footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-#projectPage .footer ul {
-    color: white;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#projectPage .footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#projectPage .footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-#projectPage .footer ul li a:hover {
-    color: crimson;
-    opacity: 1;
-}
-
-#projectPage .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
-
-#projectPage .footer .intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-}
-#projectPage footer::before{
-    content: "";
-    position: absolute;
-    background-color: lightseagreen;
-    height: 4px;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-/*End Footer Section*/
-
-#projectPage hr {
-
-    position: relative;
-    height: 17px;
-    bottom: 0;
-    border: none;
-    border-radius: 10px;
-    background: linear-gradient(to left, black, crimson);
-}
-
-
-
-
-/* ------------------------------------------------------------*/
-/*Header Section Start*/
-
-#vlogPage header {
-    position: relative;
-    min-height: 135vh;
-    background-color: black;
-}
-#vlogPage .mainHeader {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url("../images/vlog.png") no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-/*Start Nav Bar Style*/
-
-#vlogPage .headerabout {
-    color: white;
-    position: absolute;
-    top: 200px;
-    right: 260px;
-}
-#vlogPage .headerabout h2 {
-    font-size: 75px;
-    font-weight: 600;
-    text-align: center;
-}
-#vlogPage .headerabout h3{
-    font-size: 20px;
-    color: gray;
-    text-align: center;
-}
-
-/*Header Section End*/
-
-/*Main Section Start*/
-#vlogPage .design{
-    padding: 4.5rem 0;
-}
-#vlogPage .title{
-    text-align: center;
-    padding: 1rem 0;
-}
-#vlogPage .title h2{
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 2.4rem;
-}
-#vlogPage .title p{
-    text-transform: uppercase;
-    padding: 0.6rem 0;
-}
-#vlogPage .design-content{
-    margin: 2rem 0;
-}
-#vlogPage .design-item{
-    cursor: pointer;
-    margin: 1.5rem 0;
-}
-#vlogPage .design-img {
-    position: relative;
-    overflow: hidden;
-    height: 500px;
-    width: 374px;
-    border-radius: 25% 0;
-    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
-    animation: colour1 10s linear infinite;
-}
-
-@keyframes colour1 {
-    0%{
-        background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
-    }
-    50%{
-        background: linear-gradient(235deg,#00bcd4,#89ff00,#060c21);
-    }
-    100%{
-        background: linear-gradient(235deg,#060c21,#00bcd4,#89ff00);
-    }
-}
-#vlogPage .design-img::after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-}
-#vlogPage .design-img img {
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    transition: all 0.5s ease;
-    border-radius: 25% 0;
-    position: absolute;
-    top: 0;
-    height: 97%;
-    width: 97%;
-}
-#vlogPage .design-item:hover img{
-    transform: scale(1.2);
-}
-#vlogPage .design-img span:first-of-type{
-    position: absolute;
-    z-index: 1;
-    top: 10px;
-    left: 10px;
-    color: #fff;
-    padding: 0.25rem 1rem;
-}
-#vlogPage .design-img span:last-of-type{
-    position: absolute;
-    z-index: 1;
-    bottom: 10px;
-    right: 10px;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1rem;
-}
-#vlogPage .design-title{
-    padding: 1rem;
-    font-size: 1.2rem;
-    text-align: center;
-    width: 70%;
-    margin: 0 auto;
-}
-#vlogPage .design-title a{
-    color: black;
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: 'Ubuntu', sans-serif;
-}
-#vlogPage .design-title span{
-    font-weight: 600;
-    font-size: 20px;
-}
-#vlogPage img{
-    width: 100%;
-    display: block;
-}
-#vlogPage .container{
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 1.2rem;
-}
-/*Main Section End*/
-
-/*Footer Section Start*/
-#vlogPage footer {
-    font-weight: 400;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    bottom: 0;
-    height: 225px;
-}
-#vlogPage .footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-#vlogPage .footer ul {
-    color: white;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#vlogPage .footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#vlogPage .footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-#vlogPage .footer ul li a:hover {
-    color: crimson;
-    opacity: 1;
-}
-
-#vlogPage .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
-
-#vlogPage .footer .intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-}
-#vlogPage footer::before{
-    content: "";
-    position: absolute;
-    background-color: lightseagreen;
-    height: 4px;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-
-
-
 
 
 
@@ -2863,7 +1682,11 @@ footer::before{
         font-size: 15px;
     }
 
-    /*///////////////*/
+
+    .projectSlider {
+        top: 463px;
+        height: 850px;
+    }
     .footer ul {
         font-size: 15px;
     }
@@ -2952,6 +1775,10 @@ footer::before{
 
 /*Media Queries*/
 @media (max-width: 425px) {
+    #aboutPage main {
+        height: 3605px;
+    }
+
     .mainNavBar ul {
         right: 10px;
         font-size: 10px;
@@ -3176,6 +2003,7 @@ footer::before{
     }
     #aboutPage .hobby {
         font-size: 10px;
+        top: 80px;
     }
     #aboutPage .hobby img {
         height: 155px;
@@ -3215,10 +2043,10 @@ footer::before{
 
     #projectPage .serv-content1 {
         flex-wrap: wrap;
-        top: 1920px;
+        top: 1000px;
     }
     #projectPage .service {
-        bottom: 550px;
+        top: -1000px;
     }
     #projectPage footer {
         bottom: -2305px;
@@ -3334,6 +2162,11 @@ footer::before{
         height: 410px;
     }
 
+    #indexPage .study {
+        left: 10px;
+        height: 266px;
+        width: 273px;
+    }
     #indexPage .slide-about {
         top: 50px;
     }
@@ -3343,11 +2176,11 @@ footer::before{
     }
 
     #indexPage .about {
-        height: 1670px;
+        height: 2200px;
     }
 
     #indexPage .aboutmehr {
-        bottom: -655px;
+        bottom: -590px;
     }
 
     #indexPage .gallery h2 {
@@ -3458,7 +2291,7 @@ footer::before{
         height: 220px;
     }
     #aboutPage .hobby p {
-        top: 225px;
+        top: 0;
     }
 
     #projectPage .home-content .text-3 {
@@ -3496,18 +2329,18 @@ footer::before{
     }
     #projectPage .serv-content {
         flex-wrap: wrap;
-        top: 1006px;
+        top: 1000px;
     }
 
     #projectPage .serv-content1 {
         flex-wrap: wrap;
-        top: 1790px;
+        top: 1000px;
     }
     #projectPage .service {
-        bottom: 600px;
+        bottom: 1000px;
     }
     #aboutPage main {
-        height: 3600px;
+        height: 3725px;
     }
 
 }
@@ -3671,12 +2504,22 @@ footer::before{
         height: 189px;
     }
     #aboutPage .hobby{
-        bottom: -400px;
+        bottom: -380px;
     }
     #aboutPage main {
-        height: 3200px;
+        height: 3550px;
     }
 }
+
+@media all and (min-width: 1024px){
+    #aboutPage main {
+        height: 3550px;
+    }
+    #aboutPage .hobby {
+        bottom: -380px;
+    }
+}
+/*
 #aboutPage main {
     height: 2900px;
-}
+}*/
