@@ -3,7 +3,6 @@ html {
     font-family: 'Poppins', sans-serif;
 }
 
-
 /*Header Section Start*/
 #indexPage header {
     position: relative;
@@ -34,7 +33,7 @@ html {
 
 .decoration {
     position: fixed;
-    //background: linear-gradient(45deg, crimson, orange, yellow, green, dodgerblue, rebeccapurple, purple);
+/ / background: linear-gradient(45 deg, crimson, orange, yellow, green, dodgerblue, rebeccapurple, purple);
     border-bottom: #010103;
     width: 100%;
     height: 80px;
@@ -244,11 +243,34 @@ html {
     background: #888888;
     color: transparent;
     -webkit-background-clip: text;
-    background-clip: text;
+
     font-size: 3.5rem;
     text-transform: uppercase;
     padding: 1rem;
 
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .features {
@@ -373,97 +395,6 @@ a {
     font-size: 20px;
 }
 
-/*Start Slider Styling*/
-
-
-#indexPage body {
-    overflow: hidden;
-    display: flex;
-    background: #111;
-    perspective: 1000px;
-    transform-style: preserve-3d;
-}
-
-#indexPage .slider-main,
-#indexPage .slider-item {
-    position: relative;
-    display: flex;
-    margin: auto;
-    transform-style: preserve-3d;
-    transform: rotateX(-10deg);
-}
-
-#indexPage .slider-main img {
-    transform-style: preserve-3d;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    line-height: 200px;
-    font-size: 50px;
-    text-align: center;
-    box-shadow: 0 0 8px 5px #111;
-    border-radius: 12px;
-    transition: all .2s linear;
-    box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-    -moz-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-    -o-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
-}
-
-#indexPage .slider-main img:hover {
-    box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-    -moz-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-    -o-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
-}
-
-#indexPage .slider-main p {
-    font-family: Serif;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(90deg);
-    color: #fff;
-    font-size: 34px;
-}
-
-#indexPage .ground {
-    width: 900px;
-    height: 900px;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotateX(90deg);
-    background: -webkit-radial-gradient(center center, farthest-side, #9993, transparent);
-}
-
-#indexPage .space {
-    position: relative;
-    height: 500px;
-    top: 100px;
-}
-
-@keyframes spin {
-    from {
-        transform: rotateY(0deg);
-    }
-
-    to {
-        transform: rotateY(360deg);
-    }
-}
-
-@keyframes spinRevert {
-    from {
-        transform: rotateY(360deg);
-    }
-
-    to {
-        transform: rotateY(0deg);
-    }
-}
-
-
 
 .projectSlider .btnNeon {
     position: absolute;
@@ -547,9 +478,6 @@ a {
     transition: 1s;
     transition-delay: 0.75s;
 }
-
-
-
 
 .dialogBoxType .btnNeon {
     position: absolute;
@@ -635,18 +563,18 @@ a {
 }
 
 
-
-
 .projectSlider .wrapper .outer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .projectSlider {
     position: relative;
     top: 169px;
     height: 550px;
 }
+
 .projectSlider .outer .card {
     background: #fff;
     width: 50%;
@@ -732,7 +660,7 @@ a {
     padding: 7px 18px;
     border-radius: 25px;
     color: #fff;
-    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100% );
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
     transition: all 0.3s ease;
 }
 
@@ -828,19 +756,22 @@ a {
     font-size: 18px;
     color: black;
 }
-.dialogBoxType p{
+
+.dialogBoxType p {
     color: black;
 }
+
 .dialogBoxType {
     position: relative;
     top: 150px;
 }
+
 .dialogBoxType .card a {
     text-decoration: none;
     padding: 7px 18px;
     border-radius: 25px;
     color: #fff;
-    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100% );
+    background: linear-gradient(to bottom, #bea2e7 0%, #86b7e7 100%);
     transition: all 0.3s ease;
 }
 
@@ -848,169 +779,21 @@ a {
     transform: scale(0.95);
 }
 
-#indexPage .slide h1{
+#indexPage .slide h1 {
     font-size: 3.5rem;
     line-height: 2;
     text-align: center;
     color: purple;
 }
-#indexPage .main{
+
+#indexPage .main {
     background-color: #eee;
     padding: 4rem 0;
 }
 
-#indexPage .skills .main{
+#indexPage .skills .main {
     background-color: black;
     padding: 4rem 0;
-}
-#indexPage .slide-container{
-    max-width: 1000px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-}
-#indexPage .arrow{
-    width: 2rem;
-    margin: 0 1rem;
-}
-#indexPage .container{
-    margin: 0 auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-#indexPage .container::-webkit-scrollbar{
-    height: 5px;
-    width: 2px;
-    border: 1px solid #d5d5d5;
-    background-color: #d5d5d5;
-}
-#indexPage .container::-webkit-scrollbar-track{
-    --webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3)
-}
-#indexPage .container::-webkit-scrollbar-thumb{
-    background-color: #9d0191;
-    outline: 1px solid #eee;
-}
-#indexPage .container .thumbnail{
-    flex: 0 0 auto;
-    object-fit: cover;
-    cursor: pointer;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
-    overflow: hidden;
-    transform: scale(0.95);
-    transition: all 0.3s ;
-}
-#indexPage .container .thumbnail:hover{
-    transform: scale(1);
-}
-
-#indexPage .container .thumbnail2{
-    flex: 0 0 auto;
-    object-fit: cover;
-    cursor: pointer;
-    margin: 5px;
-    border: 1px solid black;
-    border-radius: 3px;
-    overflow: hidden;
-    transform: scale(0.95);
-    transition: all 0.3s ;
-}
-#indexPage .container .thumbnail2:hover{
-    transform: scale(1);
-}
-#indexPage .project-details{
-    text-align: center;
-    padding-bottom: 2rem;
-    background-color: #fff;
-}
-#indexPage .thumbnail h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-#indexPage .thumbnail p {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-    color: green;
-    font-weight: 700;
-}
-#indexPage .thumbnail a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: orangered;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-#indexPage .thumbnail a:hover{
-    background-color: deeppink;
-
-}
-
-#indexPage .thumbnail2 h2 {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-#indexPage .thumbnail2 p {
-    font-size: 1.6rem;
-    padding-bottom: 1rem;
-    color: green;
-    font-weight: 700;
-}
-#indexPage .thumbnail2 a{
-    font-size: 1.5rem;
-    text-decoration: none;
-    background-color: orangered;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-#indexPage .thumbnail2 a:hover{
-    background-color: deeppink;
-
-}
-#indexPage .product-details{
-    text-align: center;
-    padding: 10px 10px;
-}
-
-
-
-
-/*
-#indexPage .slide {
-    font-family: 'Ubuntu', sans-serif;
-    position: relative;
-    bottom: 0;
-}
-
-#indexPage .slide-about {
-    position: relative;
-    top: 150px;
-}
-
-#indexPage .slide h1 {
-    font-size: 3.5rem;
-    line-height: 2;
-    text-align: center;
-    color: #9d0191;
-}
-
-#indexPage .main {
-    background-color: #8d8d8d;
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    right: 25px;
-    margin: auto;
-    padding: 4rem 0px;
-    border-radius: 3%;
 }
 
 #indexPage .slide-container {
@@ -1019,47 +802,37 @@ a {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    overflow: hidden;
 }
 
-#indexPage .arrowleft {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-}
-
-#indexPage .arrowright {
-    position: absolute;
-    right: 0;
+#indexPage .arrow {
+    width: 2rem;
+    margin: 0 1rem;
 }
 
 #indexPage .container {
-    position: relative;
+    margin: 0 auto;
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: 100%;
-    animation-name: gogo;
-    animation-duration: 30s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
-#indexPage .pject {
-    background-color: white;
-    position: relative;
-    background: #979797;
-    height: 550px;
+#indexPage .container::-webkit-scrollbar {
+    height: 5px;
+    width: 2px;
+    border: 1px solid #d5d5d5;
+    background-color: #d5d5d5;
 }
 
-@keyframes gogo {
-    from {
-        right: 0;
-    }
-    to {
-        right: 100%;
-    }
+#indexPage .container::-webkit-scrollbar-track {
+    --webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3)
+}
 
+#indexPage .container::-webkit-scrollbar-thumb {
+    background-color: #9d0191;
+    outline: 1px solid #eee;
 }
 
 #indexPage .container .thumbnail {
@@ -1067,52 +840,95 @@ a {
     object-fit: cover;
     cursor: pointer;
     margin: 5px;
-    border: 10px solid cyan;
-    border-radius: 25% 0;
+    border: 1px solid black;
+    border-radius: 3px;
     overflow: hidden;
-    transform: scale(.95);
-    transition: all .3s;
-    background-color: crimson;
+    transform: scale(0.95);
+    transition: all 0.3s;
 }
 
 #indexPage .container .thumbnail:hover {
     transform: scale(1);
 }
 
+#indexPage .container .thumbnail2 {
+    flex: 0 0 auto;
+    object-fit: cover;
+    cursor: pointer;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    transform: scale(0.95);
+    transition: all 0.3s;
+}
+
+#indexPage .container .thumbnail2:hover {
+    transform: scale(1);
+}
+
 #indexPage .project-details {
     text-align: center;
     padding-bottom: 2rem;
-    background-color: #61a1d7;
+    background-color: #fff;
 }
 
-#indexPage .project-details h2 {
-    font-size: 2.2rem;
+#indexPage .thumbnail h2 {
+    font-size: 1.2rem;
     font-weight: 600;
 }
 
-#indexPage .project-details p {
+#indexPage .thumbnail p {
     font-size: 1.6rem;
     padding-bottom: 1rem;
     color: green;
     font-weight: 700;
 }
 
-#indexPage .project-details a {
+#indexPage .thumbnail a {
     font-size: 1.5rem;
     text-decoration: none;
-    background-color: #db6400;
-    color: white;
-    padding: 7px 10px;
+    background-color: orangered;
+    color: #fff;
+    padding: 5px 10px;
     border-radius: 3px;
-    transition: all .3s;
 }
 
-#indexPage .project-details a:hover {
-    background-color: #9d0191;
-}
-*/
+#indexPage .thumbnail a:hover {
+    background-color: deeppink;
 
-/*End Slider Styling*/
+}
+
+#indexPage .thumbnail2 h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+#indexPage .thumbnail2 p {
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+#indexPage .thumbnail2 a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+#indexPage .thumbnail2 a:hover {
+    background-color: deeppink;
+
+}
+
+#indexPage .product-details {
+    text-align: center;
+    padding: 10px 10px;
+}
 
 /*End Project Section Styling*/
 /*Start Service Section Styling*/
@@ -1398,7 +1214,7 @@ a {
     margin: auto;
     padding: 45px 0;
     display: grid;
-    grid-template-columns: auto auto auto auto; /*i write auto four time because we want four rows*/
+    grid-template-columns: auto auto auto auto;
     grid-gap: 2vh;
     grid-auto-flow: dense;
 }
@@ -1520,82 +1336,6 @@ a {
     transform: scale(1.5);
 }
 
-/*Start Footer section*/
-#indexPage footer {
-    font-weight: 400;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    bottom: -520px;
-    height: 225px;
-}
-
-#indexPage .footer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-
-#indexPage .footer ul {
-    color: white;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#indexPage .footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#indexPage .footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-#indexPage .footer ul li a:hover {
-    color: crimson;
-    opacity: 1;
-}
-
-#indexPage .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
-
-#indexPage .footer .intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-}
-
-#indexPage footer::before {
-    content: "";
-    position: absolute;
-    background-color: lightseagreen;
-    height: 4px;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-
-
-
 /*Footer Section Start*/
 footer {
     font-weight: 400;
@@ -1607,7 +1347,8 @@ footer {
     bottom: 0;
     height: 225px;
 }
-.footer{
+
+.footer {
     position: relative;
     display: flex;
     justify-content: center;
@@ -1616,6 +1357,7 @@ footer {
     text-align: center;
     color: white;
 }
+
 .footer ul {
     color: white;
     margin-top: 0;
@@ -1656,7 +1398,8 @@ footer {
     font-size: 13px;
     color: white;
 }
-footer::before{
+
+footer::before {
     content: "";
     position: absolute;
     background-color: lightseagreen;
@@ -1667,871 +1410,3 @@ footer::before{
 }
 
 /*Footer Section End*/
-
-/* Media Queries */
-@media screen and (max-width: 540px){
-    #vlogPage .headerabout h2 {
-        font-size: 30px;
-        font-weight: 600;
-        text-align: center;
-    }
-    #vlogPage .headerabout {
-        right: 100px;
-    }
-    #vlogPage .footer ul {
-        font-size: 15px;
-    }
-
-
-    .projectSlider {
-        top: 463px;
-        height: 850px;
-    }
-    .footer ul {
-        font-size: 15px;
-    }
-}
-@media screen and (min-width: 540px){
-    #vlogPage .navbar-nav a{
-        padding-right: 1.2rem;
-        padding-left: 1.2rem;
-    }
-    #vlogPage .banner-title{
-        font-size: 5rem;
-    }
-    #vlogPage .banner form{
-        margin-top: 1.4rem;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    #vlogPage .headerabout {
-        top: 172px;
-        right: 59px;
-    }
-    #vlogPage .headerabout h2 {
-        font-size: 59px;
-    }
-}
-
-@media screen and (min-width: 768px){
-    #vlogPage .navbar .container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    #vlogPage .search-input{
-        padding: 0.8rem 0;
-    }
-    #vlogPage .design-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    #vlogPage .design-item{
-        margin: 0;
-    }
-    #vlogPage .blog-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-}
-
-@media screen and (min-width: 992px){
-    #vlogPage .blog-content{
-        grid-template-columns: repeat(3, 1fr);
-    }
-    #vlogPage .about-content{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem;
-        align-items: center;
-    }
-}
-
-@media screen and (min-width: 1200px){
-    #vlogPage .design-content{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Media Queries*/
-@media (max-width: 425px) {
-    #aboutPage main {
-        height: 2640px;
-    }
-
-    .mainNavBar ul {
-        right: 10px;
-        font-size: 10px;
-    }
-
-    .mainNavBar .logo a {
-        font-size: 20px;
-    }
-
-    #indexPage .home-content .text-2 {
-        font-size: 22px;
-    }
-
-    #indexPage .home-content .text-1 {
-        font-size: 10px;
-    }
-
-    #indexPage .home-content .text-3 {
-        font-size: 15px;
-    }
-
-    #indexPage .home-content {
-        top: 220px;
-        right: 15px;
-    }
-
-    #indexPage .headerabout h2 {
-        font-size: 10px;
-    }
-
-    #indexPage .about1 {
-        font-size: 7px;
-        margin-bottom: 12px;
-        margin-top: -5px;
-    }
-
-    #indexPage .about2 {
-        font-size: 7px;
-    }
-
-    #indexPage .downNavHeader .social a {
-        font-size: 15px;
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-    }
-
-    #indexPage header {
-        min-height: 110vh;
-    }
-
-    #indexPage .maintopTheme {
-        bottom: -300px;
-        font-size: 7px;
-    }
-
-    #indexPage .slide h1 {
-        font-size: 2.5rem;
-    }
-
-    #indexPage .slide-container {
-        max-width: 300px;
-    }
-
-    #indexPage .serv-content {
-        flex-wrap: wrap;
-    }
-
-    #indexPage .serv-content1 {
-        flex-wrap: wrap;
-    }
-
-    #indexPage .treepng {
-        left: 0;
-        right: 0;
-        height: 220px;
-    }
-
-    #indexPage .study {
-        position: absolute;
-        right: 0;
-        left: 0;
-        margin: auto;
-        height: 242px;
-        width: 222px;
-    }
-
-    #indexPage .boxabout {
-        width: 218px;
-        height: 285px;
-        top: 436px;
-        right: 0;
-        left: 0;
-        font-size: 17px;
-    }
-
-    #indexPage .aboutbefore {
-        right: 0;
-        left: 0;
-        margin: auto;
-        top: 395px;
-        width: 250px;
-        height: 365px;
-    }
-
-    #indexPage .slide-about {
-        top: 35px;
-    }
-
-    #indexPage .skills {
-        position: relative;
-        top: 825px;
-    }
-
-    #indexPage .about {
-        height: 1670px;
-    }
-
-    #indexPage .aboutmehr {
-        bottom: -670px;
-    }
-
-    #indexPage .gallery h2 {
-        font-size: 10px;
-    }
-
-    #indexPage h1 {
-        font-size: 1em;
-    }
-
-    #indexPage .hobby {
-        font-size: 10px;
-    }
-
-    #aboutPage .home-content .text-2 {
-        font-size: 22px;
-    }
-    #aboutPage .home-content .text-1 {
-        font-size: 10px;
-    }
-    #aboutPage .home-content .text-3 {
-        font-size: 15px;
-    }
-    #aboutPage .home-content {
-        top: 220px;
-        right: 15px;
-    }
-    #aboutPage .headerabout h2 {
-        font-size: 15px;
-        position: relative;
-        top: -16px;
-        font-family: 'Ubuntu', sans-serif;
-    }
-    #aboutPage .headerabout {
-        bottom: -300px;
-    }
-    #aboutPage .downNavHeader .social a {
-        font-size: 15px;
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-    }
-    #aboutPage header {
-        min-height: 110vh;
-    }
-    #aboutPage .slide h1 {
-        font-size: 2.5rem;
-    }
-    #aboutPage .slide-container {
-        max-width: 300px;
-    }
-    #aboutPage .treepng {
-        left: 0;
-        right: 0;
-        height: 220px;
-    }
-    #aboutPage .study {
-        position: absolute;
-        right: 0;
-        left: 0;
-        margin: auto;
-        height: 242px;
-        width: 222px;
-    }
-    #aboutPage .boxabout {
-        width: 218px;
-        height: 285px;
-        top: 436px;
-        right: 0;
-        left: 0;
-        font-size: 17px;
-    }
-    #aboutPage .aboutbefore {
-        right: 0;
-        left: 0;
-        margin: auto;
-        top: 395px;
-        width: 250px;
-        height: 365px;
-    }
-    #aboutPage .slide-about {
-        top: 35px;
-    }
-    #aboutPage .aboutmehr {
-        bottom: -495px;
-    }
-    #aboutPage h1 {
-        font-size: 1em;
-    }
-    #aboutPage .about .abouttext {
-        font-size: 10px;
-    }
-    #aboutPage .about1 {
-        font-size: 7px;
-    }
-    #aboutPage .about2 {
-        font-size: 7px;
-        height: 2900px
-    }
-    #aboutPage .skills {
-        position: relative;
-        top: 825px;
-    }
-    #aboutPage .hobby {
-        font-size: 10px;
-        top: 80px;
-    }
-    #aboutPage .hobby img {
-        height: 155px;
-    }
-    #aboutPage .hobby p {
-        font-size: 15px;
-    }
-    #aboutPage .hobby-cont {
-        bottom: -370px;
-    }
-
-    #projectPage header {
-        background-image: url("../images/mainHeader.png");
-        height: 70vh;
-    }
-
-    #projectPage .home-content .text-1 {
-        font-size: 10px;
-    }
-
-    #projectPage .home-content .text-2 {
-        font-size: 13px;
-    }
-
-    #projectPage .home-content .text-3 {
-        font-size: 10px;
-    }
-
-    #projectPage .aboutHeader .home-content {
-        top: 261px;
-        left: 125px;
-    }
-    #projectPage .serv-content {
-        flex-wrap: wrap;
-        top: 1006px;
-    }
-
-    #projectPage .serv-content1 {
-        flex-wrap: wrap;
-        top: 1000px;
-    }
-    #projectPage .service {
-        top: -1000px;
-    }
-    #projectPage footer {
-        bottom: -2305px;
-    }
-    #projectPage .maintopTheme {
-        font-size: 6px;
-    }
-}
-
-@media all and (min-width: 425px) and (max-width: 768px) {
-    .mainNavBar ul {
-        right: 10px;
-        bottom: -15px;
-    }
-
-    .mainNavBar .logo a {
-        top: 10px;
-        left: 80px;
-        font-size: 25px;
-    }
-
-    #indexPage .home-content .text-1 {
-        font-size: 20px;
-    }
-
-    #indexPage .home-content .text-2 {
-        font-size: 30px;
-    }
-
-    #indexPage .home-content .text-3 {
-        font-size: 20px;
-    }
-
-    #indexPage .home-content {
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        width: 500px;
-        left: 40px;
-        position: relative;
-    }
-
-    #indexPage .about2 {
-        font-size: 9px;
-    }
-
-    #indexPage .about1 {
-        font-size: 9px;
-    }
-
-    #indexPage .headerabout h2 {
-        font-size: 12px;
-    }
-
-    #indexPage .downNavHeader .social a {
-        font-size: 17px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    #indexPage header {
-        min-height: 110vh;
-    }
-    .projectSlider {
-        top: 463px;
-        height: 850px;
-    }
-    #indexPage .maintopTheme {
-        bottom: -320px;
-        font-size: 8px;
-    }
-
-    #indexPage .serv-content {
-        flex-wrap: wrap;
-    }
-
-    #indexPage .serv-content1 {
-        flex-wrap: wrap;
-    }
-
-    #indexPage .treepng {
-        left: 0;
-        right: 0;
-        height: 266px;
-    }
-
-     .study {
-         position: absolute;
-         left: 0;
-         right: 0;
-         margin: auto;
-         height: 288px;
-         width: 270px;
-     }
-
-
-    #indexPage .boxabout {
-        width: 279px;
-        height: 400px;
-            top: 478px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    #indexPage .aboutbefore {
-        right: 0;
-        left: 0;
-        margin: auto;
-        top: 465px;
-        width: 305px;
-        height: 410px;
-    }
-
-    #indexPage .study {
-        left: 10px;
-        height: 266px;
-        width: 273px;
-    }
-    #indexPage .slide-about {
-        top: 50px;
-    }
-
-    #indexPage .skills {
-        top: 835px;
-    }
-
-    #indexPage .about {
-        height: 2200px;
-    }
-
-    #indexPage .aboutmehr {
-        bottom: -590px;
-    }
-
-    #indexPage .gallery h2 {
-        font-size: 12px;
-    }
-
-    #indexPage .gallery h2 {
-        font-size: 10px;
-    }
-
-    #indexPage h1 {
-        font-size: 1em;
-    }
-
-    #indexPage .hobby {
-        font-size: 10px;
-    }
-
-    #aboutPage .home-content .text-1 {
-        font-size: 20px;
-    }
-    #aboutPage .home-content .text-2 {
-        font-size: 30px;
-    }
-    #aboutPage .home-content .text-3 {
-        font-size: 20px;
-    }
-    #aboutPage .home-content {
-        top: 208px;
-        right: 25px;
-    }
-    #aboutPage .headerabout h2 {
-        position: relative;
-        top: -16px;
-        font-size: 12px;
-    }
-    #aboutPage .headerabout {
-        bottom: -300px;
-    }
-    #aboutPage .downNavHeader .social a {
-        font-size: 17px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-    #aboutPage header {
-        min-height: 110vh;
-    }
-    #aboutPage  .treepng {
-        left: 0;
-        right: 0;
-        height: 266px;
-    }
-    #aboutPage  .study {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-        height: 288px;
-        width: 270px;
-    }
-    #aboutPage .boxabout {
-        width: 279px;
-        height: 400px;
-        top: 478px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-    #aboutPage h1 {
-        font-size: 1em;
-    }
-    #aboutPage .aboutbefore {
-        right: 0;
-        left: 0;
-        margin: auto;
-        top: 465px;
-        width: 305px;
-        height: 410px;
-    }
-    #aboutPage .slide-about {
-        top: 50px;
-    }
-    #aboutPage .aboutmehr {
-        bottom: -495px;
-    }
-    #aboutPage .about .abouttext {
-        font-size: 15px;
-    }
-    #aboutPage .about2 {
-        font-size: 9px;
-        height: 1370px;
-    }
-    .skillSlider .card1 .content1 .title1{
-        font-size: 10px;
-    }
-    .skillSlider .card1 .content1 .sub-title1{
-        font-size: 8px;
-    }
-    .skillSlider .card1 .content1 .btn1 a{
-        font-size: 9px;
-    }
-    #aboutPage .about1 {
-        font-size: 9px;
-    }
-    #aboutPage .skills {
-        position: relative;
-        top: 835px;
-    }
-    #aboutPage .hobby {
-        font-size: 10px;
-        bottom: -100px;
-    }
-    #aboutPage main {
-        height: 3100px;
-    }
-    #aboutPage .hobby img {
-        height: 220px;
-    }
-    #aboutPage .hobby p {
-        top: 0;
-    }
-
-    #projectPage .home-content .text-3 {
-        font-size: 21px;
-    }
-
-    #projectPage .home-content .text-2 {
-        font-size: 30px;
-    }
-
-    #projectPage .home-content .text-1 {
-        font-size: 22px;
-    }
-
-    #projectPage .home-content {
-        top: 238px;
-        right: 12px;
-    }
-
-    #projectPage  header {
-        background-image: url("../images/secondmainheader.png");
-        height: 100vh;
-    }
-
-    #projectPage .aboutHeader .home-content {
-        top: 254px;
-        left: 200px;
-    }
-    #projectPage .maintopTheme {
-        font-size: 8px;
-        top: 0;
-    }
-    #projectPage footer {
-        bottom: -2000px;
-    }
-    #projectPage .serv-content {
-        flex-wrap: wrap;
-        top: 1000px;
-    }
-
-    #projectPage .serv-content1 {
-        flex-wrap: wrap;
-        top: 1000px;
-    }
-    #projectPage .service {
-        bottom: 1000px;
-    }
-    #aboutPage main {
-        height: 2900px;
-    }
-
-}
-
-@media all and (min-width: 768px) and (max-width: 1024px) {
-    #indexPage .home-content .text-1 {
-        font-size: 20px;
-    }
-
-    #indexPage .home-content .text-2 {
-        font-size: 40px;
-    }
-
-    #indexPage .home-content .text-3 {
-        font-size: 25px;
-    }
-
-    #indexPage .home-content {
-        top: 200px;
-    }
-
-    #indexPage .headerabout h2 {
-        font-size: 20px;
-    }
-
-    #indexPage .about1 {
-        font-size: 15px;
-    }
-
-    #indexPage .about2 {
-        font-size: 15px;
-    }
-
-    #indexPage .serv-content1 .card {
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 50px 13px;
-        margin-bottom: 15px;
-    }
-
-    #indexPage .serv-content .card {
-        margin-left: 40px;
-        margin-right: 40px;
-        padding: 50px 15px;
-        margin-bottom: 15px;
-    }
-
-    #indexPage .boxabout {
-        top: 806px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-
-    #indexPage .aboutbefore {
-        right: 0;
-        left: 0;
-        margin: auto;
-        top: 796px;
-        width: 310px;
-        height: 410px;
-    }
-
-    #indexPage .treepng {
-
-        left: 0;
-        right: 0;
-    }
-
-    #indexPage .study {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-
-    #indexPage .skills {
-        top: 1125px;
-    }
-
-    #indexPage .slide-about {
-        top: 25px;
-    }
-
-    #indexPage .aboutmehr {
-        bottom: -638px;
-    }
-
-    #indexPage .about {
-        height: 1940px;
-    }
-
-    #aboutPage .home-content .text-1 {
-        font-size: 20px;
-    }
-    #aboutPage .home-content .text-2 {
-        font-size: 40px;
-    }
-    #aboutPage .home-content .text-3 {
-        font-size: 25px;
-    }
-    #aboutPage .home-content {
-        top: 200px;
-    }
-    #aboutPage .headerabout h2 {
-        position: relative;
-        top: -16px;
-        font-size: 12px;
-    }
-    #aboutPage .headerabout {
-        bottom: -300px;
-    }
-    #aboutPage  .treepng {
-
-        left: 0;
-        right: 0;
-    }
-    #aboutPage .study {
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    #aboutPage footer {
-        bottom: -500px
-    }
-    #aboutPage main {
-        height: 3500px;
-    }
-    #aboutPage .boxabout {
-        top: 490px;
-        right: 0;
-        left: 0;
-        margin: auto;
-    }
-    #aboutPage .aboutbefore {
-        right: 0;
-        left: 0;
-        top: 490px;
-        margin: auto;
-
-        width: 310px;
-        height: 410px;
-    }
-    #aboutPage .about2 {
-        font-size: 15px;
-        height: 1390px;
-    }
-    #aboutPage .about1 {
-        font-size: 15px;
-    }
-    #aboutPage .skills {
-        position: relative;
-        bottom: -500px;
-        left: 0;
-        right: 0;
-        margin: auto;
-    }
-    #aboutPage .slide-about {
-        top: 25px;
-    }
-    #aboutPage .hobby img {
-        height: 189px;
-    }
-    #aboutPage .hobby{
-        bottom: 0;
-    }
-    #aboutPage main {
-        height: 2450px;
-    }
-}
-
-@media all and (min-width: 1024px){
-    #aboutPage main {
-        height: 2600px;
-    }
-    #aboutPage .hobby {
-        bottom: 0px;
-    }
-}
-/*
-#aboutPage main {
-    height: 2900px;
-}*/

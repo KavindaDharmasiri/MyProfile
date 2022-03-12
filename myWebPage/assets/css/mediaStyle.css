@@ -1,0 +1,936 @@
+@media screen and (max-width: 540px) {
+    #vlogPage .headerabout h2 {
+        font-size: 30px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    #vlogPage .headerabout {
+        right: 100px;
+    }
+
+    #vlogPage .footer ul {
+        font-size: 15px;
+    }
+
+    .projectSlider {
+        top: 463px;
+        height: 850px;
+    }
+
+    .footer ul {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 540px) {
+    #vlogPage .navbar-nav a {
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+
+    #vlogPage .banner-title {
+        font-size: 5rem;
+    }
+
+    #vlogPage .banner form {
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #vlogPage .headerabout {
+        top: 172px;
+        right: 59px;
+    }
+
+    #vlogPage .headerabout h2 {
+        font-size: 59px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #vlogPage .navbar .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #vlogPage .search-input {
+        padding: 0.8rem 0;
+    }
+
+    #vlogPage .design-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #vlogPage .design-item {
+        margin: 0;
+    }
+
+    #vlogPage .blog-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #vlogPage .blog-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #vlogPage .about-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 3rem;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #vlogPage .design-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 425px) {
+    #aboutPage main {
+        height: 2640px;
+    }
+
+    .mainNavBar ul {
+        right: 10px;
+        font-size: 10px;
+    }
+
+    .mainNavBar .logo a {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content .text-2 {
+        font-size: 22px;
+    }
+
+    #indexPage .home-content .text-1 {
+        font-size: 10px;
+    }
+
+    #indexPage .home-content .text-3 {
+        font-size: 15px;
+    }
+
+    #indexPage .home-content {
+        top: 220px;
+        right: 15px;
+    }
+
+    #indexPage .headerabout h2 {
+        font-size: 10px;
+    }
+
+    #indexPage .about1 {
+        font-size: 7px;
+        margin-bottom: 12px;
+        margin-top: -5px;
+    }
+
+    #indexPage .about2 {
+        font-size: 7px;
+    }
+
+    #indexPage .downNavHeader .social a {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    #indexPage header {
+        min-height: 110vh;
+    }
+
+    #indexPage .maintopTheme {
+        bottom: -300px;
+        font-size: 7px;
+    }
+
+    #indexPage .slide h1 {
+        font-size: 2.5rem;
+    }
+
+    #indexPage .slide-container {
+        max-width: 300px;
+    }
+
+    #indexPage .serv-content {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .serv-content1 {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .treepng {
+        left: 0;
+        right: 0;
+        height: 220px;
+    }
+
+    #indexPage .study {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 242px;
+        width: 222px;
+    }
+
+    #indexPage .boxabout {
+        width: 218px;
+        height: 285px;
+        top: 436px;
+        right: 0;
+        left: 0;
+        font-size: 17px;
+    }
+
+    #indexPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 395px;
+        width: 250px;
+        height: 365px;
+    }
+
+    #indexPage .slide-about {
+        top: 35px;
+    }
+
+    #indexPage .skills {
+        position: relative;
+        top: 825px;
+    }
+
+    #indexPage .about {
+        height: 1670px;
+    }
+
+    #indexPage .aboutmehr {
+        bottom: -670px;
+    }
+
+    #indexPage .gallery h2 {
+        font-size: 10px;
+    }
+
+    #indexPage h1 {
+        font-size: 1em;
+    }
+
+    #indexPage .hobby {
+        font-size: 10px;
+    }
+
+    #aboutPage .home-content .text-2 {
+        font-size: 22px;
+    }
+
+    #aboutPage .home-content .text-1 {
+        font-size: 10px;
+    }
+
+    #aboutPage .home-content .text-3 {
+        font-size: 15px;
+    }
+
+    #aboutPage .home-content {
+        top: 220px;
+        right: 15px;
+    }
+
+    #aboutPage .headerabout h2 {
+        font-size: 15px;
+        position: relative;
+        top: -16px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    #aboutPage .headerabout {
+        bottom: -300px;
+    }
+
+    #aboutPage .downNavHeader .social a {
+        font-size: 15px;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+    }
+
+    #aboutPage header {
+        min-height: 110vh;
+    }
+
+    #aboutPage .slide h1 {
+        font-size: 2.5rem;
+    }
+
+    #aboutPage .slide-container {
+        max-width: 300px;
+    }
+
+    #aboutPage .treepng {
+        left: 0;
+        right: 0;
+        height: 220px;
+    }
+
+    #aboutPage .study {
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+        height: 242px;
+        width: 222px;
+    }
+
+    #aboutPage .boxabout {
+        width: 218px;
+        height: 285px;
+        top: 436px;
+        right: 0;
+        left: 0;
+        font-size: 17px;
+    }
+
+    #aboutPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 395px;
+        width: 250px;
+        height: 365px;
+    }
+
+    #aboutPage .slide-about {
+        top: 35px;
+    }
+
+    #aboutPage .aboutmehr {
+        bottom: -495px;
+    }
+
+    #aboutPage h1 {
+        font-size: 1em;
+    }
+
+    #aboutPage .about .abouttext {
+        font-size: 10px;
+    }
+
+    #aboutPage .about1 {
+        font-size: 7px;
+    }
+
+    #aboutPage .about2 {
+        font-size: 7px;
+        height: 1380px;
+    }
+
+    #aboutPage .skills {
+        position: relative;
+        top: 825px;
+    }
+
+    #aboutPage .hobby {
+        font-size: 10px;
+        top: 0;
+    }
+
+    #aboutPage .hobby img {
+        height: 155px;
+    }
+
+    #aboutPage .hobby p {
+        font-size: 15px;
+    }
+
+    #aboutPage .hobby-cont {
+        bottom: -370px;
+    }
+
+    #projectPage header {
+        background-image: url("../images/mainHeader.png");
+        height: 70vh;
+    }
+
+    #projectPage .home-content .text-1 {
+        font-size: 10px;
+    }
+
+    #projectPage .home-content .text-2 {
+        font-size: 13px;
+    }
+
+    #projectPage .home-content .text-3 {
+        font-size: 10px;
+    }
+
+    #projectPage .aboutHeader .home-content {
+        top: 261px;
+        left: 125px;
+    }
+
+    #projectPage .serv-content {
+        flex-wrap: wrap;
+        top: 1006px;
+    }
+
+    #projectPage .serv-content1 {
+        flex-wrap: wrap;
+        top: 1000px;
+    }
+
+    #projectPage .service {
+        top: -1000px;
+    }
+
+    #projectPage footer {
+        bottom: -2305px;
+    }
+
+    #projectPage .maintopTheme {
+        font-size: 6px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px) {
+    .mainNavBar ul {
+        right: 10px;
+        bottom: -15px;
+    }
+
+    .mainNavBar .logo a {
+        top: 10px;
+        left: 80px;
+        font-size: 25px;
+    }
+
+    #indexPage .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content .text-2 {
+        font-size: 30px;
+    }
+
+    #indexPage .home-content .text-3 {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content {
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 500px;
+        left: 40px;
+        position: relative;
+    }
+
+    #indexPage .about2 {
+        font-size: 9px;
+    }
+
+    #indexPage .about1 {
+        font-size: 9px;
+    }
+
+    #indexPage .headerabout h2 {
+        font-size: 12px;
+    }
+
+    #indexPage .downNavHeader .social a {
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #indexPage header {
+        min-height: 110vh;
+    }
+
+    .projectSlider {
+        top: 463px;
+        height: 850px;
+    }
+
+    #indexPage .maintopTheme {
+        bottom: -320px;
+        font-size: 8px;
+    }
+
+    #indexPage .serv-content {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .serv-content1 {
+        flex-wrap: wrap;
+    }
+
+    #indexPage .treepng {
+        left: 0;
+        right: 0;
+        height: 266px;
+    }
+
+    .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 288px;
+        width: 270px;
+    }
+
+
+    #indexPage .boxabout {
+        width: 279px;
+        height: 400px;
+        top: 478px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #indexPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 465px;
+        width: 305px;
+        height: 410px;
+    }
+
+    #indexPage .study {
+        left: 10px;
+        height: 266px;
+        width: 273px;
+    }
+
+    #indexPage .slide-about {
+        top: 50px;
+    }
+
+    #indexPage .skills {
+        top: 835px;
+    }
+
+    #indexPage .about {
+        height: 2200px;
+    }
+
+    #indexPage .aboutmehr {
+        bottom: -590px;
+    }
+
+    #indexPage .gallery h2 {
+        font-size: 12px;
+    }
+
+    #indexPage .gallery h2 {
+        font-size: 10px;
+    }
+
+    #indexPage h1 {
+        font-size: 1em;
+    }
+
+    #indexPage .hobby {
+        font-size: 10px;
+    }
+
+    #aboutPage .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    #aboutPage .home-content .text-2 {
+        font-size: 30px;
+    }
+
+    #aboutPage .home-content .text-3 {
+        font-size: 20px;
+    }
+
+    #aboutPage .home-content {
+        top: 208px;
+        right: 25px;
+    }
+
+    #aboutPage .headerabout h2 {
+        position: relative;
+        top: -16px;
+        font-size: 12px;
+    }
+
+    #aboutPage .headerabout {
+        bottom: -300px;
+    }
+
+    #aboutPage .downNavHeader .social a {
+        font-size: 17px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    #aboutPage header {
+        min-height: 110vh;
+    }
+
+    #aboutPage .treepng {
+        left: 0;
+        right: 0;
+        height: 266px;
+    }
+
+    #aboutPage .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 288px;
+        width: 270px;
+    }
+
+    #aboutPage .boxabout {
+        width: 279px;
+        height: 400px;
+        top: 478px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #aboutPage h1 {
+        font-size: 1em;
+    }
+
+    #aboutPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 465px;
+        width: 305px;
+        height: 410px;
+    }
+
+    #aboutPage .slide-about {
+        top: 50px;
+    }
+
+    #aboutPage .aboutmehr {
+        bottom: -495px;
+    }
+
+    #aboutPage .about .abouttext {
+        font-size: 15px;
+    }
+
+    #aboutPage .about2 {
+        font-size: 9px;
+        height: 1370px;
+    }
+
+    .skillSlider .card1 .content1 .title1 {
+        font-size: 10px;
+    }
+
+    .skillSlider .card1 .content1 .sub-title1 {
+        font-size: 8px;
+    }
+
+    .skillSlider .card1 .content1 .btn1 a {
+        font-size: 9px;
+    }
+
+    #aboutPage .about1 {
+        font-size: 9px;
+    }
+
+    #aboutPage .skills {
+        position: relative;
+        top: 835px;
+    }
+
+    #aboutPage .hobby {
+        font-size: 10px;
+        bottom: -100px;
+    }
+
+    #aboutPage main {
+        height: 3100px;
+    }
+
+    #aboutPage .hobby img {
+        height: 220px;
+    }
+
+    #aboutPage .hobby p {
+        top: 0;
+    }
+
+    #projectPage .home-content .text-3 {
+        font-size: 21px;
+    }
+
+    #projectPage .home-content .text-2 {
+        font-size: 30px;
+    }
+
+    #projectPage .home-content .text-1 {
+        font-size: 22px;
+    }
+
+    #projectPage .home-content {
+        top: 238px;
+        right: 12px;
+    }
+
+    #projectPage header {
+        background-image: url("../images/secondmainheader.png");
+        height: 100vh;
+    }
+
+    #projectPage .aboutHeader .home-content {
+        top: 254px;
+        left: 200px;
+    }
+
+    #projectPage .maintopTheme {
+        font-size: 8px;
+        top: 0;
+    }
+
+    #projectPage footer {
+        bottom: -2000px;
+    }
+
+    #projectPage .serv-content {
+        flex-wrap: wrap;
+        top: 1000px;
+    }
+
+    #projectPage .serv-content1 {
+        flex-wrap: wrap;
+        top: 1000px;
+    }
+
+    #projectPage .service {
+        bottom: 1000px;
+    }
+
+    #aboutPage main {
+        height: 2900px;
+    }
+
+}
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #indexPage .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    #indexPage .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    #indexPage .home-content .text-3 {
+        font-size: 25px;
+    }
+
+    #indexPage .home-content {
+        top: 200px;
+    }
+
+    #indexPage .headerabout h2 {
+        font-size: 20px;
+    }
+
+    #indexPage .about1 {
+        font-size: 15px;
+    }
+
+    #indexPage .about2 {
+        font-size: 15px;
+    }
+
+    #indexPage .serv-content1 .card {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 50px 13px;
+        margin-bottom: 15px;
+    }
+
+    #indexPage .serv-content .card {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding: 50px 15px;
+        margin-bottom: 15px;
+    }
+
+    #indexPage .boxabout {
+        top: 806px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #indexPage .aboutbefore {
+        right: 0;
+        left: 0;
+        margin: auto;
+        top: 796px;
+        width: 310px;
+        height: 410px;
+    }
+
+    #indexPage .treepng {
+
+        left: 0;
+        right: 0;
+    }
+
+    #indexPage .study {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #indexPage .skills {
+        top: 1125px;
+    }
+
+    #indexPage .slide-about {
+        top: 25px;
+    }
+
+    #indexPage .aboutmehr {
+        bottom: -638px;
+    }
+
+    #indexPage .about {
+        height: 1940px;
+    }
+
+    #aboutPage .home-content .text-1 {
+        font-size: 20px;
+    }
+
+    #aboutPage .home-content .text-2 {
+        font-size: 40px;
+    }
+
+    #aboutPage .home-content .text-3 {
+        font-size: 25px;
+    }
+
+    #aboutPage .home-content {
+        top: 200px;
+    }
+
+    #aboutPage .headerabout h2 {
+        position: relative;
+        top: -16px;
+        font-size: 12px;
+    }
+
+    #aboutPage .headerabout {
+        bottom: -300px;
+    }
+
+    #aboutPage .treepng {
+
+        left: 0;
+        right: 0;
+    }
+
+    #aboutPage .study {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #aboutPage footer {
+        bottom: -500px
+    }
+
+    #aboutPage main {
+        height: 3500px;
+    }
+
+    #aboutPage .boxabout {
+        top: 820px;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+
+    #aboutPage .aboutbefore {
+        right: 0;
+        left: 0;
+        top: 800px;
+        margin: auto;
+
+        width: 310px;
+        height: 410px;
+    }
+
+    #aboutPage .about2 {
+        font-size: 15px;
+        height: 1630px;
+    }
+
+    #aboutPage .about1 {
+        font-size: 15px;
+    }
+
+    #aboutPage .skills {
+        position: relative;
+        bottom: -500px;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    #aboutPage .slide-about {
+        top: 25px;
+    }
+
+    #aboutPage .hobby img {
+        height: 189px;
+    }
+
+    #aboutPage .hobby {
+        bottom: 0;
+    }
+
+    #aboutPage main {
+        height: 3040px;
+    }
+}
+
+@media all and (min-width: 1024px) {
+    #aboutPage main {
+        height: 2600px;
+    }
+
+    #aboutPage .hobby {
+        bottom: 0px;
+    }
+}

@@ -1,11 +1,11 @@
-/*----------------------------------------------------------- */
 /*Start Header Section*/
 #projectPage header {
     position: relative;
     min-height: 100vh;
     background-color: black;
 }
-#projectPage .mainHeader{
+
+#projectPage .mainHeader {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -36,7 +36,7 @@
 
 /*End Rest*/
 /*Start Project Section*/
-#projectPage .rider{
+#projectPage .rider {
     width: 100%;
     height: 5px;
     position: relative;
@@ -44,7 +44,8 @@
     background-color: crimson;
     filter: blur(5px);
 }
-#projectPage .knight{
+
+#projectPage .knight {
     width: 50px;
     height: 100%;
     background-color: #480202;
@@ -55,6 +56,7 @@
     animation-direction: alternate-reverse;
     animation-fill-mode: both;
 }
+
 @keyframes ride {
     from {
         left: 0;
@@ -64,6 +66,7 @@
     }
 
 }
+
 #projectPage .maintopTheme {
     position: relative;
     left: 0;
@@ -73,19 +76,17 @@
     color: crimson;
     font-family: 'Ubuntu', sans-serif;
 }
+
 #projectPage .maintopTheme h1 {
     color: black;
 }
-#projectPage .maintopTheme h3{
+
+#projectPage .maintopTheme h3 {
     font-size: 23px;
     color: gray;
     position: relative;
     top: 50px;
 }
-
-
-
-
 
 /*End Project Section*/
 /*End Header Section*/
@@ -190,84 +191,14 @@
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
 #projectPage .service {
     position: relative;
     bottom: 0;
 }
+
 /*End Service Section*/
 /*End Main Section*/
-
-/*Start Footer Section*/
-#projectPage footer {
-    font-weight: 400;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    bottom: -1100px;
-    height: 225px;
-}
-#projectPage .footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-#projectPage .footer ul {
-    color: white;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
-
-#projectPage .footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#projectPage .footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-#projectPage .footer ul li a:hover {
-    color: crimson;
-    opacity: 1;
-}
-
-#projectPage .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
-
-#projectPage .footer .intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-}
-#projectPage footer::before{
-    content: "";
-    position: absolute;
-    background-color: lightseagreen;
-    height: 4px;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-
-/*End Footer Section*/
 
 #projectPage hr {
 
@@ -278,6 +209,3 @@
     border-radius: 10px;
     background: linear-gradient(to left, black, crimson);
 }
-
-
-

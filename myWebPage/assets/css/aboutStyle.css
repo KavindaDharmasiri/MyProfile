@@ -3,7 +3,8 @@
     min-height: 100vh;
     background-color: black;
 }
-#aboutPage .mainHeader{
+
+#aboutPage .mainHeader {
     min-height: 150vh;
     display: flex;
     align-items: center;
@@ -11,8 +12,6 @@
     background-size: cover;
     background-position: center;
 }
-
-
 
 #aboutPage .headerabout {
     position: relative;
@@ -24,6 +23,7 @@
     text-align: center;
     color: white;
 }
+
 #aboutPage .headerabout h2 {
     font-size: 33px;
     font-family: 'Ubuntu', sans-serif;
@@ -64,7 +64,7 @@
 /*Header Section End*/
 
 /*Main Section Start*/
-#aboutPage .rider{
+#aboutPage .rider {
     width: 100%;
     height: 5px;
     position: relative;
@@ -72,7 +72,8 @@
     background-color: crimson;
     filter: blur(5px);
 }
-#aboutPage .knight{
+
+#aboutPage .knight {
     width: 50px;
     height: 100%;
     background-color: #480202;
@@ -83,6 +84,7 @@
     animation-direction: alternate-reverse;
     animation-fill-mode: both;
 }
+
 @keyframes ride {
     from {
         left: 0;
@@ -92,8 +94,9 @@
     }
 
 }
+
 /*about section start*/
-#aboutPage .about .abouttext{
+#aboutPage .about .abouttext {
     font-size: 30px;
     display: flex;
     padding: 10px 125px;
@@ -101,14 +104,15 @@
 
 
 /*Start Service Section Styling*/
-#aboutPage .container5{
+#aboutPage .container5 {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     padding: 40px;
 }
-#aboutPage .card5{
+
+#aboutPage .card5 {
     position: relative;
     width: 270px;
     height: 280px;
@@ -118,34 +122,39 @@
     border-bottom-left-radius: 160px;
     border-bottom-right-radius: 160px;
     box-shadow: 0 15px 0 #fff,
-    inset 0 -15px 0 rgba(255,255,255,0.25),0 45px 0 rgba(0,0,0,0.15);
+    inset 0 -15px 0 rgba(255, 255, 255, 0.25), 0 45px 0 rgba(0, 0, 0, 0.15);
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
-#aboutPage .card5::before{
+
+#aboutPage .card5::before {
     content: "";
     position: absolute;
     top: -140px;
     left: -40px;
     width: 100%;
     height: 150%;
-    background: linear-gradient(90deg,transparent,rgba(255,255,255,0.2));
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2));
     transform: rotate(35deg);
     pointer-events: none;
     filter: blur(5px);
 }
-#aboutPage .card5:nth-child(1){
-    background: linear-gradient(to bottom,#ff2ae0,#645bf6);
+
+#aboutPage .card5:nth-child(1) {
+    background: linear-gradient(to bottom, #ff2ae0, #645bf6);
 }
-#aboutPage .card5:nth-child(2){
-    background: linear-gradient(to bottom,#ffec61,#645bf6);
+
+#aboutPage .card5:nth-child(2) {
+    background: linear-gradient(to bottom, #ffec61, #645bf6);
 }
-#aboutPage .card5:nth-child(3){
-    background: linear-gradient(to bottom,#ff2ae0,#9a4eff);
+
+#aboutPage .card5:nth-child(3) {
+    background: linear-gradient(to bottom, #ff2ae0, #9a4eff);
 }
-#aboutPage .icon{
+
+#aboutPage .icon {
     position: relative;
     width: 140px;
     height: 120px;
@@ -153,13 +162,14 @@
     border-bottom-left-radius: 100px;
     border-bottom-right-radius: 100px;
 
-    box-shadow: 0 10px 0 rgba(0,0,0,0.1),
+    box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1),
     inset 0 -8px 0 #fff;
     z-index: 100;
     display: flex;
     justify-content: center;
 }
-#aboutPage .icon::before{
+
+#aboutPage .icon::before {
     content: "";
     position: absolute;
     top: 0;
@@ -170,7 +180,8 @@
     border-top-right-radius: 50px;
     box-shadow: 15px -15px 0 15px #fff;
 }
-#aboutPage .icon::after{
+
+#aboutPage .icon::after {
     content: "";
     position: absolute;
     top: 0;
@@ -181,23 +192,27 @@
     border-top-left-radius: 50px;
     box-shadow: -20px -15px 0 15px #fff;
 }
-#aboutPage .icon ion-icon{
+
+#aboutPage .icon ion-icon {
     color: green;
     position: relative;
     font-size: 6em;
     z-index: 1000;
 }
-#aboutPage .content5{
+
+#aboutPage .content5 {
     position: absolute;
     width: 100%;
     padding: 30px;
     padding-top: 140px;
     text-align: center;
 }
-#aboutPage .content5 p{
+
+#aboutPage .content5 p {
     color: #fff;
     line-height: 1.5em;
 }
+
 /*End Service Section Styling*/
 /*Start About Section Styling*/
 
@@ -210,6 +225,7 @@
             180deg, #e70b0b, #efefef00);
     filter: blur(3px);
 }
+
 #aboutPage .about2 {
     position: relative;
     left: 0;
@@ -246,9 +262,7 @@
 .treepng {
     position: absolute;
     left: 105px;
-    /* right: 0; */
     top: 139px;
-    /* bottom: 0; */
     border-radius: 25% 0 25% 0;
     margin: auto;
     height: 552px;
@@ -260,24 +274,24 @@
     height: 562px;
     width: 563px;
     border-radius: 25% 0 25% 0;
-    background: linear-gradient(-45deg, #00ff66 , #00ff66 , #ff00ff , #ff0099 , #099fff);
+    background: linear-gradient(-45deg, #00ff66, #00ff66, #ff00ff, #ff0099, #099fff);
     filter: blur(20px);
     animation: anim 10s linear infinite;
 }
 
 @keyframes anim {
-    0%{
-        background: linear-gradient(-45deg, #099fff, #00ff66 , #00ff66 , #ff00ff , #ff0099 );
+    0% {
+        background: linear-gradient(-45deg, #099fff, #00ff66, #00ff66, #ff00ff, #ff0099);
     }
-    50%{
-        background: linear-gradient(-45deg, #ff0099 , #099fff, #00ff66 , #00ff66 , #ff00ff );
+    50% {
+        background: linear-gradient(-45deg, #ff0099, #099fff, #00ff66, #00ff66, #ff00ff);
     }
-    100%{
-        background: linear-gradient(-45deg, #ff00ff , #ff0099 , #099fff, #00ff66 , #00ff66 );
+    100% {
+        background: linear-gradient(-45deg, #ff00ff, #ff0099, #099fff, #00ff66, #00ff66);
     }
 }
 
-#aboutPage .boxabout{
+#aboutPage .boxabout {
     position: absolute;
     width: 300px;
     height: 400px;
@@ -298,21 +312,23 @@
     top: 200px;
     width: 310px;
     height: 410px;
-    background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
     filter: blur(20px);
     animation: colour1 10s linear infinite;
 }
+
 @keyframes colour1 {
-    0%{
-        background: linear-gradient(235deg,#89ff00,#060c21,#00bcd4);
+    0% {
+        background: linear-gradient(235deg, #89ff00, #060c21, #00bcd4);
     }
-    50%{
-        background: linear-gradient(235deg,#00bcd4,#89ff00,#060c21);
+    50% {
+        background: linear-gradient(235deg, #00bcd4, #89ff00, #060c21);
     }
-    100%{
-        background: linear-gradient(235deg,#060c21,#00bcd4,#89ff00);
+    100% {
+        background: linear-gradient(235deg, #060c21, #00bcd4, #89ff00);
     }
 }
+
 /*End About Section Styling*/
 /*Start Skill Section Styling*/
 #aboutPage .skills h2 {
@@ -337,15 +353,17 @@
 /*End Skill Section Styling*/
 /*about section end*/
 /*start hobby section*/
-#aboutPage .hobby{
+#aboutPage .hobby {
     position: relative;
     bottom: 0;
 }
-#aboutPage .hobby h1{
+
+#aboutPage .hobby h1 {
     font-size: 40px;
     font-weight: bold;
     margin-left: 55px;
 }
+
 #aboutPage .hobby img {
     border-style: none;
     position: absolute;
@@ -354,138 +372,81 @@
     height: 283px;
     left: 55px;
 }
+
 #aboutPage .hobby-cont {
     position: absolute;
     display: flex;
     width: 429px;
     right: 50px;
 }
+
 #aboutPage .hobby p {
     position: relative;
     display: flex;
     font-size: 25px;
     text-align: center;
 }
+
 /*Hobby section End*/
-/*Start Footer section*/
-#aboutPage footer {
-    font-weight: 400;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    background-color: black;
-    position: relative;
-    bottom: -550px;
-    height: 225px;
-}
-#aboutPage .footer{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    text-align: center;
-    color: white;
-}
-#aboutPage .footer ul {
-    color: white;
-    margin-top: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 0;
-    text-align: center;
-}
 
-#aboutPage .footer ul li a {
-    color: inherit;
-    text-decoration: none;
-    opacity: 0.8;
-}
-
-#aboutPage .footer ul li {
-    display: inline-block;
-    padding: 0 15px;
-}
-
-#aboutPage .footer ul li a:hover {
-    color: crimson;
-    opacity: 1;
-}
-
-#aboutPage .footer .copyright {
-    margin-top: 15px;
-    text-align: center;
-    font-size: 13px;
-    color: #aaa;
-}
-
-#aboutPage .footer .intro {
-    margin-top: 20px;
-    text-align: center;
-    font-size: 13px;
-    color: white;
-}
-#aboutPage footer::before{
-    content: "";
+.skillSlider .slider {
     position: absolute;
-    background-color: lightseagreen;
-    height: 4px;
-    top: 0;
+    margin: auto;
+    right: 0;
     left: 0;
-    width: 100%;
-}
-
-
-
-
-
-
-.skillSlider .slider{
     max-width: 1100px;
     display: flex;
     color: black;
 }
-.skillSlider .slider .card1{
+
+.skillSlider .slider .card1 {
     flex: 1;
     margin: 0 10px;
     background: #fff;
     border-radius: 50px;
 }
-.skillSlider .slider .card1 .img1{
+
+.skillSlider .slider .card1 .img1 {
     height: 200px;
     width: 100%;
     border-radius: 50px;
 }
-.skillSlider .slider .card1 .img1 img{
+
+.skillSlider .slider .card1 .img1 img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 50px;
 }
-.skillSlider .slider .card1 .content1{
+
+.skillSlider .slider .card1 .content1 {
     padding: 10px 20px;
 }
-.skillSlider .card1 .content1 .title1{
+
+.skillSlider .card1 .content1 .title1 {
     font-size: 25px;
     font-weight: 600;
 }
-.skillSlider .card1 .content1 .sub-title1{
+
+.skillSlider .card1 .content1 .sub-title1 {
     font-size: 20px;
     font-weight: 600;
     color: #e74c3c;
     line-height: 20px;
 }
-.skillSlider .card1 .content1 p{
+
+.skillSlider .card1 .content1 p {
     text-align: justify;
     margin: 10px 0;
 }
-.skillSlider .card1 .content1 .btn1{
+
+.skillSlider .card1 .content1 .btn1 {
     display: block;
     text-align: center;
     margin: 10px 0;
 }
-.skillSlider .card1 .content1 .btn1 a{
+
+.skillSlider .card1 .content1 .btn1 a {
     text-decoration: none;
     background: #e74c3c;
     color: #fff;
@@ -497,6 +458,7 @@
     cursor: pointer;
     transition: 0.2s;
 }
-.skillSlider .card1 .content1 .btn1 button:hover{
+
+.skillSlider .card1 .content1 .btn1 button:hover {
     transform: scale(0.9);
 }
