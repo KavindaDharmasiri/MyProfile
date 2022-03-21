@@ -31,30 +31,6 @@ $(document).ready(function(){
         loop: true
     });
     /*end auto type in index page*/
-
-    /*start carousel in about page*/
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
-            }
-        }
-    });
-    /*end carousel in about page*/
 });
 
 /*start carousel in about page*/

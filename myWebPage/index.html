@@ -7,8 +7,8 @@
     <link href="assets/css/vlogStyle.css" rel="stylesheet">
     <link href="assets/css/aboutStyle.css" rel="stylesheet">
     <link href="assets/css/projectStyle.css" rel="stylesheet">
-    <link href="assets/css/mediaStyle.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/mediaStyle.css" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
@@ -30,9 +30,66 @@
 
 
 </head>
+<!--
+<style>
+    .loaderSec{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+    }
+    .loader {
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border: 16px solid #f3f3f3;
+        border-top: 16px solid #3498db;
+        border-radius: 50%;
+        width: 120px;
+        height: 120px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    html{
+        background-color: pink;
+    }
+    .afterLoaderSec{
+        background-color: pink;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+    }
+    .afterLoaderSec h1{
+        color: black;
+        font-size: 30px;
+    }
+    img{
+        width: 50%;
+    }
+</style>
+-->
 
 <body>
+<!--
+<section class="loaderSec" id="loaderSec">
+    <div class="loader"></div>
+</section>
+-->
 
+<section id="after">
 <div class="scroll-up-btn">
     <i class="fas fa-angle-up"></i>
 </div>
@@ -1114,10 +1171,32 @@
         <p class="intro">Java Software Developer.</p>
     </div>
 </footer>
-
+</section>
 <script src="assets/js/script.js"></script>
 
 <script>
+/*
+
+    var demo9 = document.getElementById("loaderSec");
+    demo9.style.display = "none";
+
+    var demo10 = document.getElementById("after");
+    demo10.style.display = "none";
+
+    $(window).on('load',function(){
+        demo9.style.display = "none";
+        demo10.style.display = "inline";
+
+    });
+
+
+
+    $(document).ready(function(){
+        demo10.style.display = "none";
+        demo9.style.display = "inline";
+    });
+
+*/
 
     var demo1 = document.getElementById("indexPage");
 
